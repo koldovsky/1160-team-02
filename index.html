@@ -16,9 +16,16 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header></header>
-    <main data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.main.partial.html"></main>
+    <main
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="common.main.partial.html"
+    >
+      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.main.partial.html"></section>
+    </main>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
