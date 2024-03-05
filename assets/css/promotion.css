@@ -35,10 +35,26 @@
 .promotion__timer-hours,
 .promotion__timer-minutes,
 .promotion__timer-seconds {
-  border: 2px solid #000;
-  border-radius: 5px; 
+  border: 1px solid #45c1c7;
+  border-radius: 10px; 
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #3c3731;
+  font-weight: 400;
   padding: 10px; 
   margin: 5px; 
+}
+
+.transparent-text
+{
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.timer-digit {
+  font-family: "Baloo 2", cursive; 
+  font-size: 36px; 
+  font-weight: 700;
+  color:#3c3731;
 }
 
 .frame {
