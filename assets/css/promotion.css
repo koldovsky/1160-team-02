@@ -27,9 +27,18 @@
   font-weight: bold;
 }
 
-.promotion__timer {
-  font-size: 60px;
-  color: #333;
+#promotion__timer {
+  display: flex;
+}
+
+.promotion__timer-days,
+.promotion__timer-hours,
+.promotion__timer-minutes,
+.promotion__timer-seconds {
+  border: 2px solid #000;
+  border-radius: 5px; 
+  padding: 10px; 
+  margin: 5px; 
 }
 
 .frame {
