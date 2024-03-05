@@ -1,5 +1,5 @@
-body {
-  background-image: url(img/promotion-background.png);
+.promotion{
+  background-image: url(promotion-background.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -37,11 +37,7 @@ body {
   margin: 40px auto;
   text-align: center;
 }
-custom-btn btn{
-  margin: 20px;
-  text-align: center;
-  text-decoration: none;
-}
+
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -51,6 +47,9 @@ custom-btn btn{
   font-weight: bold;
   background: transparent;
   cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
   font-family: "PT Sans", sans-serif;
   transition: all 0.3s ease;
   font-size: 16.5px;
