@@ -20,13 +20,14 @@ document.addEventListener("DOMContentLoaded", function ()
       );
       const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-      const timerElement = document.getElementById("promotion__timer");
-      timerElement.innerHTML = `${days}Days ${hours}Hours ${minutes}Minutes ${seconds}Seconds`;
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
     }
     else
     {
-      clearInterval(timerInterval);
-      document.getElementById("promotion__timer").innerHTML = "Timer End!";
+      clearInterval(timerInterval);   
     }
-  } 
+  }
 });
