@@ -1,6 +1,7 @@
 .promotion{
-  background-image: url(promotion-background.png);
+  background-image: url(../../img/promotion-background.png);
   background-repeat: no-repeat;
+  
   background-size: 100%;
 }
 
