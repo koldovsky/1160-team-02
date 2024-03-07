@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --variable1: #553f38;
+    --variable2: #d36c28;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
