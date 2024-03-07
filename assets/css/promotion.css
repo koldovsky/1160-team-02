@@ -1,6 +1,8 @@
-.promotion{
-  background-image: url(promotion-background.png);
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap')
+.promotion {
+  background-image: url(../../img/promotion-background.png);
   background-repeat: no-repeat;
+
   background-size: 100%;
 }
 
@@ -36,25 +38,24 @@
 .promotion__timer-minutes,
 .promotion__timer-seconds {
   border: 1px solid #45c1c7;
-  border-radius: 10px; 
+  border-radius: 10px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #3c3731;
   font-weight: 400;
-  padding: 10px; 
-  margin: 5px; 
+  padding: 10px;
+  margin: 5px;
 }
 
-.transparent-text
-{
+.transparent-text {
   color: rgba(0, 0, 0, 0.54);
 }
 
 .timer-digit {
-  font-family: "Baloo 2", cursive; 
-  font-size: 36px; 
+  font-family: "Baloo 2", cursive;
+  font-size: 36px;
   font-weight: 700;
-  color:#3c3731;
+  color: #3c3731;
 }
 
 .frame {
@@ -85,7 +86,7 @@
   outline: none;
 }
 
-.btn{
+.btn {
   background: rgb(0, 190, 238);
   background: linear-gradient(
     0deg,
