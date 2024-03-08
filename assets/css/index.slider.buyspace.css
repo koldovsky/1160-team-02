@@ -1,5 +1,5 @@
 .slider__container{
-
+    margin: 70px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,5 +16,5 @@
 }
 .buyspace__line{
     
-    width: 500px;
+    width: 100%;
 }
