@@ -1,0 +1,20 @@
+.slider__container{
+    margin: 70px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.slide__item{
+    width: 50%;
+}
+
+.buyspace__main{
+    max-width: 700px;
+}
+.buyspace__line{
+    
+    width: 100%;
+}
