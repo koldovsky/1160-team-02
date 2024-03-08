@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 .promotion {
   background-image: url(../../img/promotion-background.png);
   background-repeat: no-repeat;
-
   background-size: 100%;
 }
 
 .promotion__prom {
   font-size: 14px;
   color: #45c1c7;
-  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
