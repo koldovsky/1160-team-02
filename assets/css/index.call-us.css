@@ -1,0 +1,58 @@
+/*volodymyr-kurylin__block-15*/
+
+.call-us {
+  /* Стилі для секції "call-us" */
+}
+
+.call-us__phone-number {
+  /* Стилі для секції з номером телефону */
+}
+
+.call-us__phone-number__title {
+  /* Стилі для заголовку "CALL US" */
+  font-weight: bold;
+}
+
+.call-us__phone-number__link {
+  /* Стилі для посилання з номером телефону */
+}
+
+.call-us__subscribe-suggestion {
+  /* Стилі для секції підписки */
+}
+
+.call-us__subscribe-suggestion__text {
+  /* Стилі для тексту підказки підписки */
+}
+
+.call-us__subscribe-suggestion__link {
+  /* Стилі для посилання підказки підписки */
+}
+
+.call-us__subscribe-suggestion__link-text {
+  /* Стилі для тексту посилання підказки підписки */
+}
+
+.call-us__subscribe-suggestion__link-arrow {
+  /* Стилі для стрілки посилання підказки підписки */
+}
+
+.call-us__subscribe-form {
+  /* Стилі для форми підписки */
+}
+
+.call-us__subscribe-form__form {
+  /* Стилі для форми підписки */
+}
+
+.call-us__subscribe-form__input {
+  /* Стилі для поля введення email у формі підписки */
+}
+
+.call-us__subscribe-form__button {
+  /* Стилі для кнопки підписки у формі підписки */
+}
+
+.call-us__subscribe-form__button-text {
+  /* Стилі для тексту кнопки підписки у формі підписки */
+}
