@@ -1,6 +1,5 @@
 .promotion {
   background-image: url(../../img/promotion-background.png);
-  background-repeat: no-repeat;
   background-size: cover;
   min-height: 570px;
   display: flex;
