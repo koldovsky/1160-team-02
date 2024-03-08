@@ -1,67 +1,45 @@
 /*volodymyr-kurylin__block-15*/
 
 :root {
-  --ui-block-title-tablet-letter-spacing: 0;
-  --ui-block-title-mobile-letter-spacing: 0;
-  --ui-block-title-tablet-line-height: 1.2;
-  --ui-block-title-mobile-line-height: 1.2;
-  --ui-block-title-size-tablet: 44px;
-  --ui-block-title-size-mobile: 30px;
-  --ui-block-title-text-transform: none;
-  --ui-block-title-font-weight: 700;
-  --ui-block-title-font-family: "Baloo 2", cursive;
-  --ui-block-title-size: 50px;
-  --ui-block-title-color: #3c3731;
-  --ui-block-title-color-light: #fff;
-  --ui-block-title-tablet-size: 44px;
-  --ui-block-title-mobile-size: 30px;
-  --ui-block-title-font-style: normal;
-  --ui-block-title-text-decoration: none;
-  --ui-block-title-coefficients-320-px: 0.77;
-  --ui-block-title-letter-spacing: 0;
-  --ui-block-title-line-height: 1.2;
+  --call-us-background-color: #f9f4f2;
 
-  --ui-brand-color: #ed6435;
+  --primary-color: #ed6435;
 
-  --ui-caption-tablet-letter-spacing: 0;
-  --ui-caption-mobile-letter-spacing: 0;
-  --ui-caption-tablet-line-height: 1.4285;
-  --ui-caption-mobile-line-height: 1.4285;
-  --ui-caption-size-tablet: 14px;
-  --ui-caption-size-mobile: 15px;
-  --ui-caption-text-transform: none;
-  --ui-caption-font-weight: 400;
-  --ui-caption-font-family: "PT Sans", sans-serif;
-  --ui-caption-size: 15px;
-  --ui-caption-color: #958b7e;
-  --ui-caption-color-light: #fff;
-  --ui-caption-tablet-size: 14px;
-  --ui-caption-mobile-size: 15px;
-  --ui-caption-font-style: normal;
-  --ui-caption-text-decoration: none;
-  --ui-caption-coefficients-320-px: 1;
-  --ui-caption-letter-spacing: 0;
-  --ui-caption-line-height: 1.4285;
+  --phone-number-link-size: 50px;
+  --phone-number-link-font: "Baloo 2", cursive;
+  --phone-number-link-font-weight: 700;
+  --phone-number-text-decoration: none;
 
-  --ui-link-color: #232323;
-  --ui-link-color-light: #fff;
-  --ui-link-hover-color: #ed6435;
-  --ui-link-hover-color-light: #ed6435;
-  --ui-link-font-style: normal;
-  --ui-link-text-decoration: none;
-  --ui-link-coefficients-320-px: 1;
-  --ui-link-letter-spacing: 0;
-  --ui-link-line-height: 1.2;
+  --phone-number-title-color: #45c1c7;
+  --phone-number-title-size: 15px;
+  --phone-number-title-font: "PT Sans", sans-serif;
+  --phone-number-title-font-weight: 700;
+  --phone-number-title-text-decoration: none;
 
-  --ui-dark-shade-color: #3c3731;
+  --subscribe-suggestion-text-color: #958b7e;
+  --subscribe-suggestion-text-size: 15px;
+  --subscribe-suggestion-text-font: "PT Sans", sans-serif;
+  --subscribe-suggestion-text-weight: 400;
+  --subscribe-suggestion-text-text-decoration: none;
+
+  --subscribe-suggestion-link-text-color: #232323; /*#958b7e;*/
+  --subscribe-suggestion-link-text-size: 15px;
+  --subscribe-suggestion-link-text-font: "PT Sans", sans-serif;
+  --subscribe-suggestion-link-text-font-weight: 700;
+  --subscribe-suggestion-link-text-text-decoration: none;
+
+  --subscribe-suggestion-link-text-hover-color: #ed6435;
+
+  --subscribe-suggestion-link-arrow-color: #45c1c7;
+  --subscribe-suggestion-link-arrow-size: 15px;
+  --subscribe-suggestion-link-arrow-font: "PT Sans", sans-serif;
+  --subscribe-suggestion-link-arrow-font-weight: 700;
+  --subscribe-suggestion-link-arrow-text-decoration: none;
 }
 
 .call-us {
   /* Стилі для секції "call-us" */
-  /*background-color: var(--ui-dark-shade-color);*/
-  z-index: 0;
-  border-radius: inherit;
-  transition: opacity .3s ease-out;
+  background-color: var(--call-us-background-color);
 }
 
 .call-us__phone-number {
@@ -70,35 +48,24 @@
 
 .call-us__phone-number__title {
   /* Стилі для заголовку "CALL US" */
-  color: var(--ui-dark-accent-color) !important;
-  font-size: var(--ui-caption-size);
-  line-height: var(--ui-caption-line-height);
-  font-family: var(--ui-caption-font-family);
-  font-weight: var(--ui-caption-font-weight);
-  -webkit-text-decoration: var(--ui-caption-text-decoration);
-  -moz-text-decoration: var(--ui-caption-text-decoration);
-  text-decoration: var(--ui-caption-text-decoration);
-  font-style: var(--ui-caption-font-style);
-  letter-spacing: calc(var(--ui-caption-letter-spacing)*1em);
-  color: var(--ui-caption-color);
-  text-transform: var(--ui-caption-text-transform);
-  font-weight: bold;
+  color: var(--phone-number-title-color);
+  font-size: var(--phone-number-title-size);
+  font-family: var(--phone-number-title-font);
+  font-weight: var(--phone-number-title-font-weight);
+  text-decoration: var(--phone-number-title-text-decoration);
 }
 
 .call-us__phone-number__link {
   /* Стилі для посилання з номером телефону */
-  color: var(--ui-brand-color) !important;
-  color: var(--ui-block-title-color);
-  font-size: var(--ui-block-title-size);
-  line-height: var(--ui-block-title-line-height);
-  font-family: var(--ui-block-title-font-family);
-  font-weight: var(--ui-block-title-font-weight);
-  text-transform: var(--ui-block-title-text-transform);
-  -webkit-text-decoration: var(--ui-block-title-text-decoration);
-  -moz-text-decoration: var(--ui-block-title-text-decoration);
-  text-decoration: var(--ui-block-title-text-decoration);
-  font-style: var(--ui-block-title-font-style);
-  letter-spacing: calc(var(--ui-block-title-letter-spacing)*1em);
+  color: var(--primary-color);
+  font-size: var(--phone-number-link-size);
+  font-family: var(--phone-number-link-font);
+  font-weight: var(--phone-number-link-font-weight);
+  text-decoration: var(--phone-number-text-decoration);
+}
+.call-us__phone-number__link:hover {
+  /* Додати підкреслення при наведенні */
+  text-decoration: underline;
 }
 
 .call-us__subscribe-suggestion {
@@ -107,44 +74,42 @@
 
 .call-us__subscribe-suggestion__text {
   /* Стилі для тексту підказки підписки */
-  font-size: var(--ui-caption-size);
-  line-height: var(--ui-caption-line-height);
-  font-family: var(--ui-caption-font-family);
-  font-weight: var(--ui-caption-font-weight);
-  -webkit-text-decoration: var(--ui-caption-text-decoration);
-  -moz-text-decoration: var(--ui-caption-text-decoration);
-  text-decoration: var(--ui-caption-text-decoration);
-  font-style: var(--ui-caption-font-style);
-  letter-spacing: calc(var(--ui-caption-letter-spacing)*1em);
-  color: var(--ui-caption-color);
-  text-transform: var(--ui-caption-text-transform);
-  font-weight: bold;
+  color: var(--subscribe-suggestion-text-color);
+  font-size: var(--subscribe-suggestion-text-size);
+  font-family: var(--subscribe-suggestion-text-font);
+  font-weight: var(--subscribe-suggestion-text-weight);
+  text-decoration: var(--subscribe-suggestion-text-text-decoration);
 }
 
 .call-us__subscribe-suggestion__link {
   /* Стилі для посилання підказки підписки */
-  font-size: var(--ui-caption-size);
-  line-height: var(--ui-caption-line-height);
-  font-family: var(--ui-caption-font-family);
-  font-weight: var(--ui-caption-font-weight); /* ??? mb not bold? */
-  -webkit-text-decoration: var(--ui-caption-text-decoration);
-  -moz-text-decoration: var(--ui-caption-text-decoration);
-  text-decoration: var(--ui-caption-text-decoration);
-  font-style: var(--ui-caption-font-style);
-  letter-spacing: calc(var(--ui-caption-letter-spacing)*1em);
-  color: var(--ui-caption-color);
-  text-transform: var(--ui-caption-text-transform);
+  text-decoration: none;
 }
 
 .call-us__subscribe-suggestion__link-text {
   /* Стилі для тексту посилання підказки підписки */
-  font-weight: bold;
-  color: var(--ui-link-color);
+  color: var(--subscribe-suggestion-link-text-color);
+  font-size: var(--subscribe-suggestion-link-text-size);
+  font-family: var(--subscribe-suggestion-link-text-font);
+  font-weight: var(--subscribe-suggestion-link-text-font-weight);
+  /*text-decoration: var(--subscribe-suggestion-link-text-text-decoration);*/
+}
+.call-us__subscribe-suggestion__link-text:hover {
+  /* Додати підкреслення при наведенні */
+  text-decoration: underline;
 }
 
 .call-us__subscribe-suggestion__link-arrow {
   /* Стилі для стрілки посилання підказки підписки */
-  color: var(--ui-dark-accent-color) !important;
+  color: var(--subscribe-suggestion-link-arrow-color);
+  font-size: var(--subscribe-suggestion-link-arrow-size);
+  font-family: var(--subscribe-suggestion-link-arrow-font);
+  font-weight: var(--subscribe-suggestion-link-arrow-font-weight);
+  /*text-decoration: var(--subscribe-suggestion-link-arrow-text-decoration);*/
+}
+.call-us__subscribe-suggestion__link-arrow:hover {
+  /* Додати підкреслення при наведенні */
+  text-decoration: underline;
 }
 
 .call-us__subscribe-form {
