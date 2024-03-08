@@ -21,3 +21,7 @@
     font-family: "PT Sans", sans-serif;
     scroll-behavior: smooth;
 }
+
+a{
+    text-decoration: none;
+}
