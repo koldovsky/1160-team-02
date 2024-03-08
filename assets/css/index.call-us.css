@@ -1,0 +1,168 @@
+/*volodymyr-kurylin__block-15*/
+
+:root {
+  --ui-block-title-tablet-letter-spacing: 0;
+  --ui-block-title-mobile-letter-spacing: 0;
+  --ui-block-title-tablet-line-height: 1.2;
+  --ui-block-title-mobile-line-height: 1.2;
+  --ui-block-title-size-tablet: 44px;
+  --ui-block-title-size-mobile: 30px;
+  --ui-block-title-text-transform: none;
+  --ui-block-title-font-weight: 700;
+  --ui-block-title-font-family: "Baloo 2", cursive;
+  --ui-block-title-size: 50px;
+  --ui-block-title-color: #3c3731;
+  --ui-block-title-color-light: #fff;
+  --ui-block-title-tablet-size: 44px;
+  --ui-block-title-mobile-size: 30px;
+  --ui-block-title-font-style: normal;
+  --ui-block-title-text-decoration: none;
+  --ui-block-title-coefficients-320-px: 0.77;
+  --ui-block-title-letter-spacing: 0;
+  --ui-block-title-line-height: 1.2;
+
+  --ui-brand-color: #ed6435;
+
+  --ui-caption-tablet-letter-spacing: 0;
+  --ui-caption-mobile-letter-spacing: 0;
+  --ui-caption-tablet-line-height: 1.4285;
+  --ui-caption-mobile-line-height: 1.4285;
+  --ui-caption-size-tablet: 14px;
+  --ui-caption-size-mobile: 15px;
+  --ui-caption-text-transform: none;
+  --ui-caption-font-weight: 400;
+  --ui-caption-font-family: "PT Sans", sans-serif;
+  --ui-caption-size: 15px;
+  --ui-caption-color: #958b7e;
+  --ui-caption-color-light: #fff;
+  --ui-caption-tablet-size: 14px;
+  --ui-caption-mobile-size: 15px;
+  --ui-caption-font-style: normal;
+  --ui-caption-text-decoration: none;
+  --ui-caption-coefficients-320-px: 1;
+  --ui-caption-letter-spacing: 0;
+  --ui-caption-line-height: 1.4285;
+
+  --ui-link-color: #232323;
+  --ui-link-color-light: #fff;
+  --ui-link-hover-color: #ed6435;
+  --ui-link-hover-color-light: #ed6435;
+  --ui-link-font-style: normal;
+  --ui-link-text-decoration: none;
+  --ui-link-coefficients-320-px: 1;
+  --ui-link-letter-spacing: 0;
+  --ui-link-line-height: 1.2;
+
+  --ui-dark-shade-color: #3c3731;
+}
+
+.call-us {
+  /* Стилі для секції "call-us" */
+  /*background-color: var(--ui-dark-shade-color);*/
+  z-index: 0;
+  border-radius: inherit;
+  transition: opacity .3s ease-out;
+}
+
+.call-us__phone-number {
+  /* Стилі для секції з номером телефону */
+}
+
+.call-us__phone-number__title {
+  /* Стилі для заголовку "CALL US" */
+  color: var(--ui-dark-accent-color) !important;
+  font-size: var(--ui-caption-size);
+  line-height: var(--ui-caption-line-height);
+  font-family: var(--ui-caption-font-family);
+  font-weight: var(--ui-caption-font-weight);
+  -webkit-text-decoration: var(--ui-caption-text-decoration);
+  -moz-text-decoration: var(--ui-caption-text-decoration);
+  text-decoration: var(--ui-caption-text-decoration);
+  font-style: var(--ui-caption-font-style);
+  letter-spacing: calc(var(--ui-caption-letter-spacing)*1em);
+  color: var(--ui-caption-color);
+  text-transform: var(--ui-caption-text-transform);
+  font-weight: bold;
+}
+
+.call-us__phone-number__link {
+  /* Стилі для посилання з номером телефону */
+  color: var(--ui-brand-color) !important;
+  color: var(--ui-block-title-color);
+  font-size: var(--ui-block-title-size);
+  line-height: var(--ui-block-title-line-height);
+  font-family: var(--ui-block-title-font-family);
+  font-weight: var(--ui-block-title-font-weight);
+  text-transform: var(--ui-block-title-text-transform);
+  -webkit-text-decoration: var(--ui-block-title-text-decoration);
+  -moz-text-decoration: var(--ui-block-title-text-decoration);
+  text-decoration: var(--ui-block-title-text-decoration);
+  font-style: var(--ui-block-title-font-style);
+  letter-spacing: calc(var(--ui-block-title-letter-spacing)*1em);
+}
+
+.call-us__subscribe-suggestion {
+  /* Стилі для секції підписки */
+}
+
+.call-us__subscribe-suggestion__text {
+  /* Стилі для тексту підказки підписки */
+  font-size: var(--ui-caption-size);
+  line-height: var(--ui-caption-line-height);
+  font-family: var(--ui-caption-font-family);
+  font-weight: var(--ui-caption-font-weight);
+  -webkit-text-decoration: var(--ui-caption-text-decoration);
+  -moz-text-decoration: var(--ui-caption-text-decoration);
+  text-decoration: var(--ui-caption-text-decoration);
+  font-style: var(--ui-caption-font-style);
+  letter-spacing: calc(var(--ui-caption-letter-spacing)*1em);
+  color: var(--ui-caption-color);
+  text-transform: var(--ui-caption-text-transform);
+  font-weight: bold;
+}
+
+.call-us__subscribe-suggestion__link {
+  /* Стилі для посилання підказки підписки */
+  font-size: var(--ui-caption-size);
+  line-height: var(--ui-caption-line-height);
+  font-family: var(--ui-caption-font-family);
+  font-weight: var(--ui-caption-font-weight); /* ??? mb not bold? */
+  -webkit-text-decoration: var(--ui-caption-text-decoration);
+  -moz-text-decoration: var(--ui-caption-text-decoration);
+  text-decoration: var(--ui-caption-text-decoration);
+  font-style: var(--ui-caption-font-style);
+  letter-spacing: calc(var(--ui-caption-letter-spacing)*1em);
+  color: var(--ui-caption-color);
+  text-transform: var(--ui-caption-text-transform);
+}
+
+.call-us__subscribe-suggestion__link-text {
+  /* Стилі для тексту посилання підказки підписки */
+  font-weight: bold;
+  color: var(--ui-link-color);
+}
+
+.call-us__subscribe-suggestion__link-arrow {
+  /* Стилі для стрілки посилання підказки підписки */
+  color: var(--ui-dark-accent-color) !important;
+}
+
+.call-us__subscribe-form {
+  /* Стилі для форми підписки */
+}
+
+.call-us__subscribe-form__form {
+  /* Стилі для форми підписки */
+}
+
+.call-us__subscribe-form__input {
+  /* Стилі для поля введення email у формі підписки */
+}
+
+.call-us__subscribe-form__button {
+  /* Стилі для кнопки підписки у формі підписки */
+}
+
+.call-us__subscribe-form__button-text {
+  /* Стилі для тексту кнопки підписки у формі підписки */
+}
