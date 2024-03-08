@@ -1,0 +1,121 @@
+/*volodymyr-kurylin__block-12*/
+:root {
+  --footer-background-color: #f9f4f2;
+
+  --ui-caption-tablet-letter-spacing: 0;
+  --ui-caption-mobile-letter-spacing: 0;
+  --ui-caption-tablet-line-height: 1.4285;
+  --ui-caption-mobile-line-height: 1.4285;
+  --ui-caption-size-tablet: 14px;
+  --ui-caption-size-mobile: 15px;
+  --ui-caption-text-transform: none;
+  --ui-caption-font-weight: 400;
+  --ui-caption-font-family: "PT Sans", sans-serif;
+  --ui-caption-size: 15px;
+  --ui-caption-color: #958b7e;
+  --ui-caption-color-light: #fff;
+  --ui-caption-tablet-size: 14px;
+  --ui-caption-mobile-size: 15px;
+  --ui-caption-font-style: normal;
+  --ui-caption-text-decoration: none;
+  --ui-caption-coefficients-320-px: 1;
+  --ui-caption-letter-spacing: 0;
+  --ui-caption-line-height: 1.4285;
+
+  --ui-dark-shade-color: #f9f4f2;/*#3c3731;*/
+}
+
+.footer {
+  /* Стилі для футера */
+}
+
+.footer__container {
+  /* Стилі для контейнера футера */
+  background-color: var(--footer-background-color);
+}
+
+.footer__block {
+  /* Стилі для блока в футері */
+}
+
+.footer__block-logo {
+  /* Стилі для логотипу в блоку футера */
+}
+
+.footer__block-text {
+  /* Стилі для тексту в блоку футера */
+}
+
+.footer__block-email {
+  /* Стилі для посилання на email в блоку футера */
+}
+
+.footer__block-socials {
+  /* Стилі для соціальних мереж в блоку футера */
+}
+
+.footer__block-socials-item {
+  /* Стилі для елементів соціальних мереж в блоку футера */
+}
+
+.footer__column {
+  /* Стилі для колонок в футері */
+}
+
+.footer__column-title {
+  /* Стилі для заголовків колонок в футері */
+}
+
+.footer__column-divider {
+  /* Стилі для роздільників у колонках футера */
+}
+
+.footer__links {
+  /* Стилі для посилань в футері */
+}
+
+.footer__link-item {
+  /* Стилі для елементів посилань в футері */
+}
+
+.footer__link {
+  /* Стилі для посилань в футері */
+}
+
+.footer__bottom {
+  /* Стилі для нижньої частини футера */
+  background-color: rgb(242, 232, 228);
+  transition: opacity .3s ease-out;
+}
+
+.footer__bottom-created-by {
+  /* Стилі для тексту "© Created by" в нижній частині футера */
+  font-size: var(--ui-caption-size);
+  line-height: var(--ui-caption-line-height);
+  font-family: var(--ui-caption-font-family);
+  font-weight: var(--ui-caption-font-weight);
+  -webkit-text-decoration: var(--ui-caption-text-decoration);
+  -moz-text-decoration: var(--ui-caption-text-decoration);
+  text-decoration: var(--ui-caption-text-decoration);
+  font-style: var(--ui-caption-font-style);
+  letter-spacing: calc(var(--ui-caption-letter-spacing) * 1em);
+  color: var(--ui-caption-color);
+  text-transform: var(--ui-caption-text-transform);
+  font-weight: bold;
+}
+
+.footer__bottom-copyright {
+  /* Стилі для тексту з авторськими правами в нижній частині футера */
+  font-size: var(--ui-caption-size);
+  line-height: var(--ui-caption-line-height);
+  font-family: var(--ui-caption-font-family);
+  font-weight: var(--ui-caption-font-weight);
+  -webkit-text-decoration: var(--ui-caption-text-decoration);
+  -moz-text-decoration: var(--ui-caption-text-decoration);
+  text-decoration: var(--ui-caption-text-decoration);
+  font-style: var(--ui-caption-font-style);
+  letter-spacing: calc(var(--ui-caption-letter-spacing) * 1em);
+  color: var(--ui-caption-color);
+  text-transform: var(--ui-caption-text-transform);
+  font-weight: bold;
+}
