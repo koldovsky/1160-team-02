@@ -26,7 +26,7 @@
     color: var(--title-text-color);
 }
 
-.recommendations__image{
+/* .recommendations__image{
     width: 272px;
 }
 
@@ -37,7 +37,7 @@
     .recommendations__promo{
         display: flex;
     }
-}
+} */
 
 .recommendations__promo{
     background-color: url(../../img/recommendation/recommendation_background.png);
