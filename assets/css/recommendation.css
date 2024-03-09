@@ -29,7 +29,7 @@
     width: 272px;
 }
 
-/* @media (max-width: 1300px){
+@media (max-width: 1300px){
     .recommendations__image{
         width: 770px;
     }
@@ -41,7 +41,7 @@
     .recommendations__image{
         width: 460px;
     }
-} */
+}
 
 .recommendations__promo{
     background-color: url(../../img/recommendation/recommendation_background.png);
