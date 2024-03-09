@@ -39,11 +39,11 @@
     }
 } */
 
-.recommendations__promo{
+/* .recommendations__promo{
     background-color: url(../../img/recommendation/recommendation_background.png);
     float: right;
     width: 400px;
-}
+} */
 
 .recommendations__promo-title{
     color: var(--brand-color);
