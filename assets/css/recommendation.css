@@ -9,6 +9,7 @@
 .recommendations__description{
     color: var(--basic-text-color);
     font-size: 19px;
+    text-align: center;
 }
 .recommendations__categories{
     display: flex;
@@ -29,17 +30,12 @@
     width: 272px;
 }
 
-@media (max-width: 1300px){
+@media (min-width: 500px){
     .recommendations__image{
-        width: 770px;
+        width: 460px;
     }
     .recommendations__promo{
         display: flex;
-    }
-}
-@media (max-width: 768px) {
-    .recommendations__image{
-        width: 460px;
     }
 }
 
