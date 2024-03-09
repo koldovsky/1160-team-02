@@ -21,6 +21,11 @@
   scroll-behavior: smooth;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
