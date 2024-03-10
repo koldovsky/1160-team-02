@@ -1,1 +1,13 @@
-section__arrivals
+.section__arrivals {
+    padding: 90px 0;
+}
+
+.arrivals__title {
+    text-align: center;
+    font-size: 30px;
+    color: var(--title-text-color);
+}
+
+.arrivals__icon {
+    justify-content: center;
+}
