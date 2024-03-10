@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap')
-/*@import "google-fonts.css";*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
 * {
   margin: 0;
@@ -27,6 +26,11 @@
   --secondary-font:"Baloo 2", cursive;
   font-family: "PT Sans", sans-serif;
   scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 a {
