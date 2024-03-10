@@ -10,5 +10,5 @@
 
 .arrivals__icon {
     justify-content: center;
-
+    min-height: 30px;
 }
