@@ -1,0 +1,21 @@
+.bone-icon
+{
+    width: 272px;
+    height: 32px;
+}
+
+img.carrousel__slide{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex; 
+}
+img.carousel-arrow {
+    width: 36px;
+    height: 36px; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}

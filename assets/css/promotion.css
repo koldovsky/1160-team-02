@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 .promotion {
   background-image: url(../../img/promotion-background.png);
-  background-repeat: no-repeat;
-
-  background-size: 100%;
+  background-size: cover;
+  min-height: 570px;
+  display: flex;
 }
 
 .promotion__prom {
   font-size: 14px;
-  color: #45c1c7;
-  font-family: "PT Sans", sans-serif;
+  color: var(--button-text-color2);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -17,12 +15,11 @@
   font-size: 82px;
   font-family: "Baloo 2", cursive;
   font-style: normal;
-  color: #3c3731;
+  color: var(--title-text-color);
 }
 .promotion__text-content {
   font-size: 19px;
-  color: #958b7e;
-  font-family: "PT Sans", sans-serif;
+  color: var(--basic-text-color);
 }
 .promotion__text-content-percent {
   color: rgb(255, 94, 0);
@@ -39,9 +36,8 @@
 .promotion__timer-seconds {
   border: 1px solid #45c1c7;
   border-radius: 10px;
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  color: #3c3731;
+  color: var(--title-text-color);
   font-weight: 400;
   padding: 10px;
   margin: 5px;
@@ -55,7 +51,7 @@
   font-family: "Baloo 2", cursive;
   font-size: 36px;
   font-weight: 700;
-  color: #3c3731;
+  color: var(--title-text-color);
 }
 
 .frame {
@@ -67,7 +63,7 @@
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: var(--button-text-color2);
   border-radius: 5px;
   padding: 10px 25px;
   font-weight: bold;
@@ -75,8 +71,6 @@
   cursor: pointer;
   margin: 20px;
   text-align: center;
-  text-decoration: none;
-  font-family: "PT Sans", sans-serif;
   transition: all 0.3s ease;
   font-size: 16.5px;
   position: relative;
@@ -87,17 +81,13 @@
 }
 
 .btn {
-  background: rgb(0, 190, 238);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 172, 238, 1) 0%,
-    rgba(2, 126, 251, 1) 100%
-  );
+  background:var(--button-bg-color2);
   width: 130px;
   height: 40px;
   line-height: 42px;
   padding: 0;
   border: none;
+  border-radius: 20px;
 }
 .btn span {
   position: relative;
@@ -111,7 +101,7 @@
   content: "";
   right: 0;
   top: 0;
-  background: rgba(2, 126, 251, 1);
+  background: var(--button-bg-color2);
   transition: all 0.3s ease;
 }
 .btn:before {
@@ -141,7 +131,7 @@
   content: "";
   left: 0;
   bottom: 0;
-  background: rgba(2, 126, 251, 1);
+  background: var(--button-text-color1);
   transition: all 0.3s ease;
 }
 .btn span:before {
