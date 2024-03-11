@@ -1,11 +1,18 @@
+@import "index.slider.buyspace.css"; /*чиє це я чому не включено до index.html*/
+
 @import "global.css";
-@import "common.footer.partial.css";
-@import "header.css";
-@import "index.call-us.css";
-@import "common.footer.css";
-@import "index.slider.buyspace.css";
-@import "promotion.css";
-@import "index.food-and-stuff.css";
-@import "recommendation.css";
-@import "testimonials.css";
-@import "index.new-arrivals.css";
+
+@import "header.css"; /*"common.header-nav.css" /*Новікова*/
+@import "index.hero.css"; /*Новікова*/
+@import "index.food-and-stuff.css"; /*Марченко*/
+/*@import "index.about-us.css"; /*Чемісов*/
+/*@import "index.trending-products.css"; /*Мачіха*/
+/*@import "index.brands.css"; /*Кундукова*/
+@import "index.new-arrivals.css"; /*Няйко*/
+@import "promotion.css"; /*"index.promotion.css"; /*Леонович*/
+@import "recommendation.css"; /*"index.recommendations.css"; /*Дерев'янко*/
+@import "testimonials.css"; /*"index.testimonials.css"; /*Наконечний*/
+/*@import "index.dry-food.css"; /*Зоценко*/
+/*@import "index.news-articles.css"; /*Калюжний*/
+@import "index.call-us.css"; /*Курилін*/
+@import "common.footer.css"; /*Курилін*/
