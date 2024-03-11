@@ -40,8 +40,8 @@
     }
 
     .testimonials-carousel__image {
-        width: 120px;
-        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
     }
     
     .testimonials-carousel__card {
@@ -58,8 +58,8 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .testimonials-carousel__image{
-        width: 120px;
-        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
     }
     .testimonials-carousel__card{
         display: none;
@@ -138,10 +138,10 @@
 
 .testimonials-carousel__description{
     padding: 5px 15px 20px 15px;
-    /* padding-top: 5px;
+    padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 15px;
-    padding-right:15x; */
+    padding-right:15x;
     font-size: 15px;
     font-weight: 700;
     line-height: 21.4275px;
