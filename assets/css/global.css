@@ -23,6 +23,9 @@
   --testimonials-carousel__description-color:rgb(237, 100, 53);
   --testimonials-carousel__review-color:rgb(179 179 179);
   --testimonials-carousel__date-color:#3c3731;
+  --arrivals__arrow-button: #686560;
+  --arivals__price-color: #ed6435;
+  --arivals__button-color: #b2e7e9;
   --secondary-font:"Baloo 2", cursive;
   font-family: "PT Sans", sans-serif;
   scroll-behavior: smooth;
@@ -31,6 +34,11 @@
 img {
   display: block;
   width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 a {

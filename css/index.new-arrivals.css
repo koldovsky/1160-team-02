@@ -1,0 +1,81 @@
+/* Няйко Анастасія */
+.section__arrivals {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.arrivals__title {
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 30px;
+    color: var(--title-text-color);
+}
+
+.arrivals__icon {
+    justify-content: center;
+}
+
+.arrivals__subtitle {
+    text-align: center;
+    font-size: 19px;
+    color: var(--basic-text-color);
+}
+
+.arrivals__carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.arrivals__carousel-arrow {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.arrivals__carousel-slides {
+    display: flex;
+    gap: 25px;
+}
+
+.arrivals__carousel-slide {
+    flex: 0 0 auto;
+}
+
+.arrivals__carousel-image {
+    height: 242px;
+    width: 242px;
+}
+
+.arrivals__carousel-href {
+    color: var(--basic-text-color);
+    font-size: 18px;
+    margin: 8px 0 0;
+}
+
+.arrivals__carousel-href:hover {
+    text-decoration: underline;
+}
+
+.arrivals__carousel-price {
+    color: var(--arivals__price-color);
+    font-weight: 700;
+}
+
+.arrivals__carousel-button {
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 5;
+    border-radius: 25px;
+    background-color: var(--arivals__button-color);
+}
+
+.arrivals__carousel-button-text {
+    color: var(--button-text-color2);
+    font-weight: 700;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+}
