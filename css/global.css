@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+
+/*
+{
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+}
+{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-style: italic;
+  font-weight: 400;
+  font-weight: 700;
+}
+*/
 
 * {
   margin: 0;
@@ -8,25 +24,29 @@
 }
 
 :root {
+  scroll-behavior: smooth;
+
+  font-family: "PT Sans", sans-serif;
+  --secondary-font: "Baloo 2", cursive;
+
+  --brand-color: #ed6435;
+  
   --main-bg-color: #faf4f2;
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
-  --brand-color: #ed6435;
   --header-link-color: #6b6b6b;
   --button-text-color1: #ed6435;
   --button-text-color2: #45c1c7;
   --button-bg-color1: #ffe6d4;
   --button-bg-color2: #b2e7e9;
-  --testimonials-header-title-color:#3d3730;
-  --testimonials-header__paragraph-color:#b5aea6;
+  --testimonials-header-title-color: #3d3730;
+  --testimonials-header__paragraph-color: #b5aea6;
   --testimonials-border-color: #ffeee2;
-  --testimonials-carousel__description-color:rgb(237, 100, 53);
-  --testimonials-carousel__review-color:rgb(179 179 179);
-  --testimonials-carousel__date-color:#3c3731;
+  --testimonials-carousel__description-color: rgb(237, 100, 53);
+  --testimonials-carousel__review-color: rgb(179 179 179);
+  --testimonials-carousel__date-color: #3c3731;
   --arrivals__arrow-button: #686560;
-  --secondary-font:"Baloo 2", cursive;
-  font-family: "PT Sans", sans-serif;
-  scroll-behavior: smooth;
+
 }
 
 img {
@@ -40,6 +60,5 @@ img {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
