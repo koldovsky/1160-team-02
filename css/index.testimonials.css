@@ -36,9 +36,12 @@
 
 @media (min-width: 767px) {
     .testimonials-carousel {
-        margin-left: 20px;
-        margin-right: 20px;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-carousel__image {
+        min-width: 120px;
+        min-height: 120px;
     }
     
     .testimonials-carousel__card {
@@ -53,6 +56,10 @@
 @media (min-width:991px){
     .testimonials-carousel{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .testimonials-carousel__image{
+        min-width: 120px;
+        min-height: 120px;
     }
     .testimonials-carousel__card{
         display: none;
@@ -109,16 +116,14 @@
     width: 75px;
     margin: auto;
 }
-/* 
-.card-img{
-
-} */
 
 .testimonials-carousel__image{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 15px;
     width: 70px;
+    height: 70px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -132,11 +137,11 @@
 }
 
 .testimonials-carousel__description{
-    padding: 5px 15px 20px 15px;;
-    /* padding-top: 5px;
+    padding: 5px 15px 20px 15px;
+    padding-top: 5px;
     padding-bottom: 20px;
     padding-left: 15px;
-    padding-right:15x; */
+    padding-right:15x;
     font-size: 15px;
     font-weight: 700;
     line-height: 21.4275px;

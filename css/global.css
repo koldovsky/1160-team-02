@@ -24,6 +24,11 @@
 
 :root {
   scroll-behavior: smooth;
+  /*
+  --text-color: black;
+  --accent-color: #a5c7cf;
+  --border-color: black;
+  */
 
   --primary-font: "PT Sans", sans-serif;
   --secondary-font: "Baloo 2", cursive;
@@ -46,7 +51,6 @@
   --testimonials-carousel__review-color: rgb(179 179 179);
   --testimonials-carousel__date-color: #3c3731;
   --arrivals__arrow-button: #686560;
-
 }
 
 img {
