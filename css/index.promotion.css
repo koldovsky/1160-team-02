@@ -1,42 +1,71 @@
+@media screen and (max-width: 480px) {
+  .promotion {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
+  }
+  .promotion__main {
+    width: 90%; /* Adjusted width for better mobile responsiveness */
+    margin-left: 5%;
+  }
+
+  .promotion__title {
+    font-size: 3em; /* Adjusted font size for better mobile readability */
+  }
+}
+
+
+
 .promotion {
   background-image: url(../img/promotion-background.png);
-  background-size: 100%;
+  background-size: cover;
   padding-top: 145px;
   padding-bottom: 150px;
   display: flex;
 }
 
 .promotion__main{
-  min-height: 570px;
-  width: 1294px;
-  margin-left: 50px;
+  min-height: 302px;
+  width: 572px;
+  margin-left: 60px;
+  
 }
 
 .promotion__prom {
   font-size: 14px;
-  line-height: 21.4272;
+  line-height: 21.4272px;
   color: var(--button-text-color2);
   font-weight: bold;
   text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .promotion__title {
   font-size: 82px;
   font-family: var(--secondary-font);
   width: 572;
-  line-height: 1;
+  line-height: 82px;
   color: var(--title-text-color);
+  text-align: left;
+  margin-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .promotion__text-content {
   font-size: 19px;
   color: var(--basic-text-color);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .promotion__text-content-percent {
-  color: var(--brand-color);
+  color: var(--arivals__price-color);
   font-weight: bold;
 }
 
 #promotion__timer {
   display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .promotion__timer-days,
