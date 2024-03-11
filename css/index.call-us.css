@@ -6,7 +6,7 @@
   --primary-color: #ed6435;
 
   --phone-number-link-size: 50px;
-  --phone-number-link-font: "Baloo 2", cursive;
+  --phone-number-link-font: var(--secondary-font);
   --phone-number-link-font-weight: 700;
   --phone-number-text-decoration: none;
 
