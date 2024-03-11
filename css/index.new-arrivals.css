@@ -12,6 +12,10 @@
     color: var(--title-text-color);
 }
 
+.arrivals__icon {
+    margin-top: 25px;
+}
+
 .arrivals__subtitle {
     text-align: center;
     font-size: 19px;
