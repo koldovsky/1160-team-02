@@ -102,6 +102,10 @@
     display: block;
 }
 
+.header-img{
+    width: 75px;
+}
+
 .testimonials-carousel__image{
     margin-top: 20px;
     margin-bottom: 15px;
