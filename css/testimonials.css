@@ -106,12 +106,13 @@
     width: 75px;
     margin: auto;
 }
-
+/* 
 .card-img{
-    text-align: center;
-}
+
+} */
 
 .testimonials-carousel__image{
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 15px;
     width: 70px;
