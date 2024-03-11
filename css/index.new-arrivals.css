@@ -1,4 +1,5 @@
 /* Няйко Анастасія */
+
 .section__arrivals {
     padding-top: 100px;
     padding-bottom: 130px;
@@ -11,10 +12,6 @@
     color: var(--title-text-color);
 }
 
-.arrivals__icon {
-    justify-content: center;
-}
-
 .arrivals__subtitle {
     text-align: center;
     font-size: 19px;
@@ -25,14 +22,6 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-}
-
-.arrivals__carousel-arrow {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    border: none;
 }
 
 .arrivals__carousel-slides {
