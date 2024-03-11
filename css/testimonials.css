@@ -21,6 +21,7 @@
 
 
 .testimonials-header__paragraph{
+    margin: 25px 20px;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.9992px;
@@ -129,8 +130,11 @@
 }
 
 .testimonials-carousel__description{
+    padding: 5px 15px 20px 15px;;
+    /* padding-top: 5px;
+    padding-bottom: 20px;
     padding-left: 15px;
-    padding-right:15x;
+    padding-right:15x; */
     font-size: 15px;
     font-weight: 700;
     line-height: 21.4275px;
@@ -138,6 +142,8 @@
 }
 
 .testimonials-carousel__review{
+    padding-left: 20px;
+    padding-right: 20px;
     color: var(--testimonials-carousel__review-color);
     font-style: italic;
     font-size: 17px;
@@ -146,6 +152,8 @@
 }
 
 .testimonials-carousel__date{
+    margin-top: 15px;
+    margin-bottom: 55px;
     font-size:15px;
     font-weight:400;
     line-height: 20px;
