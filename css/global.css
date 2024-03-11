@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/*@import "google-fonts.css";*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
 * {
   margin: 0;
@@ -17,10 +17,29 @@
   --button-text-color2: #45c1c7;
   --button-bg-color1: #ffe6d4;
   --button-bg-color2: #b2e7e9;
+  --testimonials-header-title-color:#3d3730;
+  --testimonials-header__paragraph-color:#b5aea6;
+  --testimonials-border-color: #ffeee2;
+  --testimonials-carousel__description-color:rgb(237, 100, 53);
+  --testimonials-carousel__review-color:rgb(179 179 179);
+  --testimonials-carousel__date-color:#3c3731;
+  --arrivals__arrow-button: #686560;
+  --secondary-font:"Baloo 2", cursive;
   font-family: "PT Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
-a{
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
     text-decoration: none;
 }
+
