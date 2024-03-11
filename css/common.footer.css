@@ -9,9 +9,7 @@
   --ui-caption-size-tablet: 14px;
   --ui-caption-size-mobile: 15px;
   --ui-caption-text-transform: none;
-  --ui-caption-font-weight: 400;
-  --ui-caption-font-family: "PT Sans", sans-serif;
-  --ui-caption-size: 15px;
+
   --ui-caption-color: #958b7e;
   --ui-caption-color-light: #fff;
   --ui-caption-tablet-size: 14px;
@@ -20,9 +18,8 @@
   --ui-caption-text-decoration: none;
   --ui-caption-coefficients-320-px: 1;
   --ui-caption-letter-spacing: 0;
-  --ui-caption-line-height: 1.4285;
 
-  --ui-dark-shade-color: #f9f4f2;/*#3c3731;*/
+  --ui-dark-shade-color: #f9f4f2; /*#3c3731;*/
 }
 
 .footer {
@@ -83,39 +80,48 @@
 }
 
 .footer__bottom {
-  /* Стилі для нижньої частини футера */
   background-color: rgb(242, 232, 228);
-  transition: opacity .3s ease-out;
 }
 
-.footer__bottom-created-by {
-  /* Стилі для тексту "© Created by" в нижній частині футера */
-  font-size: var(--ui-caption-size);
-  line-height: var(--ui-caption-line-height);
-  font-family: var(--ui-caption-font-family);
-  font-weight: var(--ui-caption-font-weight);
-  -webkit-text-decoration: var(--ui-caption-text-decoration);
-  -moz-text-decoration: var(--ui-caption-text-decoration);
-  text-decoration: var(--ui-caption-text-decoration);
-  font-style: var(--ui-caption-font-style);
-  letter-spacing: calc(var(--ui-caption-letter-spacing) * 1em);
-  color: var(--ui-caption-color);
-  text-transform: var(--ui-caption-text-transform);
-  font-weight: bold;
+.bottom__inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
-.footer__bottom-copyright {
-  /* Стилі для тексту з авторськими правами в нижній частині футера */
-  font-size: var(--ui-caption-size);
-  line-height: var(--ui-caption-line-height);
-  font-family: var(--ui-caption-font-family);
-  font-weight: var(--ui-caption-font-weight);
-  -webkit-text-decoration: var(--ui-caption-text-decoration);
-  -moz-text-decoration: var(--ui-caption-text-decoration);
-  text-decoration: var(--ui-caption-text-decoration);
-  font-style: var(--ui-caption-font-style);
-  letter-spacing: calc(var(--ui-caption-letter-spacing) * 1em);
+.bottom__left,
+.bottom__right {
+  font-family: var(--primary-font);
+  font-weight: 400;
   color: var(--ui-caption-color);
-  text-transform: var(--ui-caption-text-transform);
-  font-weight: bold;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .bottom__inner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottom__left,
+  .bottom__right {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bottom__text-left {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottom__text-right {
+    font-size: 14px;
+  }
 }
