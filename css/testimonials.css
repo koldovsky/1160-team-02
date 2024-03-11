@@ -129,8 +129,8 @@
 }
 
 .testimonials-carousel__description{
-    /* padding-left: 15px;
-    padding-right:15x; */
+    padding-left: 15px;
+    padding-right:15x;
     font-size: 15px;
     font-weight: 700;
     line-height: 21.4275px;
