@@ -26,11 +26,12 @@
 :root {
   scroll-behavior: smooth;
 
-  font-family: "PT Sans", sans-serif;
+  --primary-font: "PT Sans", sans-serif;
   --secondary-font: "Baloo 2", cursive;
+  font-family: var(--primary-font);
 
   --brand-color: #ed6435;
-  
+
   --main-bg-color: #faf4f2;
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
