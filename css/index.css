@@ -1,5 +1,3 @@
-@import "index.slider.buyspace.css"; /*чиє це я чому не включено до index.html*/
-
 @import "global.css";
 @import "common.header-nav.css"; /*Новікова*/
 @import "index.hero.css"; /*Новікова*/
@@ -12,6 +10,7 @@
 @import "index.recommendations.css"; /*Дерев'янко*/
 @import "index.testimonials.css"; /*Наконечний*/
 /*@import "index.dry-food.css"; /*Зоценко*/
+@import "index.featured-product.css"; /*Никифорчин*/
 /*@import "index.news-articles.css"; /*Калюжний*/
 @import "index.call-us.css"; /*Курилін*/
 @import "common.footer.css"; /*Курилін*/
