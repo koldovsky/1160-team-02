@@ -97,7 +97,6 @@
   border-radius: 50%;
 }
 .header__socials-item-img:hover{
-  /* filter: brightness(0) saturate(100%) invert(53%) sepia(35%) saturate(785%) hue-rotate(134deg) brightness(97%) contrast(84%); */
   background-color: var(--button-bg-hover-color);
 }
 @media (max-width: 1024px) {
