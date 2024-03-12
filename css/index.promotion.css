@@ -4,17 +4,20 @@
     padding-bottom: 100px;
     display: block;
   }
+  
   .promotion__main {
-    width: 90%; /* Adjusted width for better mobile responsiveness */
+    width: 90%; 
     margin-left: 5%;
   }
 
   .promotion__title {
-    font-size: 3em; /* Adjusted font size for better mobile readability */
+    font-size: 3em; 
+  }
+
+  .custom-btn{
+    font-size: 14px;
   }
 }
-
-
 
 .promotion {
   background-image: url(../img/promotion-background.png);
@@ -28,7 +31,6 @@
   min-height: 302px;
   width: 572px;
   margin-left: 60px;
-  
 }
 
 .promotion__prom {
@@ -40,6 +42,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .promotion__title {
   font-size: 82px;
   font-family: var(--secondary-font);
@@ -51,12 +54,14 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .promotion__text-content {
   font-size: 19px;
   color: var(--basic-text-color);
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .promotion__text-content-percent {
   color: var(--arivals__price-color);
   font-weight: bold;
@@ -130,6 +135,7 @@
   border: none;
   border-radius: 20px;
 }
+
 .btn span {
   position: relative;
   display: block;
