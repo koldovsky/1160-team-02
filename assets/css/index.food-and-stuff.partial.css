@@ -1,21 +1,72 @@
-.bone-icon
-{
-    width: 272px;
-    height: 32px;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+.bone-icon{
+    width: 5vw;
+    height: auto;
+    display: flex;
+    align-items: center;
 }
 
-img.carrousel__slide{
+.carrousel__slide{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     overflow: hidden;
     display: flex; 
 }
-img.carousel-arrow {
+.carousel-arrow {
     width: 36px;
-    height: 36px; 
+    height: auto; 
     overflow: hidden;
     border-radius: 50%;
     display: flex;
     position: relative;
+}
+
+.food-section{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media(min-width:640px){
+        flex-direction: row;
+    }
+
+}
+
+.food-section__block {
+    align-items: center;
+    background-image: url("/img/food-section-bg.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 30vw;
+    
+    @media(min-width:640px){
+        width: 45vw;
+        height: 15vw;
+    }
+}
+
+.stuff-section__block{ 
+    align-items: center;
+    display: flex;
+    background-image: url("/img/stuff-section-bg.webp");
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    width: 90vw;
+    height: 30vw;
+
+    @media(min-width:640px){
+        width: 45vw;
+        height: 15vw;
+    }
 }
