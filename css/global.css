@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
 
 /*list of font variations used on site (temporary)*/
 /*
@@ -24,6 +23,11 @@
 
 :root {
   scroll-behavior: smooth;
+  /*
+  --text-color: black;
+  --accent-color: #a5c7cf;
+  --border-color: black;
+  */
 
   --primary-font: "PT Sans", sans-serif;
   --secondary-font: "Baloo 2", cursive;
@@ -35,18 +39,24 @@
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
   --header-link-color: #6b6b6b;
+  --header-info-bg-color: #f2e8e4;
   --button-text-color1: #ed6435;
   --button-text-color2: #45c1c7;
   --button-bg-color1: #ffe6d4;
   --button-bg-color2: #b2e7e9;
+  --button-bg-hover-color: #32a1a7;
+  --button-burger-color: #3c3731;
   --testimonials-header-title-color: #3d3730;
   --testimonials-header__paragraph-color: #b5aea6;
   --testimonials-border-color: #ffeee2;
   --testimonials-carousel__description-color: rgb(237, 100, 53);
   --testimonials-carousel__review-color: rgb(179 179 179);
   --testimonials-carousel__date-color: #3c3731;
+  --testimonials-carousel__button-border-color:rgb(113, 113, 113);
+  --testimonials-carousel__button-bg-color:rgb(69, 69, 69);
   --arrivals__arrow-button: #686560;
-
+  --arivals__price-color: #ed6435;
+  --arivals__button-color: #b2e7e9;
 }
 
 img {
