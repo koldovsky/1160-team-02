@@ -1,0 +1,55 @@
+/* Kaliuzhnyi Oleh*/
+.articles__header{
+    margin-top: 40px;
+}
+.articles__title{
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 30px;
+    color: var(--title-text-color)
+}
+.articles_container .articles__header .articles_bone-img {
+    width: 209px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.articles__description{
+    font-family: var(--primary--font);
+    text-align: center;
+    font-size: 16px;
+    color: var(--basic-text-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.articles_container .articles__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.articles__content .article{
+    width: 370px;
+    margin: 30px;
+} 
+.articles__content .article__image {
+    width: 370px;
+    height: 250px;
+}
+.articles__content .article__title {
+    font-family: var(--secondary-font);
+    text-align: left;
+    font-size: 22px;
+    color: var(--title-text-color)
+}
+.articles__content .article__content {
+    font-family: var(--primary--font);
+    text-align: left;
+    font-size: 17px;
+    color: var(--basic-text-color)
+}
+.articles__content .article__link {
+    font-family: var(--primary--font);
+    text-align: left;
+    font-size: 15px;
+    color: var(--basic-text-color)
+}
