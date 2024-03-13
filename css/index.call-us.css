@@ -6,7 +6,7 @@
   --primary-color: #ed6435;
 
   --phone-number-link-size: 50px;
-  --phone-number-link-font: "Baloo 2", cursive;
+  --phone-number-link-font: var(--secondary-font);
   --phone-number-link-font-weight: 700;
   --phone-number-text-decoration: none;
 
@@ -130,4 +130,16 @@
 
 .call-us__subscribe-form__button-text {
   /* Стилі для тексту кнопки підписки у формі підписки */
+}
+
+@media (min-width: 320px) {
+
+
+
+}
+
+@media (min-width: 768px) {
+
+
+  
 }
