@@ -43,13 +43,14 @@
   --main-bg-color: #faf4f2;
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
+  color: var(--basic-text-color);
   --header-link-color: #6b6b6b;
   --header-info-bg-color: #f2e8e4;
-  --button-text-color1: #ed6435;
-  --button-text-color2: #45c1c7;
-  --button-bg-color1: #ffe6d4;
-  --button-bg-color2: #b2e7e9;
-  --button-bg-hover-color: #32a1a7;
+  --button-text-primary-color: #ed6435;
+  --button-text-secondary-color: #45c1c7;
+  --button-bg-primary-color: #ffe6d4;
+  --button-bg-secondary-color: #b2e7e9;
+  --socials-button-bg-hover-color: #32a1a7;
   --button-burger-color: #3c3731;
   --testimonials-header-title-color: #3d3730;
   --testimonials-header__paragraph-color: #b5aea6;
@@ -86,43 +87,6 @@
 
   --ui-dark-shade-color: #f9f4f2; /*#3c3731;*/
   /*footer variables*/
-  /*call-us variables*/
-  /*under construction - SKIP THIS*/
-  --call-us-background-color: #f9f4f2;
-
-  --primary-color: #ed6435;
-
-  --phone-number-link-size: 50px;
-  --phone-number-link-font: var(--secondary-font);
-  --phone-number-link-font-weight: 700;
-  --phone-number-text-decoration: none;
-
-  --phone-number-title-color: #45c1c7;
-  --phone-number-title-size: 15px;
-  --phone-number-title-font: "PT Sans", sans-serif;
-  --phone-number-title-font-weight: 700;
-  --phone-number-title-text-decoration: none;
-
-  --subscribe-suggestion-text-color: #958b7e;
-  --subscribe-suggestion-text-size: 15px;
-  --subscribe-suggestion-text-font: "PT Sans", sans-serif;
-  --subscribe-suggestion-text-weight: 400;
-  --subscribe-suggestion-text-text-decoration: none;
-
-  --subscribe-suggestion-link-text-color: #232323; /*#958b7e;*/
-  --subscribe-suggestion-link-text-size: 15px;
-  --subscribe-suggestion-link-text-font: "PT Sans", sans-serif;
-  --subscribe-suggestion-link-text-font-weight: 700;
-  --subscribe-suggestion-link-text-text-decoration: none;
-
-  --subscribe-suggestion-link-text-hover-color: #ed6435;
-
-  --subscribe-suggestion-link-arrow-color: #45c1c7;
-  --subscribe-suggestion-link-arrow-size: 15px;
-  --subscribe-suggestion-link-arrow-font: "PT Sans", sans-serif;
-  --subscribe-suggestion-link-arrow-font-weight: 700;
-  --subscribe-suggestion-link-arrow-text-decoration: none;
-  /*call-us variables*/
 }
 
 img {
@@ -133,6 +97,7 @@ img {
 .container {
   max-width: 1200px;
   margin: auto;
+  /*overflow: hidden;*/
 }
 
 a {

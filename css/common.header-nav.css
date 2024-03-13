@@ -92,12 +92,12 @@
   border-radius: 50%;
 }
 .header__socials-item-img {
-  background-color: var(--button-text-color2);
+  background-color: var(--button-text-secondary-color);
   transition: 0.3s;
   border-radius: 50%;
 }
-.header__socials-item-img:hover{
-  background-color: var(--button-bg-hover-color);
+.header__socials-item-img:hover {
+  background-color: var(--socials-button-bg-hover-color);
 }
 @media (max-width: 1024px) {
   .header__nav {
