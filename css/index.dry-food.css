@@ -1,1 +1,24 @@
-/*Diana Zotsenko*/
+/*Diana Zotsenko__block 10*/
+
+.dry-food__content h2 {
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: 50px;
+}
+
+.dry-food__description {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 19px;
+}
+
+.dry-food__bone-icon {
+  width: 209px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dry-food__product-icon {
+  max-width: 120px;
+}
