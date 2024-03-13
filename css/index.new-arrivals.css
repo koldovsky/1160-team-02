@@ -12,9 +12,11 @@
     color: var(--title-text-color);
 }
 
-/* .arrivals__icon {
-    margin-top: 25px;
-} */
+.arrivals__icon {
+    width: 72px;
+    display: block;
+    margin: 0 auto;
+}
 
 .arrivals__subtitle {
     text-align: center;
