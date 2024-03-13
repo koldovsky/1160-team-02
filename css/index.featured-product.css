@@ -1,26 +1,104 @@
+@media (max-width: 500px) {
+    
 .slider__container{
-
-    margin: 70px 150px;
+    
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.buyspace__maintext{
-    font-weight: 500;
-    font-size: 2em;
-    font-family: sans-serif;
-}
-
-.slide__item{
-    max-width: 70%;
+    justify-content: space-between;
 }
 
 .buyspace__main{
-    max-width: 700px;
+    max-width: 200px;
+    max-height: 298px;
 }
-.buyspace__line{
-    color: gray;
-    margin: 40px 0px 25px 0px;
-    width: 100%;
+.slide__item{
+
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+   width: 256px;
 }
+.buyspace__stock-text{
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    color: green;
+    margin: 5px;
+    
+}
+.buyspace__maintext{
+    font-family: "Baloo 2", sans-serif;
+    
+    font-size: 15px;
+    margin: 5px;
+}
+.product__code{
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    margin: 4px;
+}
+.input__main{
+    max-width: 10px;
+    margin-right: 3px;
+}
+.buyspace__addcard{
+    font-family: "Baloo 2", sans-serif;
+    background-color: #FFE6D4;
+    min-width: 175px;
+    color: #ED6435;
+    border: 0px;
+    background-color: oran;
+    border-radius: 10px;
+}
+.buyspace__text{
+    font-family: "Baloo 2", sans-serif;
+    font-size: 9px;
+    margin: 5px;
+}
+
+
+}
+
+.slider__buyspace{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider__container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.slider__main-slider{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.slide__item{
+padding-top: 20px;
+max-width: 400px;
+
+}
+.buyspace__main{
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 560px;
+}
+.buyspace__addcard{
+    font-family: "Baloo 2", sans-serif;
+    background-color: #FFE6D4;
+    min-width: 400px;
+    min-height: 32px;
+    color: #ED6435;
+    border: 0px;
+    background-color: oran;
+    border-radius: 10px;
+}
+.input__main{
+    max-width: 20px;
+    max-height: 20px;
+}
+   
+   
+
+
+

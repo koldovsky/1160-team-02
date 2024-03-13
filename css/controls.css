@@ -1,14 +1,25 @@
-/*extracted example -> edit everything*/
 .button {
-    background-color: var(--accent-color);
-    padding: 5px 10px;
-    border: 1px solid var(--border-color);
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--text-color);
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
-.button:hover {
-    text-decoration: underline;
+.primary-button {
+  background-color: var(--button-bg-primary-color);
+  color: var(--button-text-primary-color);
+}
+
+.secondary-button {
+  background-color: var(--button-bg-secondary-color);
+  color: var(--button-text-secondary-color);
+}
+.primary-button:hover {
+  background-color: var(--button-bg-secondary-color);
+  color: var(--button-text-secondary-color);
+}
+.secondary-button:hover {
+  background-color: var(--button-bg-primary-color);
+  color: var(--button-text-primary-color);
 }

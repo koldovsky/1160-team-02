@@ -61,7 +61,7 @@
 
 .arrivals__carousel-button {
     padding: 10px 20px;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 5;
     border-radius: 25px;
     background-color: var(--arivals__button-color);
