@@ -144,8 +144,8 @@
 
 
 .btn:hover {
-  color:var(--button-text-color1);
-  background-color:var(--button-bg-color1);
+  color:var(--button-text-primary-color);
+  background-color:var(--button-bg-primary-color);
   box-shadow: none;
 }
 
