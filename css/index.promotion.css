@@ -37,7 +37,7 @@
 .promotion__prom {
   font-size: 14px;
   line-height: 21.4272px;
-  color: var(--button-text-color2);
+  color: var(--button-text-secondary-color);
   font-weight: bold;
   text-transform: uppercase;
   padding-left: 15px;
@@ -110,7 +110,7 @@
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: var(--button-text-color2);
+  color: var(--button-text-secondary-color);
   border-radius: 5px;
   padding: 10px 25px;
   font-weight: bold;
@@ -126,7 +126,7 @@
 }
 
 .btn {
-  background:var(--button-bg-color2);
+  background:var(--button-bg-secondary-color);
   width: 130px;
   height: 40px;
   line-height: 42px;
@@ -144,8 +144,8 @@
 
 
 .btn:hover {
-  color:var(--button-text-color1);
-  background-color:var(--button-bg-color1);
+  color:var(--button-text-primary-color);
+  background-color:var(--button-bg-primary-color);
   box-shadow: none;
 }
 
