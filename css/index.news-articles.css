@@ -29,7 +29,7 @@
 }
 .articles__content .article{
     width: 370px;
-    margin: 30px;
+    margin: 15px;
 } 
 .articles__content .article__image {
     width: 370px;
@@ -51,5 +51,12 @@
     font-family: var(--primary--font);
     text-align: left;
     font-size: 15px;
-    color: var(--basic-text-color)
+    color: var(--basic-text-color);
+    transition: color 0.3s;
+}
+.articles__content .article__link:hover {
+    color: #ed6435;
+    .article__link-text{
+        text-decoration: underline;
+    }
 }
