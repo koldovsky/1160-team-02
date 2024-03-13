@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*
+* {
+  outline: 1px solid red;
+}
+*/
 
 /*list of font variations used on site (temporary)*/
 /*
@@ -53,9 +58,35 @@
   --testimonials-carousel__description-color: rgb(237, 100, 53);
   --testimonials-carousel__review-color: rgb(179 179 179);
   --testimonials-carousel__date-color: #3c3731;
+  --testimonials-carousel__button-border-color: rgb(113, 113, 113);
+  --testimonials-carousel__button-bg-color: rgb(69, 69, 69);
   --arrivals__arrow-button: #686560;
   --arivals__price-color: #ed6435;
   --arivals__button-color: #b2e7e9;
+
+  /*footer variables*/
+  /*under construction - SKIP THIS*/
+  --footer-background-color: #f9f4f2;
+
+  --ui-caption-tablet-letter-spacing: 0;
+  --ui-caption-mobile-letter-spacing: 0;
+  --ui-caption-tablet-line-height: 1.4285;
+  --ui-caption-mobile-line-height: 1.4285;
+  --ui-caption-size-tablet: 14px;
+  --ui-caption-size-mobile: 15px;
+  --ui-caption-text-transform: none;
+
+  --ui-caption-color: #958b7e;
+  --ui-caption-color-light: #fff;
+  --ui-caption-tablet-size: 14px;
+  --ui-caption-mobile-size: 15px;
+  --ui-caption-font-style: normal;
+  --ui-caption-text-decoration: none;
+  --ui-caption-coefficients-320-px: 1;
+  --ui-caption-letter-spacing: 0;
+
+  --ui-dark-shade-color: #f9f4f2; /*#3c3731;*/
+  /*footer variables*/
 }
 
 img {
@@ -66,6 +97,7 @@ img {
 .container {
   max-width: 1200px;
   margin: auto;
+  overflow: hidden;
 }
 
 a {

@@ -70,10 +70,10 @@
 
 .testimonials-carousel__button {
   text-align: center;
-  border: 1px solid rgb(113, 113, 113);
+  border: 1px solid var(--testimonials-carousel__button-border-color);
   border-radius: 50%;
   font-weight: 400;
-  background-color: rgb(69, 69, 69);
+  background-color: var(--testimonials-carousel__button-bg-color);
 }
 
 .left-btn {
