@@ -40,7 +40,7 @@
 
 .food-section__block {
     align-items: center;
-    background-image: url("/img/food-section-bg.webp");
+    background-image: url("img/food-stuff-products/food-section-bg.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -58,7 +58,7 @@
 .stuff-section__block{ 
     align-items: center;
     display: flex;
-    background-image: url("/img/stuff-section-bg.webp");
+    background-image: url("img/food-stuff-products/stuff-section-bg.webp");
     background-size: cover;
     background-position: center;
     flex-direction: column;
