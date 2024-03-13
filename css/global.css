@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
 
 /*list of font variations used on site (temporary)*/
 /*
@@ -40,13 +39,13 @@
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
   --header-link-color: #6b6b6b;
-  --header-info-bg-color:#f2e8e4;
+  --header-info-bg-color: #f2e8e4;
   --button-text-color1: #ed6435;
   --button-text-color2: #45c1c7;
   --button-bg-color1: #ffe6d4;
   --button-bg-color2: #b2e7e9;
-  --button-bg-hover-color:#32a1a7;
-  --button-burger-color:#3c3731;
+  --button-bg-hover-color: #32a1a7;
+  --button-burger-color: #3c3731;
   --testimonials-header-title-color: #3d3730;
   --testimonials-header__paragraph-color: #b5aea6;
   --testimonials-border-color: #ffeee2;
