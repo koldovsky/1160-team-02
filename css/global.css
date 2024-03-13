@@ -86,43 +86,6 @@
 
   --ui-dark-shade-color: #f9f4f2; /*#3c3731;*/
   /*footer variables*/
-  /*call-us variables*/
-  /*under construction - SKIP THIS*/
-  --call-us-background-color: #f9f4f2;
-
-  --primary-color: #ed6435;
-
-  --phone-number-link-size: 50px;
-  --phone-number-link-font: var(--secondary-font);
-  --phone-number-link-font-weight: 700;
-  --phone-number-text-decoration: none;
-
-  --phone-number-title-color: #45c1c7;
-  --phone-number-title-size: 15px;
-  --phone-number-title-font: "PT Sans", sans-serif;
-  --phone-number-title-font-weight: 700;
-  --phone-number-title-text-decoration: none;
-
-  --subscribe-suggestion-text-color: #958b7e;
-  --subscribe-suggestion-text-size: 15px;
-  --subscribe-suggestion-text-font: "PT Sans", sans-serif;
-  --subscribe-suggestion-text-weight: 400;
-  --subscribe-suggestion-text-text-decoration: none;
-
-  --subscribe-suggestion-link-text-color: #232323; /*#958b7e;*/
-  --subscribe-suggestion-link-text-size: 15px;
-  --subscribe-suggestion-link-text-font: "PT Sans", sans-serif;
-  --subscribe-suggestion-link-text-font-weight: 700;
-  --subscribe-suggestion-link-text-text-decoration: none;
-
-  --subscribe-suggestion-link-text-hover-color: #ed6435;
-
-  --subscribe-suggestion-link-arrow-color: #45c1c7;
-  --subscribe-suggestion-link-arrow-size: 15px;
-  --subscribe-suggestion-link-arrow-font: "PT Sans", sans-serif;
-  --subscribe-suggestion-link-arrow-font-weight: 700;
-  --subscribe-suggestion-link-arrow-text-decoration: none;
-  /*call-us variables*/
 }
 
 img {
@@ -133,6 +96,7 @@ img {
 .container {
   max-width: 1200px;
   margin: auto;
+  overflow: hidden;
 }
 
 a {
