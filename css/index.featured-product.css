@@ -21,12 +21,21 @@
     max-width: 250px;
 }
 .slide{
+    display: grid;
     padding-top: 25px;
-    text-align: center;
+    place-items: center;
+    
+}
+
+.slider__title{
+    font-family: var(--primary-font);
+    font-size: 17px;
+    color: var(--slider-featured-product-title);
 }
 
 .buyspace__stock-text{
-    font-family: "Baloo";
+    font-family: "Baloo 2";
+    font-size: 17px;
     color: var(--slider-stock-color);
 }
 .buyspace__addcard{
@@ -42,6 +51,9 @@
 .buyspace__main-info{
     padding-top: 20px;
 }
+.buyspace__main{
+    padding: 0 10px 0 10px;
+}
 .buyspace__text{
     font-family: "Baloo 2";
     color: var(--text-grey-page-p);
@@ -50,7 +62,7 @@
     position: relative;
     width: 100%;
     height: 2px;
-    background-color: var(--text-grey-page-p);
+    background: var(--slider-line);
     margin-bottom:15px;
     margin-top: 15px;
    
@@ -69,7 +81,7 @@
     background-color: var(--button-text-primary-color);
 }
 .text__under-line{
-    color: var(--button-text-primary-color);
+    color: var(--slider-line);
     font-size: 12px;
     font-family: var(--primary-font);
     font-weight: 400;
@@ -79,6 +91,30 @@
     height: 45px;
     margin-right: 20px;
    
+}
+
+@media(min-width:705px){
+    .slider__container{
+     flex-direction: row;
+    }
+    .slide__item{
+        max-width: 70%;
+    }
+    .buyspace__main{
+     padding-top: 0.5em;
+    }
+    .buyspace__maintext{
+        margin-bottom: 15px;
+    }
+    .product__code{
+        margin-bottom: 10px;
+    }
+    .buyspace__price{
+        font-size: 1.5em;
+    }
+    .buyspace__line{
+        margin-top: 40px;
+    }
 }
 
 
