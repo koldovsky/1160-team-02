@@ -1,8 +1,6 @@
 /*Andrii Chemisov block 3*/
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
-*
+.about-us
 {
     font-family: "Baloo 2", sans-serif;
     font-optical-sizing: auto;
@@ -10,18 +8,19 @@
     font-style: normal;
 }
 
-@media (max-width: 500px) 
+.__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.__text-explanation {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+@media (min-width: 501px) 
 {
-    .__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .__text-explanation {
-        display: block;
-        font-size: 1.5em;
-        font-weight: bold;
-
-    }
 }

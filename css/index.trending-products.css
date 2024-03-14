@@ -1,0 +1,20 @@
+/*Machikha 4 block*/
+.trending-products__content h2 {
+        font-family: "Madimi One", sans-serif;
+        font-size: 50px;
+        font-style: normal;
+        text-align: center;
+      }
+
+.top-selling__preview {
+        font-family: "PT Sans", sans-serif;
+        font-size: 19px;
+        text-align: center;
+      }
+
+.trending-products__bone-picture {
+    width: 206px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto 
+      }
