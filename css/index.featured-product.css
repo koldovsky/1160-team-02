@@ -1,15 +1,16 @@
 
 .buyspace__maintext{
     font-family: "Baloo 2";
+    color: var(--title-text-color);
 }
 .buyspace__price{
-    color: var(--button-text-primary-color);
+    color: var( --basic-text-color);
     font-family: "Baloo 2";
     margin-bottom: 20px;
 }
 .product__code{
     font-family: "Baloo 2";
-    color: var(--button-text-primary-color);
+    color: var(--basic-text-color);
 }
 .slider__container{
     display: flex;
