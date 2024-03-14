@@ -1,27 +1,59 @@
-@media screen and (max-width: 480px) {
+
   .promotion {
+    background: url(../img/promotion-background.png) no-repeat;
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-size: contain;
-    display: block;
+    background-size: cover;
+    
   }
   
   .promotion__main {
     width: 90%; 
     margin-left: 5%;
   }
+  
+  .promotion__prom {
+    font-size: 14px;
+    line-height: 21.4272px;
+    color: var(--button-text-secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   .promotion__title {
-    font-size: 3em; 
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    color: var(--title-text-color);
   }
 
   .custom-btn{
     font-size: 14px;
   }
+  #promotion__timer {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+.promotion__timer-days,
+.promotion__timer-hours,
+.promotion__timer-minutes,
+.promotion__timer-seconds {
+  border: 1px solid #45c1c7;
+  border-radius: 5px;
+  font-size: 18px;
+  color: var(--title-text-color);
+  width: auto;
+  margin: 5px 10px;
+  box-sizing: border-box;
+  
 }
 
+@media (min-width: 668px) {
 .promotion {
-  background-image: url(../img/promotion-background.png);
+  background: url(../img/promotion-background.png)34.69% 92.13% / cover no-repeat rgb(244, 244, 244);;
   background-size: cover;
   padding-top: 145px;
   padding-bottom: 150px;
@@ -94,7 +126,7 @@
 }
 
 .timer-digit {
-  font-family: "Baloo 2", cursive;
+  font-family: var(--secondary-font);
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -149,4 +181,4 @@
   box-shadow: none;
 }
 
-
+}
