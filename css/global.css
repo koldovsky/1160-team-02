@@ -44,8 +44,10 @@
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
   color: var(--basic-text-color);
+
   --slider-stock-color: #61A854;
-  
+  --slider-line:#edf0f5;
+  --slider-featured-product-title: #232323;
   --header-link-color: #6b6b6b;
   --header-info-bg-color: #f2e8e4;
   --button-text-primary-color: #ed6435;
