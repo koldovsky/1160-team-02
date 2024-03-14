@@ -4,12 +4,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="indexmain.css">
+    <title>Slider</title>
   </head>
   <body>
     <div class="slider__buyspace">
-      <div class="slider__container">
         <p class="slider__title">Store homepage</p>
+      <div class="slider__container">
+       
         <div class="slider__main-slider">
         
 
@@ -29,18 +31,18 @@
           <div class="buyspace__main-info">
             <p class="buyspace__stock-text">In stock</p>
 
-            <h1 class="buyspace__maintext">DUNA Pillow Bed (2321)</h1>
+            <h2 class="buyspace__maintext">DUNA Pillow Bed (2321)</h2>
 
-            <p>Product code 51</p>
+            <p class="product__code">Product code 51</p>
 
             <p class="buyspace__price">$5.00</p>
           </div>
 
-          <hr class="buyspace__line" />
+          <div class="buyspace__line"></div>
 
           <div class="buyspace__count-element">
-            <label for="quantity">Quantity:</label>
             <input
+            class="input__main"
               type="number"
               id="quantity"
               name="quantity"
@@ -48,10 +50,11 @@
               min="1"
             />
 
-            <button class="buyspace__addcart">Add to cart</button>
+            <button class="buyspace__addcard">Add to cart</button>
           </div>
 
-          <hr class="buyspace__line" />
+          <p><a class="text__under-line" href="#">DESCRIPTION</a></p>
+         <div class="buyspace__line line-mod"></div>
           <p class="buyspace__text">
             Present your pup a totally comfortable bed! It is super soft yet
             easy to clean. The pillow is lightweight, so you can move it to any

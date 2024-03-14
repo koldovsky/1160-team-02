@@ -44,12 +44,14 @@
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
   color: var(--basic-text-color);
+  --slider-stock-color: #61A854
   --header-link-color: #6b6b6b;
   --header-info-bg-color: #f2e8e4;
   --button-text-primary-color: #ed6435;
   --button-text-secondary-color: #45c1c7;
   --button-bg-primary-color: #ffe6d4;
   --button-bg-secondary-color: #b2e7e9;
+  --button-bg-buyspace-color: #FFE6D4;
   --socials-button-bg-hover-color: #32a1a7;
   --button-burger-color: #3c3731;
   --testimonials-header-title-color: #3d3730;
