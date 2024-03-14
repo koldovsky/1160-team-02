@@ -14,6 +14,8 @@
 .slider__container{
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
 }
 .slide__item{
     max-width: 250px;
