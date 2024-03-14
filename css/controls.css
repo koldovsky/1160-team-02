@@ -23,3 +23,11 @@
   background-color: var(--button-bg-primary-color);
   color: var(--button-text-primary-color);
 }
+
+.carousel__button {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--testimonials-carousel__button-border-color);
+  border-radius: 50%;
+  background-color: var(--testimonials-carousel__button-bg-color);
+}
