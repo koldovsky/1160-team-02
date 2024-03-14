@@ -106,6 +106,10 @@
     .buyspace__maintext{
         margin-bottom: 15px;
     }
+    .buyspace__addcard{
+        min-width: 85%;
+        min-height: 40px;
+    }
     .product__code{
         margin-bottom: 10px;
     }
