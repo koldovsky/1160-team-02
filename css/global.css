@@ -19,7 +19,6 @@
   /* "PT Sans" normal / italic 400 / 700 */
 
   --brand-color: #ed6435;
-
   --main-bg-color: #faf4f2;
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
@@ -53,6 +52,8 @@
   --footer__grid-background-color: #f9f4f2;
   --footer__copyright-background-color: rgb(242, 232, 228);
   --footer__info-nav-links-item-background-color: #45c1c7;
+  --footer__link-item-font-color: rgb(154, 152, 152);
+  --footer__grid-item-title-font-color: #3c3731;
   /* footer variables */
 }
 
