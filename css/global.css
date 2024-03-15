@@ -47,9 +47,7 @@
   --arrivals__arrow-button: #686560;
   --arivals__price-color: #ed6435;
   --arivals__button-color: #b2e7e9;
-<<<<<<< HEAD
   --button-bg-color-light: #ffe6d4;
-=======
 
   /* footer variables */
   --footer__grid-background-color: #f9f4f2;
@@ -58,7 +56,6 @@
   --footer__link-item-font-color: rgb(154, 152, 152);
   --footer__grid-item-title-font-color: #3c3731;
   /* footer variables */
->>>>>>> 7f2dc7a6915627f40fd5c6fcb7f857908abc371d
 }
 
 img {
