@@ -1,127 +1,136 @@
 /*volodymyr-kurylin__block-12*/
-:root {
-  --footer-background-color: #f9f4f2;
-
-  --ui-caption-tablet-letter-spacing: 0;
-  --ui-caption-mobile-letter-spacing: 0;
-  --ui-caption-tablet-line-height: 1.4285;
-  --ui-caption-mobile-line-height: 1.4285;
-  --ui-caption-size-tablet: 14px;
-  --ui-caption-size-mobile: 15px;
-  --ui-caption-text-transform: none;
-
-  --ui-caption-color: #958b7e;
-  --ui-caption-color-light: #fff;
-  --ui-caption-tablet-size: 14px;
-  --ui-caption-mobile-size: 15px;
-  --ui-caption-font-style: normal;
-  --ui-caption-text-decoration: none;
-  --ui-caption-coefficients-320-px: 1;
-  --ui-caption-letter-spacing: 0;
-
-  --ui-dark-shade-color: #f9f4f2; /*#3c3731;*/
-}
-
 .footer {
-  /* Стилі для футера */
+  /* footer */
 }
 
-.footer__container {
-  /* Стилі для контейнера футера */
-  background-color: var(--footer-background-color);
+.footer__grid-background {
+  background-color: var(--footer__grid-background-color);
 }
 
-.footer__block {
-  /* Стилі для блока в футері */
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.footer__block-logo {
-  /* Стилі для логотипу в блоку футера */
+.footer__info {
+  /* information block */
 }
 
-.footer__block-text {
-  /* Стилі для тексту в блоку футера */
+.footer__info-logo-container {
+  width: 193px;
+  /* make responsive */
 }
 
-.footer__block-email {
-  /* Стилі для посилання на email в блоку футера */
+.footer__info-logo-link {
+  /* footer info logo link */
 }
 
-.footer__block-socials {
-  /* Стилі для соціальних мереж в блоку футера */
+.footer__info-logo {
+  /* footer info logo */
 }
 
-.footer__block-socials-item {
-  /* Стилі для елементів соціальних мереж в блоку футера */
+.footer__info-text {
+  /* footer info text */
 }
 
-.footer__column {
-  /* Стилі для колонок в футері */
+.footer__info-email {
+  /* footer info email */
 }
 
-.footer__column-title {
-  /* Стилі для заголовків колонок в футері */
+.footer__info-nav {
+  width: 100%;
 }
 
-.footer__column-divider {
-  /* Стилі для роздільників у колонках футера */
+.footer__info-nav-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__info-nav-links-item {
+  width: 31px;
+  border-radius: 50%;
+  background-color: var(--footer__info-nav-links-item-background-color);
+  list-style-type: none;
+  margin: auto 7.5px;
+}
+
+.footer__info-nav-links-link {
+  /* footer info nav links link */
+}
+
+.footer__info-nav-links-logo {
+  /* footer info nav links logo */
+}
+
+.footer__grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  /*width: 100%;*/
+  /*justify-content: center;*/
+  /*
+  @media (min-width: 768px) {
+    
+  }
+  */
+}
+
+.footer__grid-item-title {
+  /* footer grid item title */
+}
+
+.footer__divider-container {
+  /* footer divider container */
+}
+
+.footer__divider {
+  /* footer divider */
 }
 
 .footer__links {
-  /* Стилі для посилань в футері */
+  /* footer links */
 }
 
 .footer__link-item {
-  /* Стилі для елементів посилань в футері */
+  list-style-type: none;
 }
 
 .footer__link {
-  /* Стилі для посилань в футері */
+  /* footer link */
 }
 
-.footer__bottom {
-  background-color: rgb(242, 232, 228);
+.footer__copyright-background {
+  background-color: var(--footer__copyright-background-color);
 }
 
-.bottom__inner-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.bottom__left,
-.bottom__right {
-  font-family: var(--primary-font);
-  font-weight: 400;
-  color: var(--ui-caption-color);
-  text-transform: none;
+.footer__copyright {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .bottom__inner-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .bottom__left,
-  .bottom__right {
-    margin-bottom: 10px;
-  }
+/*
+.bottom__middle {
+  min-height: 32px;
 }
+*/
+.footer__copyright-text {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--ui-caption-color);
+  text-transform: none;
+  /*display: flex;*/
+  /*width: calc(100%+20px);*/
+  font-size: 15px;
 
-@media (max-width: 767px) {
-  .bottom__text-left {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bottom__text-right {
+  @media (min-width: 768px) {
     font-size: 14px;
   }
 }

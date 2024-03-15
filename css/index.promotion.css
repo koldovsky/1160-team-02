@@ -1,152 +1,62 @@
-@media screen and (max-width: 480px) {
   .promotion {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-size: contain;
-    display: block;
+    background: url(../img/promotion-images/promotion-background.png) no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 100px;
+   }
+
+  .promotion__main-text-content
+  {
+    padding-left: 15px;
+    padding-right: 15px;
   }
+
+  .promotion__prom {
+    font-size: 15px;
+    line-height: 21.4272px;
+    color: var(--button-text-secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
   
-  .promotion__main {
-    width: 90%; 
-    margin-left: 5%;
   }
 
   .promotion__title {
-    font-size: 3em; 
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 100%;
+    color: var(--title-text-color);
   }
 
-  .custom-btn{
-    font-size: 14px;
+  .promotion__text-content{
+    margin-block-start: 35px;
+    font-size: 19px;
+    font-family: var(--primary-font);
   }
+
+  .promotion__text-content-percent{
+
+    color: var(--arivals__price-color);
+
+  }
+  .promotion__items{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #promotion__timer {
+    display: flex;
+    width: 69.469px;
+  }
+  
+
+@media(min-width: 792){
+  .promotion{
+  background-size: contain;
+  padding-top: 117.5px;
+  padding-bottom: 105px;
 }
-
-.promotion {
-  background-image: url(../img/promotion-background.png);
-  background-size: cover;
-  padding-top: 145px;
-  padding-bottom: 150px;
-  display: block;
 }
-
-.promotion__main{
-  min-height: 302px;
-  width: 572px;
-  margin-left: 60px;
-}
-
-.promotion__prom {
-  font-size: 14px;
-  line-height: 21.4272px;
-  color: var(--button-text-color2);
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.promotion__title {
-  font-size: 82px;
-  font-family: var(--secondary-font);
-  width: 572;
-  line-height: 82px;
-  color: var(--title-text-color);
-  text-align: left;
-  margin-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.promotion__text-content {
-  font-size: 19px;
-  color: var(--basic-text-color);
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.promotion__text-content-percent {
-  color: var(--arivals__price-color);
-  font-weight: bold;
-}
-
-#promotion__timer {
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.promotion__timer-days,
-.promotion__timer-hours,
-.promotion__timer-minutes,
-.promotion__timer-seconds {
-  border: 1px solid #45c1c7;
-  border-radius: 5px;
-  font-size: 18px;
-  color: var(--title-text-color);
-  text-align: center;
-  width: 97.266px;
-  font-weight: 400;
-  padding: 10px;
-  margin: 5px;
-}
-
-.transparent-text {
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.timer-digit {
-  font-family: "Baloo 2", cursive;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  color: var(--title-text-color);
-}
-
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
-
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: var(--button-text-color2);
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-weight: bold;
-  background: transparent;
-  cursor: pointer;
-  margin: 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-  font-size: 16.5px;
-  position: relative;
-  display: inline-block;
-  outline: none;
-}
-
-.btn {
-  background:var(--button-bg-color2);
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
-  border-radius: 20px;
-}
-
-.btn span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-
-.btn:hover {
-  color:var(--button-text-color1);
-  background-color:var(--button-bg-color1);
-  box-shadow: none;
-}
-
-
