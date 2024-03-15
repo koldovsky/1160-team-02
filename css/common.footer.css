@@ -1,149 +1,116 @@
 /*volodymyr-kurylin__block-12*/
 .footer {
-  flex: 1;
+  /* footer */
 }
 
-.footer__main {
-  background-color: var(--footer-background-color);
+.footer__grid-background {
+  background-color: var(--footer__grid-background-color);
 }
 
-.footer__container {
-  display: flex;
-}
-@media (max-width: 767px) {
-  .footer__container {
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) {
-  .footer__container {
-    flex-direction: row;
-  }
+.footer__grid {
+  /* footer grid */
 }
 
-.footer__block {
-  /*1st out of 4 blocks (part of future grid)*/
-  display: flex;
-  flex-direction: column;
-  /*flex-grow: 1;*/
-  /*width: 25%;*/
-}
-@media (max-width: 767px) {
-  .footer__block {
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  .footer__block {
-    align-items: start;
-  }
+.footer__info {
+  /* information block */
 }
 
-.footer__block-logo {
+.footer__info-logo-container {
   width: 193px;
+  /* make responsive */
 }
 
-.footer__block-text {
-  /* Стилі для тексту в блоку футера */
+.footer__info-logo-link {
+  /* footer info logo link */
 }
 
-.footer__block-email {
-  /* Стилі для посилання на email в блоку футера */
+.footer__info-logo {
+  /* footer info logo */
 }
 
-.footer__block-socials {
-  display: flex;
-  flex-direction: row;
-  /*align-items: end;
-  align-content: space-around;
-  width: 100%;*/
+.footer__info-text {
+  /* footer info text */
 }
 
-.footer__block-socials-item {
+.footer__info-email {
+  /* footer info email */
+}
+
+.footer__info-nav {
+  /* footer info nav */
+}
+
+.footer__info-nav-links {
+  /* footer info nav links */
+}
+
+.footer__info-nav-links-item {
   width: 31px;
   border-radius: 50%;
-  overflow: hidden;
-  background-color: #45c1c7;
+  background-color: var(--footer__info-nav-links-item-background-color);
+  list-style-type: none;
 }
 
-.footer__column {
-  /* Стилі для колонок в футері */
+.footer__info-nav-links-link {
+  /* footer info nav links link */
 }
 
-.footer__column-title {
-  /* Стилі для заголовків колонок в футері */
+.footer__info-nav-links-logo {
+  /* footer info nav links logo */
 }
 
-.footer__column-divider {
-  /* Стилі для роздільників у колонках футера */
+.footer__grid-item {
+  /* blocks with navigation, customer service, and help information */
+}
+
+.footer__grid-item-title {
+  /* footer grid item title */
+}
+
+.footer__divider-container {
+  /* footer divider container */
+}
+
+.footer__divider {
+  /* footer divider */
 }
 
 .footer__links {
-  /* Стилі для посилань в футері */
+  /* footer links */
 }
 
 .footer__link-item {
-  /* Стилі для елементів посилань в футері */
+  list-style-type: none;
 }
 
 .footer__link {
-  /* Стилі для посилань в футері */
+  /* footer link */
 }
 
-.footer__bottom {
-  background-color: rgb(242, 232, 228);
+.footer__copyright-background {
+  background-color: var(--footer__copyright-background-color);
 }
 
-.bottom__inner-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer__copyright {
+  /* copyright */
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-.bottom__left,
-.bottom__middle,
-.bottom__right {
+/*
+.bottom__middle {
+  min-height: 32px;
+}
+*/
+.footer__copyright-text {
   font-family: var(--primary-font);
   font-weight: 700;
   color: var(--ui-caption-color);
   text-transform: none;
   display: flex;
   width: calc(100%+20px);
-}
-
-.bottom__middle {
-  min-height: 32px;
-}
-/*
-@media (min-width: 768px)
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: -5px;
-}
-*/
-
-@media (max-width: 767px) {
-  .bottom__inner-container {
-    flex-direction: row;
-    /*text-align: center;*/
-  }
-
-  .bottom__left {
-    justify-content: start;
-  }
-  .bottom__right {
-    justify-content: end;
-  }
-}
-
-@media (max-width: 767px) {
-  .bottom__text-left {
-    font-size: 15px;
+  font-size: 15px;
+  @media (min-width: 768px) {
+    font-size: 14px;
   }
 }
 

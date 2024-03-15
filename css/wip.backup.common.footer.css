@@ -4,7 +4,7 @@
 }
 
 .footer__main {
-  background-color: var(--footer-background-color);
+  /* footer grid background */
 }
 
 .footer__container {
@@ -40,7 +40,7 @@
 }
 
 .footer__block-logo {
-  width: 193px;
+  /* footer info logo container */
 }
 
 .footer__block-text {
@@ -60,10 +60,7 @@
 }
 
 .footer__block-socials-item {
-  width: 31px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #45c1c7;
+  /* footer info nav links item */
 }
 
 .footer__column {
@@ -83,7 +80,7 @@
 }
 
 .footer__link-item {
-  /* Стилі для елементів посилань в футері */
+  /* footer link item */
 }
 
 .footer__link {
@@ -91,15 +88,14 @@
 }
 
 .footer__bottom {
-  background-color: rgb(242, 232, 228);
+  /* block with copyright information */
 }
 
 .bottom__inner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+
 }
 
 .bottom__left,
@@ -141,14 +137,4 @@
   }
 }
 
-@media (max-width: 767px) {
-  .bottom__text-left {
-    font-size: 15px;
-  }
-}
 
-@media (min-width: 768px) {
-  .bottom__text-right {
-    font-size: 14px;
-  }
-}
