@@ -3,8 +3,11 @@
   flex: 1;
 }
 
-.footer__container {
+.footer__background {
   background-color: var(--footer-background-color);
+}
+
+.footer__container {
   display: flex;
 }
 @media (max-width: 767px) {
