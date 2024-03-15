@@ -74,6 +74,16 @@
   padding: 5px;
 }
 
+/* animation */
+.carousel__button img {
+  transition: transform 0.4s ease;
+}
+
+.carousel__button:hover img {
+  transform: rotate(360deg);
+}
+/* animation */
+
 .left-btn {
   position: absolute;
   top: 50%;
