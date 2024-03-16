@@ -1,4 +1,8 @@
 /* Kaliuzhnyi Oleh*/
+.articles_container {
+  max-width: 1200px;
+  margin: auto;
+}
 .articles__header {
   margin-top: 40px;
 }
@@ -24,12 +28,18 @@
 }
 .articles_container .articles__content {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
-  justify-content: center;
+}
+@media (max-width: 1200px){
+  .articles_container .articles__content {
+    flex-direction: column;
+  }
+
 }
 .articles__content .article {
   width: 370px;
-  margin: 15px;
 }
 .articles__content .article__image {
   width: 370px;
