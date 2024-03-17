@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/product-details.css" />
+    
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/promotion-timer.js"></script>
+    <script src="js/burger-button.js"></script>
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -18,68 +28,56 @@
         data-hx-get="common.header-nav.partial.html"
       ></nav>
     </header>
-    <div class="container">
-      <div class="container__left-side">
-        <a class="container__link-home" href="/index.html">Store homepage</a>
-        <div class="container__corousel">
-          <span class="container__corousel-arrow arrow-left">
-            <img src="img/product-details/arrow-left.svg" alt="arrow left" />
-          </span>
-          <div class="container__corousel-image">
-            <img
-              src="img/product-details/product.png"
-              alt="kitten's heaven set"
-              width="427.5"
-            />
-          </div>
-          <span class="container__corousel-arrow arrow-right">
-            <img src="img/product-details/arrow-right.svg" alt="arrow right" />
-          </span>
-        </div>
-        <div class="container__right-side">
-            <div class="container__product-info">
-                <p class="container__stock-status">In stock</p>
-                <h1 class="container__product-name">Kitten's Heaven Set (2321)</h1>
-                <p class="container__product-code">Product code 45</p>
-                <h3 class="container__product-price">$12,00</h3>
+    <div class="container product-details">
+        <div class="container__link"><a class="container__link-home" href="/index.html">Store homepage</a></div>
+            <div class="grid-wrapper">
+                <div class="container__left-side">
+                    <div class="container__corousel">
+                        <span class="container__corousel-arrow arrow-left">
+                            <img src="img/product-details/arrow-left.svg" alt="arrow left" />
+                        </span>
+                        <div class="container__corousel-image">
+                            <img
+                            src="img/product-details/product.png"
+                            alt="kitten's heaven set"
+                            />
+                        </div>
+                        <span class="container__corousel-arrow arrow-right">
+                            <img src="img/product-details/arrow-right.svg" alt="arrow right" />
+                        </span>
+                    </div>
+                    <div class="container__corousel-image-small">
+                        <img
+                        src="img/product-details/product.png"
+                        alt="kitten's heaven set"
+                        width="200"
+                        />
+                    </div>
+                </div>
+                <div class="container__right-side">
+                    <div class="container__product-info">
+                        <p class="container__stock-status">In stock</p>
+                        <h1 class="container__product-name">Kitten's Heaven Set (2321)</h1>
+                        <p class="container__product-code">Product code 45</p>
+                        <h3 class="container__product-price">$12,00</h3>
+                    </div>
+                    <div class="container__cart">
+                        <input type="number" class="container__cart-amount" />
+                        <button class="container__cart-button">Add to cart</button>
+                    </div>
+                    <div class="container__description">
+                        <p class="container__description-title">DESCRIPTION</p>
+                        <h4 class="container__description-content">
+                            Have you adopted a kitten? Congratulations! It will love this set of
+                            toys for sure. Here is everything to entertain your pet — bright
+                            woolen mice, sticks with ropes, and clinking balls.
+                        </h4>
+                    </div>
+                </div>
             </div>
-            <div class="container__cart">
-                <input type="number" class="container__cart-amount" placeholder="1">
-                <button class="container__cart-button">Add to cart</button>
-            </div>
-            <div class="container__description">
-                <p class="container__description-title">DESCRIPTION</p>
-                <h4 class="container__description-content">Have you adopted a kitten? Congratulations! It will love this set of toys for sure. Here is everything to entertain your pet — bright woolen mice, sticks with ropes, and clinking balls.</h4>
-            </div>
-        <div container__corousel-small-image>
-          <img
-            src="img/product-details/product.png"
-            alt="kitten's heaven Set small"
-            width="102.39"
-          />
         </div>
-      </div>
-      <div class="container__right-side">
-        <div class="container__product-info">
-          <p class="container__stock-status">In stock</p>
-          <h1 class="container__product-name">Kitten's Heaven Set (2321)</h1>
-          <p class="container__product-code">Product code 45</p>
-          <h3 class="container__product-price">$12,00</h3>
-        </div>
-        <div class="container__cart">
-          <input type="number" class="container__cart-amount" />
-          <button class="container__cart-button">Add to cart</button>
-        </div>
-        <div class="container__description">
-          <p class="container__description-title">DESCRIPTION</p>
-          <h4 class="container__description-content">
-            Have you adopted a kitten? Congratulations! It will love this set of
-            toys for sure. Here is everything to entertain your pet — bright
-            woolen mice, sticks with ropes, and clinking balls.
-          </h4>
-        </div>
-      </div>
     </div>
+    
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
