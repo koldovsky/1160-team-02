@@ -1,0 +1,140 @@
+/*volodymyr-kurylin__block-12*/
+.footer {
+  /* footer */
+}
+
+.footer__grid-background {
+  background-color: var(--footer__grid-background-color);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer__info {
+  /* information block */
+}
+
+.footer__info-logo-container {
+  width: 193px;
+  /* make responsive */
+}
+
+.footer__info-logo-link {
+  /* footer info logo link */
+}
+
+.footer__info-logo {
+  /* footer info logo */
+}
+
+.footer__info-text {
+  /* footer info text */
+}
+
+.footer__info-email {
+  /* footer info email */
+}
+
+.footer__info-nav {
+  width: 100%;
+}
+
+.footer__info-nav-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__info-nav-links-item {
+  width: 31px;
+  border-radius: 50%;
+  background-color: var(--footer__info-nav-links-item-background-color);
+  list-style-type: none;
+  margin: auto 7.5px;
+}
+
+.footer__info-nav-links-link {
+  /* footer info nav links link */
+}
+
+.footer__info-nav-links-logo {
+  /* footer info nav links logo */
+}
+
+.footer__grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  /*width: 100%;*/
+  /*justify-content: center;*/
+  /*
+  @media (min-width: 768px) {
+    
+  }
+  */
+}
+
+.footer__grid-item-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  color: var(--footer__grid-item-title-font-color);
+}
+
+.footer__divider-container {
+  /* footer divider container */
+}
+
+.footer__divider {
+  /* footer divider */
+}
+
+.footer__links {
+  /* footer links */
+}
+
+.footer__link-item {
+  list-style-type: none;
+}
+
+.footer__link {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--footer__link-item-font-color);
+}
+
+.footer__copyright-background {
+  background-color: var(--footer__copyright-background-color);
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+/*
+.bottom__middle {
+  min-height: 32px;
+}
+*/
+.footer__copyright-text {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--ui-caption-color);
+  text-transform: none;
+  /*display: flex;*/
+  /*width: calc(100%+20px);*/
+  font-size: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+}

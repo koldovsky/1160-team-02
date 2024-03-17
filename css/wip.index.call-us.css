@@ -1,0 +1,101 @@
+/*volodymyr-kurylin__block-15*/
+.call-us {
+  /* Стилі для секції "call-us" */
+  background-color: var(--call-us-background-color);
+}
+
+.call-us__phone-number {
+  /* Стилі для секції з номером телефону */
+}
+
+.call-us__phone-number__title {
+  /* Стилі для заголовку "CALL US" */
+  color: var(--phone-number-title-color);
+  font-size: var(--phone-number-title-size);
+  font-family: var(--phone-number-title-font);
+  font-weight: var(--phone-number-title-font-weight);
+  text-decoration: var(--phone-number-title-text-decoration);
+}
+
+.call-us__phone-number__link {
+  /* Стилі для посилання з номером телефону */
+  color: var(--primary-color);
+  font-size: var(--phone-number-link-size);
+  font-family: var(--phone-number-link-font);
+  font-weight: var(--phone-number-link-font-weight);
+  text-decoration: var(--phone-number-text-decoration);
+}
+.call-us__phone-number__link:hover {
+  /* Додати підкреслення при наведенні */
+  text-decoration: underline;
+}
+
+.call-us__subscribe-suggestion {
+  /* Стилі для секції підписки */
+}
+
+.call-us__subscribe-suggestion__text {
+  /* Стилі для тексту підказки підписки */
+  color: var(--subscribe-suggestion-text-color);
+  font-size: var(--subscribe-suggestion-text-size);
+  font-family: var(--subscribe-suggestion-text-font);
+  font-weight: var(--subscribe-suggestion-text-weight);
+  text-decoration: var(--subscribe-suggestion-text-text-decoration);
+}
+
+.call-us__subscribe-suggestion__link {
+  /* Стилі для посилання підказки підписки */
+  text-decoration: none;
+}
+
+.call-us__subscribe-suggestion__link-text {
+  /* Стилі для тексту посилання підказки підписки */
+  color: var(--subscribe-suggestion-link-text-color);
+  font-size: var(--subscribe-suggestion-link-text-size);
+  font-family: var(--subscribe-suggestion-link-text-font);
+  font-weight: var(--subscribe-suggestion-link-text-font-weight);
+  /*text-decoration: var(--subscribe-suggestion-link-text-text-decoration);*/
+}
+.call-us__subscribe-suggestion__link-text:hover {
+  /* Додати підкреслення при наведенні */
+  text-decoration: underline;
+}
+
+.call-us__subscribe-suggestion__link-arrow {
+  /* Стилі для стрілки посилання підказки підписки */
+  color: var(--subscribe-suggestion-link-arrow-color);
+  font-size: var(--subscribe-suggestion-link-arrow-size);
+  font-family: var(--subscribe-suggestion-link-arrow-font);
+  font-weight: var(--subscribe-suggestion-link-arrow-font-weight);
+  /*text-decoration: var(--subscribe-suggestion-link-arrow-text-decoration);*/
+}
+.call-us__subscribe-suggestion__link-arrow:hover {
+  /* Додати підкреслення при наведенні */
+  text-decoration: underline;
+}
+
+.call-us__subscribe-form {
+  /* Стилі для форми підписки */
+}
+
+.call-us__subscribe-form__form {
+  /* Стилі для форми підписки */
+}
+
+.call-us__subscribe-form__input {
+  /* Стилі для поля введення email у формі підписки */
+}
+
+.call-us__subscribe-form__button {
+  /* Стилі для кнопки підписки у формі підписки */
+}
+
+.call-us__subscribe-form__button-text {
+  /* Стилі для тексту кнопки підписки у формі підписки */
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+}

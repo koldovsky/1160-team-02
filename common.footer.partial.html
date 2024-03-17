@@ -4,13 +4,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>common.footer.partial</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer>
-      <h2>Hello World!</h2>
+    <footer class="footer">
+      <div class="footer__grid-background">
+        <div class="footer__grid container">
+          <!-- Information block -->
+          <div class="footer__grid-item footer__info">
+            <div class="footer__info-logo-container">
+              <a class="footer__info-logo-link" href="/">
+                <img
+                  src="img/header-footer/logo.svg"
+                  alt="happy paw logo"
+                  class="footer__info-logo"
+                />
+              </a>
+            </div>
+            <p class="footer__info-text">
+              If you have any questions, please contact us at
+              <a class="footer__info-email" href="mailto:happypaw@email.com"
+                >happypaw@email.com</a
+              >
+              or get in touch via social media.
+            </p>
+            <nav class="footer__info-nav">
+              <ul class="footer__info-nav-links">
+                <li class="footer__info-nav-links-item">
+                  <a
+                    class="footer__info-nav-links-link"
+                    href="https://www.facebook.com/"
+                    ><img
+                      src="img/header-footer/facebook-logo.svg"
+                      alt="facebook"
+                      class="footer__info-nav-links-logo"
+                  /></a>
+                </li>
+                <li class="footer__info-nav-links-item">
+                  <a
+                    class="footer__info-nav-links-link"
+                    href="https://www.instagram.com/"
+                    ><img
+                      src="img/header-footer/instagram-logo.svg"
+                      alt="instagram"
+                      class="footer__info-nav-links-logo"
+                  /></a>
+                </li>
+                <li class="footer__info-nav-links-item">
+                  <a
+                    class="footer__info-nav-links-link"
+                    href="https://www.youtube.com/"
+                    ><img
+                      src="img/header-footer/youtube-logo.svg"
+                      alt="youtube"
+                      class="footer__info-nav-links-logo"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Blocks with navigation, customer service, and help information -->
+          <div class="footer__grid-item">
+            <h3 class="footer__grid-item-title">Navigation</h3>
+            <div class="footer__divider-container">
+              <img
+                class="footer__divider"
+                src="img/header-footer/divider.svg"
+                alt="divider"
+              />
+            </div>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a class="footer__link" href="#about-us" data-proofer-ignore
+                  >About Us</a
+                >
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#categories" data-proofer-ignore
+                  >Categories</a
+                >
+              </li>
+              <li class="footer__link-item">
+                <a
+                  class="footer__link"
+                  href="#trending-products"
+                  data-proofer-ignore
+                  >Best Sellers</a
+                >
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#new-arrivals" data-proofer-ignore
+                  >New Arrivals</a
+                >
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#our-shop" data-proofer-ignore
+                  >Our Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid-item">
+            <h3 class="footer__grid-item-title">Customer Service</h3>
+            <div class="footer__divider-container">
+              <img
+                class="footer__divider"
+                src="img/header-footer/divider.svg"
+                alt="divider"
+              />
+            </div>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Track Order</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Returns</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Shipping Info</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Recalls & Advisories</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Pet Store Locator</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid-item">
+            <h3 class="footer__grid-item-title">Help & Information</h3>
+            <div class="footer__divider-container">
+              <img
+                class="footer__divider"
+                src="img/header-footer/divider.svg"
+                alt="divider"
+              />
+            </div>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">FAQ</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Product Support</a>
+              </li>
+              <li class="footer__link-item">
+                <a class="footer__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Block with copyright information -->
+      <div class="footer__copyright-background">
+        <div class="footer__copyright container">
+          <p class="footer__copyright-text">© Created by</p>
+          <p class="footer__copyright-text">All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,62 @@
+  .promotion {
+    background: url(../img/promotion-images/promotion-background.png) no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 100px;
+   }
+
+  .promotion__main-text-content
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .promotion__prom {
+    font-size: 15px;
+    line-height: 21.4272px;
+    color: var(--button-text-secondary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  
+  }
+
+  .promotion__title {
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 100%;
+    color: var(--title-text-color);
+  }
+
+  .promotion__text-content{
+    margin-block-start: 35px;
+    font-size: 19px;
+    font-family: var(--primary-font);
+  }
+
+  .promotion__text-content-percent{
+
+    color: var(--arivals__price-color);
+
+  }
+  .promotion__items{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #promotion__timer {
+    display: flex;
+    width: 69.469px;
+  }
+  
+
+@media(min-width: 792){
+  .promotion{
+  background-size: contain;
+  padding-top: 117.5px;
+  padding-bottom: 105px;
+}
+}

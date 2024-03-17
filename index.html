@@ -10,13 +10,14 @@
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/timer.js"></script>
+    <script src="js/promotion-timer.js"></script>
+    <script src="js/burger-button.js"></script>
   </head>
 
   <body>
@@ -27,7 +28,6 @@
     >
       <!--Новікова-->
     </header>
-
     <main>
       <section
         data-hx-trigger="load"
@@ -36,9 +36,13 @@
       >
         <!--Новікова-->
       </section>
-
-      <!--Марченко-->
-
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.food-and-stuff.partial.html"
+      >
+        <!--Марченко-->
+      </section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -46,14 +50,13 @@
       >
         <!--Чемісов-->
       </section>
-
-      <!--Мачіха-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.trending-products.partial.html"
-      ></section>
-
+      >
+        <!--Мачіха-->
+      </section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -61,7 +64,13 @@
       >
         <!--Кундукова-->
       </section>
-
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.brands.partial.html"
+      >
+        <!--Кундукова-->
+      </section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -69,7 +78,6 @@
       >
         <!--Няйко-->
       </section>
-
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -77,7 +85,6 @@
       >
         <!--Леонович-->
       </section>
-
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -85,7 +92,6 @@
       >
         <!--Дерев'янко-->
       </section>
-
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -93,7 +99,6 @@
       >
         <!--Наконечний-->
       </section>
-
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -101,10 +106,28 @@
       >
         <!--Зоценко-->
       </section>
-
-      <!--Калюжний-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.featured-product.partial.html"
+      >
+        <!--Никифорчин-->
+      </section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.news-articles.partial.html"
+      >
+        <!--Калюжний-->
+      </section>
     </main>
-
+    <!--<section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.call-us.partial.html"
+    >-->
+      <!--Курилін-->
+    <!--</section>-->
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
