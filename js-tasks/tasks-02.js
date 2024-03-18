@@ -34,6 +34,8 @@
 // 7. Find the first non-consecutive number
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
+// team code here
+
 
 // Bonus tasks (some extra) (8-13):    =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^=
 
