@@ -8,7 +8,13 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 // Make negative
 // https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 
-// team code here 2
+function makeNegative(num) {
+  if (num > 0) {
+    return -num;
+  } else {
+    return num;
+  }
+}
 
 // Game Move
 // https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
@@ -20,7 +26,9 @@ function move(position, roll) {
 // Personalized Message
 // https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
-// team code here 4
+function greet(name, owner) {
+  return name == owner ? "Hello boss" : "Hello guest";
+}
 
 // Keep Hydrated
 // https://www.codewars.com/kata/keep-hydrated-1/train/javascript
@@ -34,5 +42,5 @@ function litres(time) {
 
 function lovefunc(flower1, flower2) {
   const sum = flower1 + flower2;
-  return sum % 2 != 0;
+  return sum % 2 !== 0;
 }
