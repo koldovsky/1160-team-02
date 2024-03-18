@@ -25,7 +25,9 @@ function move(position, roll) {
 // Keep Hydrated
 // https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 
-// team code here 5
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
 
 // Opposites Attract
 // https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
