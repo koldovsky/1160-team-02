@@ -37,7 +37,7 @@ const warnTheSheep = (queue) =>
     ? 'Pls go away and stop eating my sheep'
     : `Oi! Sheep number ${queue
         .reverse()
-        .indexOf("wolf")}! You are about to be eaten by a wolf!`;
+        .indexOf('wolf')}! You are about to be eaten by a wolf!`;
 
 // 6. Beginner - Lost Without a Map
 // https://www.codewars.com/kata/beginner-lost-without-a-map
