@@ -9,6 +9,7 @@ const stringToArray = (string) => string.split(' ');
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 const DNAtoRNA = (dna) => dna.replace(/T/g, 'U');
+// mentor-note => try to use newer .replaceAll();
 
 // 3. Find Maximum and Minimum Values of a List
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -36,7 +37,7 @@ const warnTheSheep = (queue) =>
   queue[queue.length - 1] === 'wolf'
     ? 'Pls go away and stop eating my sheep'
     : `Oi! Sheep number ${queue
-        .reverse()
+        .reverse() // mentor-note => never change the incoming array
         .indexOf('wolf')}! You are about to be eaten by a wolf!`;
 
 // 6. Beginner - Lost Without a Map
@@ -106,7 +107,7 @@ function getRealFloor(n) {
 // https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
 const past = (h, m, s) => ((h * 60 + m) * 60 + s) * 1000;
-
+// mentor-note => try not to use 'Magic Numbers'
 function past(h, m, s) {
   return h * 3600000 + m * 60000 + s * 1000;
 }
