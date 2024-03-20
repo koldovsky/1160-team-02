@@ -3,12 +3,12 @@
 // 1. Convert a string to an array
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
-const stringToArray = (string) => string.split(" ");
+const stringToArray = (string) => string.split(' ');
 
 // 2. DNA to RNA Conversion
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
+const DNAtoRNA = (dna) => dna.replace(/T/g, 'U');
 
 // 3. Find Maximum and Minimum Values of a List
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -22,7 +22,7 @@ const max = (list) => Math.max(...list);
 
 // We already have an arrow function with the same name in task #3, so...
 function min(arr, toReturn) {
-  return toReturn === "value"
+  return toReturn === 'value'
     ? Math.min(...arr)
     : arr.indexOf(Math.min(...arr));
 }
@@ -33,8 +33,8 @@ function min(arr, toReturn) {
 // https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
 const warnTheSheep = (queue) =>
-  queue[queue.length - 1] === "wolf"
-    ? "Pls go away and stop eating my sheep"
+  queue[queue.length - 1] === 'wolf'
+    ? 'Pls go away and stop eating my sheep'
     : `Oi! Sheep number ${queue
         .reverse()
         .indexOf("wolf")}! You are about to be eaten by a wolf!`;
