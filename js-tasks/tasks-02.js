@@ -2,9 +2,6 @@
 
 // 1. Convert a string to an array
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
-"1. Convert a string to an array"[
-  "https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript"
-];
 
 const stringToArray = (string) => string.split(" ");
 
