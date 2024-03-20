@@ -1,10 +1,7 @@
 // Simple tasks (1-4):     =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^=
 
 // 1. Convert a string to an array
-link1 =
-  "https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript";
 // https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
-// [1. Convert a string to an array](https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript)
 
 const stringToArray = (string) => string.split(" ");
 
