@@ -1,9 +1,19 @@
+body.lock {
+  overflow: hidden;
+}
+  
   .promotion {
     background: url(../img/promotion-images/promotion-background.png) no-repeat;
     background-size: cover;
     padding-top: 90px;
     padding-bottom: 100px;
    }
+
+   .promotion__main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
   .promotion__main-text-content
   {
@@ -40,6 +50,10 @@
     color: var(--arivals__price-color);
 
   }
+  .promotion__button-show_now{
+    display: flex;
+    gap: 10px;
+  }
   .promotion__items{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -53,10 +67,12 @@
   }
   
 
-@media(min-width: 792px){
+@media(min-width: 1024px){
   .promotion{
-  background-size: contain;
-  padding-top: 117.5px;
-  padding-bottom: 105px;
+  background-size: 34.69% 92.13% / cover no-repeat;
+  padding-top: 145px;
+  padding-bottom: 150px;
 }
+
+
 }
