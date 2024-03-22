@@ -3,18 +3,30 @@
 // 1. Find the smallest integer in the array
 // https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 
-// team code here
+class SmallestIntegerFinder {
+  findSmallestInt = (args) => Math.min(...args);
+}
 
 // 2. Geometry Basics: Circle Circumference in 2D
 // https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 
-// team code here
+const circleCircumference = (circle) => 2 * Math.PI * circle.radius;
 
 // 3. Training JS #12: loop statement --for..in and for..of
 // https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 
-//team code here
-
+const giveMeFive = (obj) => {
+  const result = [];
+  for (key in obj) {
+    if (key.length === 5) {
+      result.push(key);
+    }
+    if (obj[key].length === 5) {
+      result.push(obj[key]);
+    }
+  }
+  return result;
+};
 
 // Advanced tasks (not necessary) (4-5):    =^.^= =^.^= =^.^= =^.^= =^.^= =^.^=
 
