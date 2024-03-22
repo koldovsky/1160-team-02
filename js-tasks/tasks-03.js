@@ -33,9 +33,39 @@ const giveMeFive = (obj) => {
 // 4. Understanding closures - the basics
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 
-// team code here
+const buildFun = (n) => {
+  let result = [];
+
+  for (let i = 0; i < n; i++) {
+    result.push(() => i);
+  }
+  return result;
+};
 
 // 5. Fun with ES6 Classes #2 - Animals and Inheritance
 // https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
 
-// team code here
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, 'shark', status);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, 'cat', status);
+  }
+  introduce() {
+    return `${super.introduce()}  Meow meow!`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, 'dog', status);
+    this.master = master;
+  }
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
+}
