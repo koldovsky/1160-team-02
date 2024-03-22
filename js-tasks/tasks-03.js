@@ -17,7 +17,7 @@ const circleCircumference = (circle) => 2 * Math.PI * circle.radius;
 
 const giveMeFive = (obj) => {
   const result = [];
-  for (key in obj) {
+  for (key in obj) { // mentor-note => always put 'const'
     if (key.length === 5) {
       result.push(key);
     }
@@ -34,7 +34,7 @@ const giveMeFive = (obj) => {
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 
 const buildFun = (n) => {
-  let result = [];
+  let result = []; // mentor-note => find a better variable name than 'result'
 
   for (let i = 0; i < n; i++) {
     result.push(() => i);
