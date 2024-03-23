@@ -5,12 +5,11 @@ function init() {
   /*import('./index.about-us.css'); /*Чемісов*/
   /*import('./index.trending-products.css'); /*Мачіха*/
   /*import ("./index.brands.css"); /*Кундукова*/
-  import('./new-arrivals-partial'); /*Няйко*/
+  import("./new-arrivals-partial"); /*Няйко*/
   /*import('./index.new-arrivals.css'); /*Няйко*/
   /*import('./index.promotion.css'); /*Леонович*/
   /*import('./index.recommendations.css'); /*Дерев'янко*/
-  import('./testimonials-carousel'); /*Наконечний*/ //import('./index.testimonials-carousel.css');
-  /*import('./index.testimonials.css'); /*Наконечний*/
+  import("./testimonials-carousel.js"); /*Наконечний*/
   /*import('./index.dry-food.css'); /*Зоценко*/
   /*import('./index.featured-product.css'); /*Никифорчин*/
   /*import('./index.news-articles.css'); /*Калюжний*/
@@ -23,7 +22,7 @@ const totalPartials = document.querySelectorAll(
 ).length;
 let loadedPartialsCount = 0;
 
-document.body.addEventListener('htmx:afterOnLoad', () => {
+document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
   if (loadedPartialsCount === totalPartials) init();
 });
