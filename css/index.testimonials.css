@@ -34,9 +34,9 @@
 }
 
 @media (min-width: 767px) {
-  .testimonials-carousel {
+  /* .testimonials-carousel {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 
   .testimonials-carousel__image {
     min-width: 120px;
