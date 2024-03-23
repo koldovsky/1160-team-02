@@ -1,20 +1,20 @@
 function init() {
-  /*import('./common.header-nav.css'); /*Новікова*/
-  /*import('./index.hero.css'); /*Новікова*/
-  /*import('./index.food-and-stuff.css'); /*Марченко*/
-  /*import('./index.about-us.css'); /*Чемісов*/
-  /*import('./index.trending-products.css'); /*Мачіха*/
-  /*import ("./index.brands.css"); /*Кундукова*/
+  /*import('./common.header-nav.js'); /*Новікова*/
+  /*import('./index.hero.js'); /*Новікова*/
+  /*import('./index.food-and-stuff.js'); /*Марченко*/
+  /*import('./index.about-us.js'); /*Чемісов*/
+  /*import('./index.trending-products.js'); /*Мачіха*/
+  /*import ("./index.brands.js"); /*Кундукова*/
   import("./new-arrivals-partial"); /*Няйко*/
-  /*import('./index.new-arrivals.css'); /*Няйко*/
-  /*import('./index.promotion.css'); /*Леонович*/
-  /*import('./index.recommendations.css'); /*Дерев'янко*/
+  /*import('./index.new-arrivals.js'); /*Няйко*/
+  /*import('./index.promotion.js'); /*Леонович*/
+  /*import('./index.recommendations.js'); /*Дерев'янко*/
   import("./testimonials-carousel.js"); /*Наконечний*/
-  /*import('./index.dry-food.css'); /*Зоценко*/
-  /*import('./index.featured-product.css'); /*Никифорчин*/
-  /*import('./index.news-articles.css'); /*Калюжний*/
-  /*import ("./index.call-us.css"); /*Курилін*/
-  /*import('./common.footer.css'); /*Курилін*/
+  /*import('./index.dry-food.js'); /*Зоценко*/
+  /*import('./index.featured-product.js'); /*Никифорчин*/
+  /*import('./index.news-articles.js'); /*Калюжний*/
+  /*import("./index.call-us.js"); /*Курилін*/
+  /*import('./common.footer.js'); /*Курилін*/
 }
 
 const totalPartials = document.querySelectorAll(
