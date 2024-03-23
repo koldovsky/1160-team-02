@@ -22,3 +22,21 @@
 .dry-food__product-icon {
   max-width: 120px;
 }
+
+.dry-food__products {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media (min-width: 768px) {
+  .dry-food__products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .dry-food__products {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
