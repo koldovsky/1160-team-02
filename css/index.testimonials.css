@@ -87,6 +87,7 @@
 }
 
 .carousel__button:hover img {
+  cursor: pointer;
   transform: rotate(360deg);
 }
 /* animation */
