@@ -1,14 +1,17 @@
 /*Diana Zotsenko__block 10*/
 
-.dry-food__content h2 {
-  font-family: "Baloo 2", cursive;
-  font-size: 50px;
-  text-align: center;
+.dry-food__container {
+padding-top: 110px;
+padding-bottom: 110px;
+padding-left: 101px;
+padding-right: 101px;
+background-color: var(--main-bg-color);
 }
 
-.dry-food__description {
-  font-family: "PT Sans", sans-serif;
-  font-size: 19px;
+.dry-food__content h2 {
+  font-family: "Baloo 2", cursive;
+  color: var(--title-text-color);
+  font-size: 50px;
   text-align: center;
 }
 
@@ -19,8 +22,35 @@
   margin-right: auto;
 }
 
+.dry-food__description {
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-text-color);
+  font-size: 19px;
+  text-align: center;
+}
+
+.dry-food__products h3 {
+  font-family: "Baloo 2", cursive;
+  color: var(--title-text-color);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dry-food__products p {
+  font-family: "Baloo 2", cursive;
+  color: var(--title-text-color);
+  font-size: 23px;
+  font-weight: 700;
+}
+
 .dry-food__product-icon {
   max-width: 120px;
+}
+
+.ingredients {
+  font-family: "PT Sans", sans-serif;
+  color: var(--basic-text-color);
+  font-size: 17px;
 }
 
 .dry-food__products {
