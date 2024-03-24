@@ -75,17 +75,17 @@
   } */
 }
 
-.carousel__button {
+.carousel__button-t {
   border: none;
   transition: 0.2s;
 }
 
-.carousel__button:hover {
+.carousel__button-t:hover {
   transform: translateY(-3px);
   box-shadow: 0 3px 0 #fcc295;
 }
 
-.carousel__button:active {
+.carousel__button-t:active {
   transform: translateY(-1px);
   box-shadow: 0 1px 0 #fcc295;
 }
@@ -97,11 +97,11 @@
 }
 
 /* animation */
-.carousel__button img {
+.carousel__button-t img {
   transition: transform 0.4s ease;
 }
 
-.carousel__button:hover img {
+.carousel__button-t:hover img {
   cursor: pointer;
   transform: rotate(360deg);
 }
