@@ -120,6 +120,8 @@
 }
 
 .testimonials-carousel__card {
+  flex: 1;
+  min-width: 300px;
   margin-left: 18px;
   margin-right: 18px;
   min-height: 450px;
