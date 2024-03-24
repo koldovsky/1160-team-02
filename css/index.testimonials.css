@@ -33,6 +33,13 @@
   position: relative;
 }
 
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 @media (min-width: 767px) {
   /* .testimonials-carousel {
     grid-template-columns: repeat(2, 1fr);
@@ -53,9 +60,9 @@
 }
 
 @media (min-width: 991px) {
-  .testimonials-carousel {
+  /* .testimonials-carousel {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } */
   .testimonials-carousel__image {
     min-width: 120px;
     min-height: 120px;

@@ -87,8 +87,18 @@ const cards = [
 let currentCardIndex = 0;
 
 function renderCard() {
-  const carouselContainer = document.querySelector(".testimonials-carousel");
+  const carouselContainer = document.querySelector(".carousel-container");
   carouselContainer.innerHTML = cards[currentCardIndex];
+  if (window.matchMedia("(min-width:768px)").matches) {
+    const secondCardIndex =
+      currentCardIndex + 1 >= cards.length ? 0 : currentCardIndex + 1;
+    carouselContainer.innerHTML += cards[secondCardIndex];
+    if (window.matchMedia("(min-width:991px)").matches) {
+      const thirdCardIndex =
+        secondCardIndex + 1 >= cards.length ? 0 : secondCardIndex + 1;
+      carouselContainer.innerHTML += cards[thirdCardIndex];
+    }
+  }
 }
 
 function nextCard() {
@@ -111,3 +121,5 @@ rightBtn.addEventListener("click", nextCard);
 
 const leftBtn = document.querySelector(".left-btn");
 leftBtn.addEventListener("click", prevCard);
+
+window.addEventListener("resize", renderCard);
