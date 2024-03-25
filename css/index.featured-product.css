@@ -38,38 +38,15 @@
     font-size: 17px;
     color: var(--slider-stock-color);
 }
-.buyspace__addcard-btn{
+.buyspace__addcard{
     font-family: "PT Sans", sans-serif;
-    background-color: var(--addcart-background);
-    min-width: 70%;
+    background-color: var(--button-bg-buyspace-color);
+    min-width: 65%;
     min-height: 50px;
-    color: var(--text-main-btn);
+    color: var(--button-text-primary-color);
     border: 0;
     font-size: 15px;
     border-radius: 20px;
-    cursor: pointer;
-}
-.btn{
-    position: absolute;
-    top: 55%;
-    transform: translateY(-55%); 
-    background: none;
-    border: none;
-    transition: transform 2ms ease;
-    cursor: pointer;   
-}
-.btn.right{
-    right:  20px;
-}
-.btn.left{
-    left: 20px;
-}
-.btn__arrow{
-    max-width: 15px;
-    max-height: 15px;
-}
-.btn__arrow:hover{
-    transform: rotate(180deg);
 }
 .buyspace__main-info{
     padding-top: 20px;
