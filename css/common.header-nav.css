@@ -117,14 +117,14 @@
 .header__socials-item-img:hover {
   background-color: var(--socials-button-bg-hover-color);
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .header__nav {
-    position: absolute;
+    position: fixed;
     top: 93px;
     right: 0;
     width: 100%;
-    height: calc(100vh - 93px);
-    overscroll-behavior: contain;
+    height: 100%;
+    overflow: auto;
     transform: translateX(100%);
     visibility: hidden;
     z-index: 2;
