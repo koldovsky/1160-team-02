@@ -40,10 +40,10 @@
 }
 .buyspace__addcard-btn{
     font-family: "PT Sans", sans-serif;
-    background-color: var(--button-text-primary-color);
+    background-color: var(--button-bg-buyspace-color);
     min-width: 70%;
     min-height: 50px;
-    color: var(--brand-color);
+    color: var(--button-text-primary-color);
     border: 0;
     font-size: 15px;
     border-radius: 20px;
