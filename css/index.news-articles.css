@@ -1,10 +1,7 @@
 /* Kaliuzhnyi Oleh*/
 .articles_container {
-  max-width: 1200px;
-  margin: auto;
-}
-.articles__header {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .articles__title {
   font-family: var(--secondary-font);
@@ -13,7 +10,7 @@
   color: var(--title-text-color);
 }
 .articles_container .articles__header .articles_bone-img {
-  width: 209px;
+  width: 210px;
   height: 90px;
   margin-left: auto;
   margin-right: auto;
@@ -27,23 +24,21 @@
   margin-bottom: 25px;
 }
 .articles_container .articles__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-}
-@media (max-width: 1200px){
-  .articles_container .articles__content {
-    flex-direction: column;
-  }
-
+  display: grid;
+  margin-top: 50px;
+  width: auto;
+  grid-template-columns: 1fr;
+  grid-row-gap:20px;
 }
 .articles__content .article {
-  width: 370px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  
 }
 .articles__content .article__image {
-  width: 370px;
-  height: 250px;
+  width: 100%;
+  height: auto;
 }
 .articles__content .article__title {
   font-family: var(--secondary-font);
@@ -56,6 +51,8 @@
   text-align: left;
   font-size: 17px;
   color: var(--basic-text-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .articles__content .article__link {
   font-family: var(--primary--font);
