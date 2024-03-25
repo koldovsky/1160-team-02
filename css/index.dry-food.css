@@ -1,25 +1,38 @@
 /*Diana Zotsenko__block 10*/
 
 .dry-food__container {
-padding-top: 110px;
-padding-bottom: 110px;
-padding-left: 40px;
-padding-right: 40px;
-background-color: var(--main-bg-color);
+  padding-top: 110px;
+  padding-bottom: 110px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--main-bg-color);
 }
 
 .dry-food__title {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  -ms-flex-item-align: center;
 }
 
 .dry-food__content h2 {
+  display: block;
   font-family: "Baloo 2", cursive;
   color: var(--title-text-color);
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
-  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .dry-food__content h2 {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 992px) {
+  .dry-food__content h2 {
+    font-size: 50px;
+  }
 }
 
 .dry-food__bone-icon {
@@ -41,8 +54,20 @@ background-color: var(--main-bg-color);
 .dry-food__products h3 {
   font-family: "Baloo 2", cursive;
   color: var(--title-text-color);
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .dry-food__products h3 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .dry-food__products h3 {
+    font-size: 32px;
+  }
 }
 
 .dry-food__products p {
@@ -52,16 +77,14 @@ background-color: var(--main-bg-color);
   font-weight: 700;
 }
 
-/*.dry-food__bone-icon {
-  margin-top: 25px;
-}*/
-
 .dry-food__products article {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   padding-top: 7.5px;
   padding-bottom: 7.5px;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
 }
 
 .dry-food__products img {
@@ -89,7 +112,7 @@ background-color: var(--main-bg-color);
 @media (min-width: 992px) {
   .dry-food__products {
     grid-template-columns: 1fr 1fr 1fr;
-    }
+  }
 }
 
 .dry-food__dogs,
@@ -100,7 +123,7 @@ background-color: var(--main-bg-color);
 }
 
 .header-and-price {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
