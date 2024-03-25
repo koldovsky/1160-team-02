@@ -1,52 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/*
-* {
-  outline: 1px solid red;
-}
-*/
-
-/*list of font variations used on site (temporary)*/
-/*
-  font-family: "Baloo 2";
-  font-style: normal;
-  font-weight: 400;
-  font-weight: 700;
-*/
-/*
-  font-family: "PT Sans";
-  font-style: normal;
-  font-style: italic;
-  font-weight: 400;
-  font-weight: 700;
-*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /*outline: 1px solid red;*/
 }
 
 :root {
   scroll-behavior: smooth;
-  /*
-  --text-color: black;
-  --accent-color: #a5c7cf;
-  --border-color: black;
-  */
 
   --primary-font: "PT Sans", sans-serif;
   --secondary-font: "Baloo 2", cursive;
   font-family: var(--primary-font);
+  /* list of font variations used on site (temporary) */
+  /* "Baloo 2" normal 400 / 700 */
+  /* "PT Sans" normal / italic 400 / 700 */
 
   --brand-color: #ed6435;
-  
   --main-bg-color: #faf4f2;
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
   color: var(--basic-text-color);
 
-  --slider-stock-color: #61A854;
-  --slider-line:#edf0f5;
+  --slider-stock-color: #61a854;
+  --slider-line: #edf0f5;
   --slider-featured-product-title: #232323;
   --header-link-color: #6b6b6b;
   --header-info-bg-color: #f2e8e4;
@@ -54,7 +33,7 @@
   --button-text-secondary-color: #45c1c7;
   --button-bg-primary-color: #ffe6d4;
   --button-bg-secondary-color: #b2e7e9;
-  --button-bg-buyspace-color: #FFE6D4;
+  --button-bg-buyspace-color: #ffe6d4;
   --socials-button-bg-hover-color: #32a1a7;
   --button-burger-color: #3c3731;
   --testimonials-header-title-color: #3d3730;
@@ -68,30 +47,19 @@
   --arrivals__arrow-button: #686560;
   --arivals__price-color: #ed6435;
   --arivals__button-color: #b2e7e9;
+  --button-bg-color-light: #ffe6d4;
 
-  /*footer variables*/
-  /*under construction - SKIP THIS*/
-  --footer-background-color: #f9f4f2;
+  /* footer variables */
+  --footer__grid-background-color: #f9f4f2;
+  --footer__copyright-background-color: rgb(242, 232, 228);
+  --footer__info-nav-links-item-background-color: #45c1c7;
+  --footer__link-item-font-color: rgb(154, 152, 152);
+  --footer__grid-item-title-font-color: #3c3731;
+  /* footer variables */
+}
 
-  --ui-caption-tablet-letter-spacing: 0;
-  --ui-caption-mobile-letter-spacing: 0;
-  --ui-caption-tablet-line-height: 1.4285;
-  --ui-caption-mobile-line-height: 1.4285;
-  --ui-caption-size-tablet: 14px;
-  --ui-caption-size-mobile: 15px;
-  --ui-caption-text-transform: none;
-
-  --ui-caption-color: #958b7e;
-  --ui-caption-color-light: #fff;
-  --ui-caption-tablet-size: 14px;
-  --ui-caption-mobile-size: 15px;
-  --ui-caption-font-style: normal;
-  --ui-caption-text-decoration: none;
-  --ui-caption-coefficients-320-px: 1;
-  --ui-caption-letter-spacing: 0;
-
-  --ui-dark-shade-color: #f9f4f2; /*#3c3731;*/
-  /*footer variables*/
+body.lock {
+  overflow: hidden;
 }
 
 img {
@@ -102,7 +70,6 @@ img {
 .container {
   max-width: 1200px;
   margin: auto;
-  /*overflow: hidden;*/
 }
 
 a {

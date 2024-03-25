@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pet Store</title>
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -14,19 +14,21 @@
   </head>
   <body>
     <section id="new-arrivals" class="section__arrivals container">
-      <h2 class="arrivals__title">Our New Arrivals</h2>
-      <div>
-        <img
-          class="arrivals__icon"
-          src="img/testimonials-images/bone-icon.svg"
-          alt="Bone Icon"
-        />
+      <div class="arrivals__header">
+        <h2 class="arrivals__title">Our New Arrivals</h2>
+        <div>
+          <img
+            class="arrivals__icon"
+            src="img/testimonials-images/bone-icon.svg"
+            alt="Bone Icon"
+          />
+        </div>
+        <p class="arrivals__subtitle">
+          We offer affordable and safe toys and accessories for your pets.
+        </p>
       </div>
-      <p class="arrivals__subtitle">
-        We offer affordable and safe toys and accessories for your pets.
-      </p>
       <div class="arrivals__carousel">
-        <button class="arrivals__carousel-arrow left-button">
+        <button class="arrivals__carousel-arrow carousel__button left-arrow">
           <img
             width="30"
             class="arrow_icon"
@@ -43,11 +45,7 @@
             />
             <a class="arrivals__carousel-href" href="#">OPTY Plastic Bowl</a>
             <p class="arrivals__carousel-price">$3,00</p>
-            <a class="arrivals__carousel-button" href="#"
-              ><span class="arrivals__carousel-button-text"
-                >Add to Cart</span
-              ></a
-            >
+            <a class="arrivals__carousel-button" href="#">Add to Cart</a>
           </article>
           <article class="arrivals__carousel-slide">
             <img
@@ -57,11 +55,7 @@
             />
             <a class="arrivals__carousel-href" href="#">EGO Butterfly Toy</a>
             <p class="arrivals__carousel-price">$8,00</p>
-            <a class="arrivals__carousel-button" href="#"
-              ><span class="arrivals__carousel-button-text"
-                >Add to Cart</span
-              ></a
-            >
+            <a class="arrivals__carousel-button" href="#">Add to Cart</a>
           </article>
           <article class="arrivals__carousel-slide">
             <img
@@ -73,11 +67,7 @@
               >VITALIFE Crunch Sticks Treat</a
             >
             <p class="arrivals__carousel-price">$5,00</p>
-            <a class="arrivals__carousel-button" href="#"
-              ><span class="arrivals__carousel-button-text"
-                >Add to Cart</span
-              ></a
-            >
+            <a class="arrivals__carousel-button" href="#">Add to Cart</a>
           </article>
           <article class="arrivals__carousel-slide">
             <img
@@ -87,11 +77,7 @@
             />
             <a class="arrivals__carousel-href" href="#">DUNA Woven Toy</a>
             <p class="arrivals__carousel-price">$1,50</p>
-            <a class="arrivals__carousel-button" href="#"
-              ><span class="arrivals__carousel-button-text"
-                >Add to Cart</span
-              ></a
-            >
+            <a class="arrivals__carousel-button" href="#">Add to Cart</a>
           </article>
           <article class="arrivals__carousel-slide">
             <img
@@ -101,14 +87,10 @@
             />
             <a class="arrivals__carousel-href" href="#">SERA Woven Leash</a>
             <p class="arrivals__carousel-price">$2,00</p>
-            <a class="arrivals__carousel-button" href="#"
-              ><span class="arrivals__carousel-button-text"
-                >Add to Cart</span
-              ></a
-            >
+            <a class="arrivals__carousel-button" href="#">Add to Cart</a>
           </article>
         </div>
-        <button class="arrivals__carousel-arrow right-button">
+        <button class="arrivals__carousel-arrow carousel__button right-arrow">
           <img
             width="30"
             class="arrow_icon"

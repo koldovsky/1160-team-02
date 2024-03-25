@@ -26,6 +26,16 @@
   color: var(--button-text-primary-color);
 }
 
+.shopping-button{
+  background-color: var( --button-bg-secondary-color);
+  color: var(--button-text-secondary-color);
+}
+
+.shopping-button:hover{
+    color:var(--button-text-primary-color);
+    background-color:var(--button-bg-primary-color);
+}
+
 .carousel__button {
   width: 30px;
   height: 30px;
