@@ -1,4 +1,5 @@
 function init() {
+  import('./burger-button.js')
   import('./new-arrivals-partial'); /*Няйко*/
   import('./testimonials-carousel.js'); /*Наконечний*/
   /*import("./index.call-us.js"); /*Курилін*/

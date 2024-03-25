@@ -1,6 +1,3 @@
-body.lock {
-  overflow: hidden;
-}
 .header {
   background-color: var(--main-bg-color);
   padding: 30px 24px;
@@ -130,6 +127,7 @@ body.lock {
     overscroll-behavior: contain;
     transform: translateX(100%);
     visibility: hidden;
+    z-index: 2;
   }
 }
 @media (min-width: 1024px) {
