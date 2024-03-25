@@ -17,6 +17,9 @@
     flex-direction: column;
    
 }
+.slider__main-slider{
+    position: relative;
+}
 .slide__item{
     max-width: 250px;
 }
@@ -54,8 +57,8 @@
 }
 .btn{
     position: absolute;
-    top: 55%;
-    transform: translateY(-55%); 
+    top: 35%;
+    transform: translateY(-35%); 
     background: none;
     border: none;
     transition: transform 2ms ease;
@@ -64,7 +67,7 @@
 }
 
 .btn.right{
-    right:  20px;
+    right: 20px;
 }
 .btn.left{
     left: 20px;
