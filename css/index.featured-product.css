@@ -57,8 +57,8 @@
 }
 .btn{
     position: absolute;
-    top: 35%;
-    transform: translateY(-35%); 
+    top: 50%;
+    transform: translateY(-50%); 
     background: none;
     border: none;
     transition: transform 2ms ease;
