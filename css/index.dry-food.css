@@ -3,9 +3,15 @@
 .dry-food__container {
 padding-top: 110px;
 padding-bottom: 110px;
-padding-left: 101px;
-padding-right: 101px;
+padding-left: 40px;
+padding-right: 40px;
 background-color: var(--main-bg-color);
+}
+
+.dry-food__title {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .dry-food__content h2 {
@@ -13,13 +19,16 @@ background-color: var(--main-bg-color);
   color: var(--title-text-color);
   font-size: 50px;
   text-align: center;
+  height: 60px;
 }
 
 .dry-food__bone-icon {
-  width: 209px;
-  height: 90px;
+  width: auto;
+  height: 32px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .dry-food__description {
@@ -43,8 +52,20 @@ background-color: var(--main-bg-color);
   font-weight: 700;
 }
 
-.dry-food__product-icon {
-  max-width: 120px;
+/*.dry-food__bone-icon {
+  margin-top: 25px;
+}*/
+
+.dry-food__products article {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.dry-food__products img {
+  align-items: center;
 }
 
 .ingredients {
@@ -69,4 +90,34 @@ background-color: var(--main-bg-color);
   .dry-food__products {
     grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.dry-food__dogs,
+.dry-food__cats,
+.dry-food__other {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-and-price {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  color: var(--brand-color);
+  font-weight: 700;
+}
+
+.price-decorator {
+  width: 100%;
+  height: 1px;
+  min-width: 10px;
+  margin-top: 30px;
+  flex: 1 1;
+  background: var(--basic-text-color);
+  opacity: 0.2;
 }
