@@ -29,12 +29,23 @@
   width: auto;
   grid-template-columns: 1fr;
   grid-row-gap:20px;
-}
-.articles__content .article {
-  width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  
+}
+@media (min-width: 767px) {
+  .articles_container .articles__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+  }
+}
+@media (min-width: 991px) {
+  .articles_container .articles__content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+  }
+}
+.articles__content .article {
+  width: 100%;
 }
 .articles__content .article__image {
   width: 100%;
@@ -58,8 +69,9 @@
   font-family: var(--primary--font);
   text-align: left;
   font-size: 15px;
-  color: var(--basic-text-color);
+  color: var(--title-text-color);
   transition: color 0.3s;
+  font-weight: bold; 
 }
 .articles__content .article__link:hover {
   color: #ed6435;
