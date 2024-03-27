@@ -1,0 +1,23 @@
+[
+    {
+       "id":"7",
+       "image":"img/dry-food-images/grain-nuts.png",
+       "title":"Grain & Nuts",
+       "price":"$3",
+       "ingredients":"Whole Brown Rice, Oat Groats, Wheat Bran, Wheat, Soybean Meal, Soybean Hulls."
+    },
+    {
+       "id":"8",
+       "image":"img/dry-food-images/fish-food.png",
+       "title":"Fish Food",
+       "price":"$5",
+       "ingredients":"Dried Yeast, Ground Brown Rice, Shrimp Meal, Dried Fish Protein Digest, Wheat Gluten."
+    },
+    {
+       "id":"9",
+       "image":"img/dry-food-images/parrots-food.png",
+       "title":"Parrots Food",
+       "price":"$7",
+       "ingredients":"Canary Grass Seed, White Millet, Oat Groats, Ground Corn, Red Millet, Flax Seed."
+    }
+ ]
