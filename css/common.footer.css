@@ -1,8 +1,4 @@
 /*volodymyr-kurylin__block-12*/
-.footer {
-  /* footer */
-}
-
 .footer__grid-background {
   background-color: var(--footer__grid-background-color);
 }
@@ -16,29 +12,20 @@
   }
 }
 
-.footer__info {
-  /* information block */
-}
-
 .footer__info-logo-container {
   width: 193px;
-  /* make responsive */
-}
-
-.footer__info-logo-link {
-  /* footer info logo link */
-}
-
-.footer__info-logo {
-  /* footer info logo */
 }
 
 .footer__info-text {
-  /* footer info text */
+  line-height: 27px;
+  margin: 20px 0px;
+  text-align: center;
+  color: var(--basic-text-color);
 }
 
 .footer__info-email {
-  /* footer info email */
+  color: var(--basic-text-color);
+  font-weight: 700;
 }
 
 .footer__info-nav {
@@ -59,54 +46,47 @@
   margin: auto 7.5px;
 }
 
-.footer__info-nav-links-link {
-  /* footer info nav links link */
-}
-
-.footer__info-nav-links-logo {
-  /* footer info nav links logo */
-}
-
 .footer__grid-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  /*width: 100%;*/
-  /*justify-content: center;*/
-  /*
-  @media (min-width: 768px) {
-    
-  }
-  */
+  margin-top: 50px;
+  width: 100%;
 }
 
 .footer__grid-item-title {
   font-family: var(--secondary-font);
   font-weight: 700;
-  color: var(--footer__grid-item-title-font-color);
+  font-size: 22px;
+  color: var(--title-text-color);
 }
 
 .footer__divider-container {
-  /* footer divider container */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .footer__divider {
-  /* footer divider */
-}
-
-.footer__links {
-  /* footer links */
+  width: 14%;
+  margin: 10px 5px;
+  min-height: 3px;
+  background-color: var(--brand-color);
 }
 
 .footer__link-item {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__link {
   font-family: var(--primary-font);
   font-weight: 700;
-  color: var(--footer__link-item-font-color);
+  font-size: 17px;
+  margin: 10px 5px;
+  color: var(--basic-text-color);
 }
 
 .footer__copyright-background {
@@ -119,20 +99,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px 15px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
-/*
-.bottom__middle {
-  min-height: 32px;
-}
-*/
+
 .footer__copyright-text {
   font-family: var(--primary-font);
   font-weight: 700;
-  color: var(--ui-caption-color);
+  color: var(--basic-text-color);
   text-transform: none;
-  /*display: flex;*/
-  /*width: calc(100%+20px);*/
   font-size: 15px;
+  margin: 4px;
 
   @media (min-width: 768px) {
     font-size: 14px;
