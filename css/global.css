@@ -14,9 +14,6 @@
   --primary-font: "PT Sans", sans-serif;
   --secondary-font: "Baloo 2", cursive;
   font-family: var(--primary-font);
-  /* list of font variations used on site (temporary) */
-  /* "Baloo 2" normal 400 / 700 */
-  /* "PT Sans" normal / italic 400 / 700 */
 
   --brand-color: #ed6435;
   --main-bg-color: #faf4f2;
@@ -49,13 +46,9 @@
   --arivals__button-color: #b2e7e9;
   --button-bg-color-light: #ffe6d4;
 
-  /* footer variables */
   --footer__grid-background-color: #f9f4f2;
   --footer__copyright-background-color: rgb(242, 232, 228);
   --footer__info-nav-links-item-background-color: #45c1c7;
-  --footer__link-item-font-color: rgb(154, 152, 152);
-  --footer__grid-item-title-font-color: #3c3731;
-  /* footer variables */
 }
 
 body.lock {
