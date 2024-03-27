@@ -9,7 +9,7 @@ const catsProducts = await responseCats.json();
 const responseOther = await fetch("api/dry-food/other-products.json");
 const otherProducts = await responseOther.json();
 
-function renderDogsProducts(dogsProducts) {
+function renderDogsProducts(dogsProducts, rate = 1) {
   let productsDomString = "";
   for (const product of dogsProducts) {
     productsDomString += `
@@ -19,7 +19,7 @@ function renderDogsProducts(dogsProducts) {
                 <div class="dry-food__header-and-price">
                     <p class="dry-food__header">${product.title}</p>
                     <span class="dry-food__price-decorator"></span>
-                    <span class="dry-food__price">${product.price}</span>
+                    <span class="dry-food__price">${(product.price * rate).toFixed(2)}</span>
                 </div>
                 <span class="dry-food__ingredients">${product.ingredients}</span>
             </div>
@@ -29,7 +29,7 @@ function renderDogsProducts(dogsProducts) {
   productsContainer.innerHTML = productsDomString;
 }
 
-function renderCatsProducts(catsProducts) {
+function renderCatsProducts(catsProducts, rate = 1) {
   let productsDomString = "";
   for (const product of catsProducts) {
     productsDomString += `
@@ -39,7 +39,7 @@ function renderCatsProducts(catsProducts) {
                 <div class="dry-food__header-and-price">
                     <p class="dry-food__header">${product.title}</p>
                     <span class="dry-food__price-decorator"></span>
-                    <span class="dry-food__price">${product.price}</span>
+                    <span class="dry-food__price">${(product.price * rate).toFixed(2)}</span>
                 </div>
                 <span class="dry-food__ingredients">${product.ingredients}</span>
             </div>
@@ -49,7 +49,7 @@ function renderCatsProducts(catsProducts) {
   productsContainer.innerHTML = productsDomString;
 }
 
-function renderOtherProducts(otherProducts) {
+function renderOtherProducts(otherProducts, rate = 1) {
   let productsDomString = "";
   for (const product of otherProducts) {
     productsDomString += `
@@ -59,7 +59,7 @@ function renderOtherProducts(otherProducts) {
                 <div class="dry-food__header-and-price">
                     <p class="dry-food__header">${product.title}</p>
                     <span class="dry-food__price-decorator"></span>
-                    <span class="dry-food__price">${product.price}</span>
+                    <span class="dry-food__price">${(product.price * rate).toFixed(2)}</span>
                 </div>
                 <span class="dry-food__ingredients">${product.ingredients}</span>
             </div>
@@ -69,6 +69,27 @@ function renderOtherProducts(otherProducts) {
   productsContainer.innerHTML = productsDomString;
 }
 
-renderDogsProducts(dogsProducts);
-renderCatsProducts(catsProducts);
-renderOtherProducts(otherProducts);
+let currencies;
+let lastRead = 0;
+
+async function convertCurrency() {
+    if (!currencies || (new Date() - lastRead > 30 * 1000) ) {
+        try {
+            const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+            currencies = await response.json();
+        } catch (error) {
+            console.error('Error: ' + error.message);
+        }
+        lastRead = new Date();
+    }
+    const convertTo = document.querySelector('.dry-food__currency').value;
+    const rate = currencies.rates[convertTo];
+    
+    renderDogsProducts(dogsProducts, rate);
+    renderCatsProducts(catsProducts, rate);
+    renderOtherProducts(otherProducts, rate);
+}
+
+document.querySelector('.dry-food__currency').addEventListener('change', convertCurrency);
+
+convertCurrency();
