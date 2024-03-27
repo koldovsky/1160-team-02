@@ -44,7 +44,7 @@
   margin-bottom: 25px;
 }
 
-.dry-food__description {
+.dry-food__slogan {
   font-family: "PT Sans", sans-serif;
   color: var(--basic-text-color);
   font-size: 19px;
@@ -70,14 +70,14 @@
   }
 }
 
-.dry-food__products p {
+.dry-food__header {
   font-family: "Baloo 2", cursive;
   color: var(--title-text-color);
   font-size: 23px;
   font-weight: 700;
 }
 
-.dry-food__products article {
+.dry-food__card {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -87,11 +87,12 @@
   margin-right: -7.5px;
 }
 
-.dry-food__products img {
+.dry-food__product-icon {
   align-items: center;
+  width: 120px;
 }
 
-.ingredients {
+.dry-food__ingredients {
   font-family: "PT Sans", sans-serif;
   color: var(--basic-text-color);
   font-size: 17px;
@@ -122,20 +123,20 @@
   padding-right: 15px;
 }
 
-.header-and-price {
+.dry-food__header-and-price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.price {
+.dry-food__price {
   font-family: "Baloo 2", cursive;
   font-size: 24px;
   color: var(--brand-color);
   font-weight: 700;
 }
 
-.price-decorator {
+.dry-food__price-decorator {
   width: 100%;
   height: 1px;
   min-width: 10px;
