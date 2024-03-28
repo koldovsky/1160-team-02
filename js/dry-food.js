@@ -9,7 +9,7 @@ const catsProducts = await responseCats.json();
 const responseOther = await fetch("api/dry-food/other-products.json");
 const otherProducts = await responseOther.json();
 
-function renderDogsProducts(dogsProducts, rate = 1) {
+function renderDogsProducts(dogsProducts, rate = 1, convertTo = "USD") {
   let productsDomString = "";
   for (const product of dogsProducts) {
     productsDomString += `
@@ -19,7 +19,7 @@ function renderDogsProducts(dogsProducts, rate = 1) {
                 <div class="dry-food__header-and-price">
                     <p class="dry-food__header">${product.title}</p>
                     <span class="dry-food__price-decorator"></span>
-                    <span class="dry-food__price">${(product.price * rate).toFixed(2)}</span>
+                    <span class="dry-food__price">${currencyMarkers[convertTo]}${(product.price * rate).toFixed()}</span>
                 </div>
                 <span class="dry-food__ingredients">${product.ingredients}</span>
             </div>
@@ -29,7 +29,7 @@ function renderDogsProducts(dogsProducts, rate = 1) {
   productsContainer.innerHTML = productsDomString;
 }
 
-function renderCatsProducts(catsProducts, rate = 1) {
+function renderCatsProducts(catsProducts, rate = 1, convertTo = "USD") {
   let productsDomString = "";
   for (const product of catsProducts) {
     productsDomString += `
@@ -39,7 +39,7 @@ function renderCatsProducts(catsProducts, rate = 1) {
                 <div class="dry-food__header-and-price">
                     <p class="dry-food__header">${product.title}</p>
                     <span class="dry-food__price-decorator"></span>
-                    <span class="dry-food__price">${(product.price * rate).toFixed(2)}</span>
+                    <span class="dry-food__price">${currencyMarkers[convertTo]}${(product.price * rate).toFixed()}</span>
                 </div>
                 <span class="dry-food__ingredients">${product.ingredients}</span>
             </div>
@@ -49,7 +49,7 @@ function renderCatsProducts(catsProducts, rate = 1) {
   productsContainer.innerHTML = productsDomString;
 }
 
-function renderOtherProducts(otherProducts, rate = 1) {
+function renderOtherProducts(otherProducts, rate = 1, convertTo = "USD") {
   let productsDomString = "";
   for (const product of otherProducts) {
     productsDomString += `
@@ -59,7 +59,7 @@ function renderOtherProducts(otherProducts, rate = 1) {
                 <div class="dry-food__header-and-price">
                     <p class="dry-food__header">${product.title}</p>
                     <span class="dry-food__price-decorator"></span>
-                    <span class="dry-food__price">${(product.price * rate).toFixed(2)}</span>
+                    <span class="dry-food__price">${currencyMarkers[convertTo]}${(product.price * rate).toFixed()}</span>
                 </div>
                 <span class="dry-food__ingredients">${product.ingredients}</span>
             </div>
@@ -85,9 +85,9 @@ async function convertCurrency() {
   const convertTo = document.querySelector(".dry-food__currency").value;
   const rate = currencies.rates[convertTo];
 
-  renderDogsProducts(dogsProducts, rate);
-  renderCatsProducts(catsProducts, rate);
-  renderOtherProducts(otherProducts, rate);
+  renderDogsProducts(dogsProducts, rate, convertTo);
+  renderCatsProducts(catsProducts, rate, convertTo);
+  renderOtherProducts(otherProducts, rate, convertTo);
 }
 
 document
@@ -95,3 +95,10 @@ document
   .addEventListener("change", convertCurrency);
 
 convertCurrency();
+
+const currencyMarkers = {
+  "USD" : "$",
+  "EUR" : "€",
+  "PLN" : "Zł",
+  "UAH" : "₴"
+};
