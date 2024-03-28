@@ -1,13 +1,11 @@
 // Зоценко Діана__block 10
 
-const responseDogs = await fetch("api/dry-food/dogs-products.json");
-const dogsProducts = await responseDogs.json();
+const response = await fetch("api/dry-food/products.json");
+const products = await response.json();
 
-const responseCats = await fetch("api/dry-food/cats-products.json");
-const catsProducts = await responseCats.json();
-
-const responseOther = await fetch("api/dry-food/other-products.json");
-const otherProducts = await responseOther.json();
+const dogsProducts = products.filter(product => product.category === "dogs");
+const catsProducts = products.filter(product => product.category === "cats");
+const otherProducts = products.filter(product => product.category === "other");
 
 function renderDogsProducts(dogsProducts, rate = 1, convertTo = "USD") {
   let productsDomString = "";
