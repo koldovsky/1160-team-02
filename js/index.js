@@ -4,6 +4,8 @@ function init() {
   import("./testimonials-carousel.js"); /*Наконечний*/
   /*import("./index.call-us.js"); /*Курилін*/
   import("./common.footer.js"); /*Курилін*/
+  import('./common.footer.js'); /*Курилін*/
+  import('./dry-food.js'); /*Зоценко*/
 }
 
 const totalPartials = document.querySelectorAll(
