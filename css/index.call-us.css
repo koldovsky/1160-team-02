@@ -1,9 +1,4 @@
 /*volodymyr-kurylin__block-15*/
-.call-us {
-  @media (min-width: 768px) {
-  }
-}
-
 .call-us__grid-background {
   background-color: var(--call-us-background-color);
 }
@@ -55,6 +50,9 @@
   @media (min-width: 768px) {
     font-size: 44px;
     line-height: 1;
+  }
+  @media (min-width: 992px) {
+    font-size: 50px;
   }
 }
 .call-us__link-tel:hover {

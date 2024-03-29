@@ -6,10 +6,10 @@
 .footer__grid {
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 90px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 90px;
   }
 }
 
@@ -22,6 +22,11 @@
   margin: 20px 0px;
   text-align: center;
   color: var(--basic-text-color);
+  font-size: 17px;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .footer__info-email {
@@ -37,6 +42,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__info-nav-links-item {
@@ -58,6 +67,11 @@
   margin: auto;
   margin-top: 50px;
   width: 100%;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    padding: 15px;
+  }
 }
 
 .footer__grid-item-title {
@@ -71,6 +85,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__divider {
@@ -80,10 +98,20 @@
   background-color: var(--brand-color);
 }
 
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .footer__link-item {
   list-style-type: none;
   display: flex;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__link {
@@ -93,6 +121,10 @@
   margin: 10px 5px;
   color: var(--basic-text-color);
   transition: 0.2s;
+
+  @media (min-width: 992px) {
+    font-size: 15px;
+  }
 }
 .footer__link:hover {
   text-decoration: underline;
