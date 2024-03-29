@@ -9,6 +9,7 @@
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 90px;
   }
 }
 
@@ -44,6 +45,10 @@
   background-color: var(--footer__info-nav-links-item-background-color);
   list-style-type: none;
   margin: auto 7.5px;
+  transition: 0.3s;
+}
+.footer__info-nav-links-item:hover {
+  background-color: var(--footer__info-nav-links-item-background-hover-color);
 }
 
 .footer__grid-item {
@@ -87,6 +92,11 @@
   font-size: 17px;
   margin: 10px 5px;
   color: var(--basic-text-color);
+  transition: 0.2s;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  color: var(--footer__link-hover-color);
 }
 
 .footer__copyright-background {
