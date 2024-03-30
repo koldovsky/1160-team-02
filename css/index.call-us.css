@@ -83,12 +83,17 @@
   }
 }
 
-.call-us__link-sale-week {
+.call-us__sale-week-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
   font-size: 15px;
   font-family: var(--primary-font);
   font-weight: 700;
   text-decoration: none;
+}
 
+.call-us__link-sale-week {
   @media (min-width: 768px) {
     padding-top: 20px;
     font-size: 14px;
@@ -111,6 +116,58 @@
 }
 .call-us__arrow:hover {
   text-decoration: underline;
+}
+
+.call-us__sale-week-countdown {
+  margin-left: 42px;
+  animation: color-change 15s infinite;
+}
+@keyframes color-change {
+  0% {
+    color: var(--call-us-background-color);
+  }
+  7% {
+    color: var(--call-us__title-color);
+  }
+  14% {
+    color: var(--call-us__text-color);
+  }
+  21% {
+    color: var(--call-us__link-sale-week-color);
+  }
+  28% {
+    color: var(--call-us__arrow-color);
+  }
+  35% {
+    color: var(--call-us__input-backround-color);
+  }
+  42% {
+    color: var(--call-us__button-backround-color);
+  }
+  49% {
+    color: var(--call-us__button-backround-hover-color);
+  }
+  56% {
+    color: var(--call-us__button-text-hover-color);
+  }
+  63% {
+    color: var(--footer__grid-background-color);
+  }
+  70% {
+    color: var(--footer__copyright-background-color);
+  }
+  77% {
+    color: var(--footer__info-nav-links-item-background-color);
+  }
+  84% {
+    color: var(--footer__info-nav-links-item-background-hover-color);
+  }
+  91% {
+    color: var(--footer__link-hover-color);
+  }
+  100% {
+    color: var(--call-us-background-color);
+  }
 }
 
 .call-us__subscribe-form {
