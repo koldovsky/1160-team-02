@@ -14,7 +14,7 @@ cardsInfo.forEach((card) => {
           alt="${card.alt}"
         />
       </div>
-      <h3 class="testimonials-carousel__name">${card.name}{</h3>
+      <h3 class="testimonials-carousel__name">${card.name}</h3>
       <p class="testimonials-carousel__description">
         ${card.description}
       </p>
