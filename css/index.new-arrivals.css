@@ -77,14 +77,23 @@
 
 .left-arrow {
   left: 0;
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+
+.left-arrow:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .right-arrow {
   right: 0;
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+
+.right-arrow:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .arrivals__carousel-slide {
-  
   margin: 0 10px;
   text-align: center;
 }
@@ -118,6 +127,12 @@
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 20px;
+  padding-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.arrivals__carousel-price:hover {
+  transform: scale(1.6);
 }
 
 .arrivals__carousel-button {
