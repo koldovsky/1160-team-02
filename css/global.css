@@ -46,9 +46,21 @@
   --arivals__button-color: #b2e7e9;
   --button-bg-color-light: #ffe6d4;
 
+  --call-us-background-color: #f9f4f2;
+  --call-us__title-color: #45c1c7;
+  --call-us__text-color: #95887e;
+  --call-us__link-sale-week-color: #3c3731;
+  --call-us__arrow-color: #45c1c7;
+  --call-us__input-backround-color: #f4e6e2;
+  --call-us__button-backround-color: #ffe6d4;
+  --call-us__button-backround-hover-color: #b2e7e9;
+  --call-us__button-text-hover-color: #45c1c7;
+
   --footer__grid-background-color: #f9f4f2;
   --footer__copyright-background-color: rgb(242, 232, 228);
   --footer__info-nav-links-item-background-color: #45c1c7;
+  --footer__info-nav-links-item-background-hover-color: #32a1a7;
+  --footer__link-hover-color: #4e4b48;
 }
 
 body.lock {

@@ -1,9 +1,8 @@
 function init() {
-  import("./burger-button.js");
-  import("./new-arrivals.carousel.js"); /*Няйко*/
-  import("./testimonials-carousel.js"); /*Наконечний*/
+  import('./burger-button.js')
+  import('./new-arrivals-partial'); /*Няйко*/
+  import('./testimonials-carousel.js'); /*Наконечний*/
   /*import("./index.call-us.js"); /*Курилін*/
-  import("./common.footer.js"); /*Курилін*/
   import('./common.footer.js'); /*Курилін*/
   import('./dry-food.js'); /*Зоценко*/
 }
