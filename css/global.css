@@ -34,6 +34,10 @@
   --button-bg-primary-color: #ffe6d4;
   --button-bg-secondary-color: #b2e7e9;
   --button-bg-buyspace-color: #ffe6d4;
+
+  --button-bg-hover: rgba(72, 209, 204, 0.5);
+  --button-cl-hover:rgba(127, 255, 212, 0.9);
+
   --socials-button-bg-hover-color: #32a1a7;
   --button-burger-color: #3c3731;
   --testimonials-header-title-color: #3d3730;

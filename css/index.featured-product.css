@@ -52,6 +52,11 @@
     border-radius: 20px;
     cursor: pointer;
 }
+.buyspace__addcard-btn:hover{
+    background-color: var(--button-bg-hover);
+    color: var(--button-cl-hover);
+    transition: background-color, 0.3s ease;
+}
 .btn__container{
     position: relative;
 }
