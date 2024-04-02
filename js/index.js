@@ -8,6 +8,7 @@ function init() {
   import('./dry-food.js'); /*Зоценко*/
   import('./trending-carousel.js') /*Мачіха*/
   import('./featured-product.js'); // Никифорчин
+  import('./swiper.js'); //Марченко
 }
 
 const totalPartials = document.querySelectorAll(
