@@ -28,7 +28,6 @@
     position: relative;
 }
 .slide__item{
-   
     max-width: 85%;
     opacity: 1;
     transition: opacity 0.5s ease;
