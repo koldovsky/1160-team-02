@@ -6,27 +6,27 @@ const pics = [
     </article>`,
     `<article class="product__slides">
         <h3 class="slide-header">For Cats<span class="blue-arrow">→</span></h3>
-        <img class="carrousel__slide" src="../img/food-stuff-products/cat-pic.png" alt="Cat photo">
+        <img class="carrousel__slide" src="img/food-stuff-products/cat-pic.png" alt="Cat photo">
         <p class="subtitle-text">Dry Food • Wet Food • Treats • Catnip &amp; Grass • Litter Boxes  • Bowls &amp; Feeders • Toys • Beds  •&nbsp;</p>
     </article>`,
     `<article class="product__slides">
         <h3 class="slide-header">For Dogs<span class="blue-arrow">→</span></h3>
-        <img class="carrousel__slide" src="../img/food-stuff-products/dog-pic.png" alt="Dog photo">
+        <img class="carrousel__slide" src="img/food-stuff-products/dog-pic.png" alt="Dog photo">
         <p class="subtitle-text">Dry &amp; Canned Food • Jerky • Chewy Treats • Bowls • Toys • Collars and Leashes • Clothes •</p>
     </article>`,
     `<article class="product__slides">
         <h3 class="slide-header">For Parrots<span class="blue-arrow">→</span></h3>
-        <img class="carrousel__slide" src="../img/food-stuff-products/parrot-pic.png" alt="Parrot photo">
+        <img class="carrousel__slide" src="img/food-stuff-products/parrot-pic.png" alt="Parrot photo">
         <p class="subtitle-text">Food • Treats • Cages &amp; Stands • Vitamins • Bowls &amp; Feeders • Litter &amp; Nesting • Odor Control •</p>
     </article>`,
     `<article class="product__slides">
         <h3 class="slide-header">For Rabbits<span class="blue-arrow">→</span></h3>
-        <img class="carrousel__slide" src="../img/food-stuff-products/rabbit-pic.png" alt="Rabbit photo">
+        <img class="carrousel__slide" src="img/food-stuff-products/rabbit-pic.png" alt="Rabbit photo">
         <p class="subtitle-text">Food • Treats • Hay • Cages • Litter &amp; Bedding • Harnesses • Toys • Odor Removers •&nbsp;</p>
     </article>`,
     `<article class="product__slides">
         <h3 class="slide-header">For Fish<span class="blue-arrow">→</span></h3>
-        <img class="carrousel__slide" src="../img/food-stuff-products/fish-pic.png" alt="Fish photo">
+        <img class="carrousel__slide" src="img/food-stuff-products/fish-pic.png" alt="Fish photo">
         <p class="subtitle-text">Food • Feeders • Aquariums • Filters &amp; Pumps • Cleaning  • Water Care • Decor •</p>
     </article>`
     ]
