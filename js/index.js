@@ -6,6 +6,7 @@ function init() {
   import('./index.call-us.sale-week.countdown.js'); /*Курилін*/
   import('./common.footer.copyright.clock.js'); /*Курилін*/
   import('./dry-food.js'); /*Зоценко*/
+  import('./trending-carousel.js') /*Мачіха*/
 }
 
 const totalPartials = document.querySelectorAll(
