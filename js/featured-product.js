@@ -25,10 +25,10 @@ function renderCode(productList, rate=1){
 
         
           <button class="btn left">
-            <img class="btn__arrow controlls" src="img/arrivals-arrow-left.png" alt="">
+            <img class="btn__arrow controlls" src="img/featured-product/arrivals-arrow-left.png" alt="">
           </button>
-          <button class="btn right ">
-          <img class="btn__arrow controlls"src="img/arrivals-arrow-right.png" alt="">
+          <button class="btn right">
+          <img class="btn__arrow controlls"src="img/featured-product/arrivals-arrow-right.png" alt="">
           </button>
         
        
