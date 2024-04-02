@@ -12,7 +12,7 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <script src="js/promotion-timer.js"></script>
+    <!--<script src="js/promotion-timer.js"></script>--> <!--fix errors-->
     <script src="js/burger-button.js"></script>
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -62,11 +62,11 @@
                         <h3 class="container__product-price">$12,00</h3>
                     </div>
                     <div class="container__cart">
-                        <input type="number" class="container__cart-amount" />
+                        <input type="number" class="container__cart-amount" value="1" min="1"/>
                         <button class="container__cart-button">Add to cart</button>
                     </div>
                     <div class="container__description">
-                        <p class="container__description-title">DESCRIPTION</p>
+                        <p class="container__description-title"><span class="red-line">DESCRIPTION</span> </p>
                         <h4 class="container__description-content">
                             Have you adopted a kitten? Congratulations! It will love this set of
                             toys for sure. Here is everything to entertain your pet — bright

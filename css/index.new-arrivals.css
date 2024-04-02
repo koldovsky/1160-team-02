@@ -2,7 +2,6 @@
 .section__arrivals {
   padding-top: 90px;
   padding-bottom: 90px;
-  overflow-x: hidden;
 }
 
 .arrivals__title {
@@ -28,11 +27,40 @@
 }
 
 .arrivals__carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  gap: 5px;
   position: relative;
-  overflow-x: hidden;
+}
+
+@media (min-width: 767px) {
+  .arrivals__carousel {
+    grid-template-columns: repeat(2 1fr);
+  }
+
+  .arrivals__carousel-slide {
+    min-height: 463px;
+    min-width: 360px;
+  }
+
+  .arrivals__carousel-image {
+    align-items: center;
+    min-width: 330px;
+  }
+}
+
+@media (min-width: 991px) {
+  .arrivals__carousel {
+    grid-template-columns: repeat(4 1fr);
+  }
+
+  .arrivals__carousel-slide {
+    min-height: 377px;
+    min-width: 232px;
+  }
+
+  .arrivals__carousel-image {
+    min-width: 202px;
+  }
 }
 
 .arrivals__carousel-arrow {
@@ -49,14 +77,23 @@
 
 .left-arrow {
   left: 0;
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+
+.left-arrow:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .right-arrow {
   right: 0;
+  transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+
+.right-arrow:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .arrivals__carousel-slide {
-  flex: 0 0 auto;
   margin: 0 10px;
   text-align: center;
 }
@@ -64,7 +101,9 @@
 .arrivals__carousel-slides {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5px;
 }
 
 .arrivals__carousel-image {
@@ -88,6 +127,12 @@
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 20px;
+  padding-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.arrivals__carousel-price:hover {
+  transform: scale(1.6);
 }
 
 .arrivals__carousel-button {
@@ -104,24 +149,4 @@
 .arrivals__carousel-button:hover {
   background-color: var(--button-bg-primary-color);
   color: var(--arivals__price-color);
-}
-
-@media (min-width: 767px) {
-  .arrivals__carousel {
-    grid-template-columns: 1fr, 1fr;
-  }
-
-  .arrivals__carousel-image {
-    min-width: 330px;
-  }
-}
-
-@media (min-width: 767px) {
-  .arrivals__carousel {
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-  }
-
-  .arrivals__carousel-image {
-    min-width: 202px;
-  }
 }

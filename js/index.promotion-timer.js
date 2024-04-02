@@ -1,7 +1,6 @@
 //Leonovych Maksym block-7 (timer)
-document.addEventListener("DOMContentLoaded", function () {
   const endDate = new Date("2024-12-31T23:59:59").getTime();
-
+  updateTimer();
   const timerInterval = setInterval(updateTimer, 1000);
 
   function updateTimer() {
@@ -27,4 +26,4 @@ document.addEventListener("DOMContentLoaded", function () {
       clearInterval(timerInterval);
     }
   }
-});
+
