@@ -73,6 +73,22 @@ body.lock {
   padding-top: 145px;
   padding-bottom: 150px;
 }
+.promotion__main{
+  margin-left: 240.556px;
+  margin-right: 240.556px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.promotion__main-text-content
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+.promotion__title{
+  font-size: 82px;
+  line-height: 82px;
+}
 
 
 }

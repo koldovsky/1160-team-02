@@ -1,6 +1,7 @@
 function init() {
   import("./burger-button.js");
   import("./new-arrivals.carousel.js"); /*Няйко*/
+  import('./index.promotion-timer.js'); /*Леонович*/
   import("./testimonials-carousel.js"); /*Наконечний*/
   /*import("./index.call-us.js"); /*Курилін*/
   import("./common.footer.js"); /*Курилін*/
@@ -28,7 +29,7 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
 /*import('./index.brands.js'); /*Кундукова*/
 
 /*import('./index.new-arrivals.js'); /*Няйко*/
-/*import('./index.promotion.js'); /*Леонович*/
+
 /*import('./index.recommendations.js'); /*Дерев'янко*/
 
 /*import('./index.dry-food.js'); /*Зоценко*/
