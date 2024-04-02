@@ -22,7 +22,7 @@ body.lock {
 
 .promotion__prom {
   font-size: 15px;
-  line-height: 21.4272px;
+  line-height: 35px;
   color: var(--button-text-secondary-color);
   font-weight: bold;
   text-transform: uppercase;
@@ -36,6 +36,7 @@ body.lock {
   line-height: 48px;
   max-width: 100%;
   color: var(--title-text-color);
+  margin-bottom: 60px;
 }
 
 .promotion__text-content {
@@ -45,13 +46,12 @@ body.lock {
 }
 
 .promotion__text-content-percent {
-
   color: var(--arivals__price-color);
-
 }
 
 .promotion__button-show_now {
   display: flex;
+  margin-top: 35px;
   gap: 10px;
 }
 
@@ -68,16 +68,29 @@ body.lock {
 }
 
 .timer-digit {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--title-text-color);
+}
 
+.promotion__timer-days,
+.promotion__timer-hours,
+.promotion__timer-minutes,
+.promotion__timer-seconds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 77px;
+  min-height: 77px;
   border: 1px solid var(--button-text-secondary-color);
   border-radius: 5px;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: left;
+  margin: 15px;
 }
 
 @media(min-width: 1024px) {
@@ -104,5 +117,34 @@ body.lock {
     line-height: 82px;
   }
 
+  .promotion__timer-days,
+  .promotion__timer-hours,
+  .promotion__timer-minutes,
+  .promotion__timer-seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 97.083px;
+    min-height: 97.083px;
+    font-size: 15px;
+    border: 1px solid var(--button-text-secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    justify-content: center;
+  }
+
+
+  .timer-digit {
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--title-text-color);
+  }
+
+  .transparent-text {
+    color: rgba(0, 0, 0, 0.54);
+  }
 
 }
