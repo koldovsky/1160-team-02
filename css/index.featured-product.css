@@ -27,7 +27,7 @@
 .slider__main-slider{
     position: relative;
 }
-.slide__item{
+.slide-item{
     max-width: 85%;
     opacity: 1;
     transition: opacity 0.5s ease;
