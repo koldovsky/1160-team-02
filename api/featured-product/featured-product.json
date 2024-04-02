@@ -1,0 +1,42 @@
+[
+    {
+       "id":"1",
+       "title":"DUNA Woven Toy (2321)",
+       "price":1.50,
+       "productCode":"Product code 44",
+       "description":"Here's a universal toy for your pet. It can bite, throw, and scratch this woolen jingle toy, and still, it will serve you for a very long time.",
+       "image":"img/featured-product/arrivals-woven-toy.png"
+    },
+    {
+       "id":"2",
+       "title":"VITALIFE Crunch Sticks Treat (2321)",
+       "price":5.00,
+       "productCode":"Product code 51",
+       "description":"Treat your hamster or rabbit to a crunchy baked treat stick. It is made with seeds, whole grains, vitamins, and extra calcium. Support your pet's healthy teeth!",
+       "image":"img/featured-product/arrivals-crunch-stick.png"
+    },
+    {
+       "id":"3",
+       "title":"SERA Woven Leash (2321)",
+       "price":2.00,
+       "productCode":"Product code 47",
+       "description":"Simple and lightweight leash for your pet. The red color will keep your companion in sight in the crowd.",
+       "image":"img/featured-product/arrivals-woven-leash.png"
+    },
+    {
+       "id":"4",
+       "title":"OPTY Plastic Bowl (2321)",
+       "price":1.50,
+       "productCode":"Product code 49",
+       "description":"This is a simple and safe bowl for your animal to use for both food and water. The bowl is made of high-quality plastic.",
+       "image":"img/featured-product/arrivals-bowl.png"
+    },
+    {
+       "id":"5",
+       "title":"EGO Butterfly Toy (2321)",
+       "price":8.00,
+       "productCode":"Product code 50",
+       "description":"This toy will entertain your cat for a long time. The butterfly is attached to the base with a spring and will swing in all directions, attracting the attention of your pet.",
+       "image":"img/featured-product/arrivals-butterfly-toy.png"
+    }
+ ]
