@@ -5,7 +5,7 @@
        "price":1.50,
        "productCode":"Product code 44",
        "description":"Here's a universal toy for your pet. It can bite, throw, and scratch this woolen jingle toy, and still, it will serve you for a very long time.",
-       "image":"img/featured-product/arrivals-bowl.png"
+       "image":"img/featured-product/arrivals-woven-toy.png"
     },
     {
        "id":"2",
@@ -37,6 +37,6 @@
        "price":8.00,
        "productCode":"Product code 50",
        "description":"This toy will entertain your cat for a long time. The butterfly is attached to the base with a spring and will swing in all directions, attracting the attention of your pet.",
-       "image":"img/featured-product/arrivals-woven-toy.png"
+       "image":"img/featured-product/arrivals-bowl.png"
     }
  ]
