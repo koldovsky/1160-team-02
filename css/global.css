@@ -14,9 +14,6 @@
   --primary-font: "PT Sans", sans-serif;
   --secondary-font: "Baloo 2", cursive;
   font-family: var(--primary-font);
-  /* list of font variations used on site (temporary) */
-  /* "Baloo 2" normal 400 / 700 */
-  /* "PT Sans" normal / italic 400 / 700 */
 
   --brand-color: #ed6435;
   --main-bg-color: #faf4f2;
@@ -52,7 +49,16 @@
   --highlight-text-color: #ed6435;
   --border-slide-color: #ffe6d4;
 
-  /* footer variables */
+  --call-us-background-color: #f9f4f2;
+  --call-us__title-color: #45c1c7;
+  --call-us__text-color: #95887e;
+  --call-us__link-sale-week-color: #3c3731;
+  --call-us__arrow-color: #45c1c7;
+  --call-us__input-backround-color: #f4e6e2;
+  --call-us__button-backround-color: #ffe6d4;
+  --call-us__button-backround-hover-color: #b2e7e9;
+  --call-us__button-text-hover-color: #45c1c7;
+
   --footer__grid-background-color: #f9f4f2;
   --footer__copyright-background-color: rgb(242, 232, 228);
   --footer__info-nav-links-item-background-color: #45c1c7;

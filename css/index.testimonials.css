@@ -33,39 +33,40 @@
   position: relative;
 }
 
-@media (min-width: 767px) {
-  .testimonials-carousel {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5px;
+}
 
+@media (min-width: 767px) {
   .testimonials-carousel__image {
     min-width: 120px;
     min-height: 120px;
-  }
-
-  .testimonials-carousel__card {
-    display: none;
-  }
-
-  .testimonials-carousel__card:nth-of-type(-n + 2) {
-    display: block;
   }
 }
 
 @media (min-width: 991px) {
-  .testimonials-carousel {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .testimonials-carousel__image {
     min-width: 120px;
     min-height: 120px;
   }
-  .testimonials-carousel__card {
-    display: none;
-  }
-  .testimonials-carousel__card:nth-of-type(-n + 3) {
-    display: block;
-  }
+}
+
+.carousel__button-t {
+  border: none;
+  transition: 0.2s;
+}
+
+.carousel__button-t:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 0 #fcc295;
+}
+
+.carousel__button-t:active {
+  transform: translateY(-1px);
+  box-shadow: 0 1px 0 #fcc295;
 }
 
 .carousel__button img {
@@ -75,11 +76,12 @@
 }
 
 /* animation */
-.carousel__button img {
+.carousel__button-t img {
   transition: transform 0.4s ease;
 }
 
-.carousel__button:hover img {
+.carousel__button-t:hover img {
+  cursor: pointer;
   transform: rotate(360deg);
 }
 /* animation */
@@ -97,21 +99,15 @@
 }
 
 .testimonials-carousel__card {
+  flex: 1;
+  max-width: 100%;
   margin-left: 18px;
   margin-right: 18px;
-  min-height: 450px;
+  min-height: 575px;
   padding-left: 25px;
   padding-right: 25px;
   text-align: center;
   border: 2px solid var(--testimonials-border-color);
-}
-
-.testimonials-carousel__card {
-  display: none;
-}
-
-.testimonials-carousel__card:first-of-type {
-  display: block;
 }
 
 .header-img {
@@ -127,6 +123,15 @@
   height: 70px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.card-img {
+  transition: all 0.2s ease-in;
+}
+
+.card-img:hover {
+  transform: scale(1.4) translate(0, -15px);
+  cursor: pointer;
 }
 
 .testimonials-carousel__name {

@@ -12,6 +12,10 @@
   font-family: var(--secondary-font);
   font-size: 2.5rem;
   color: var(--title-text-color);
+  max-width: 60%;
+}
+.hero__subtitle {
+  max-width: 50%;
 }
 .hero__buttons {
   display: flex;
@@ -26,7 +30,14 @@
   color: white;
   background-color: var(--button-text-secondary-color);
 }
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
+  .hero__title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    max-width: 70%;
+  }
+}
+@media (min-width: 900px) {
   .hero {
     background: url("../img/header-footer/hero-bg.png") center / cover no-repeat
       var(--main-bg-color);
@@ -36,6 +47,9 @@
     font-size: 5.1rem;
     line-height: 5.1rem;
     max-width: 570px;
+  }
+  .hero__subtitle {
+    max-width: 100%;
   }
   .hero__buttons {
     gap: 20px;
