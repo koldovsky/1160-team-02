@@ -7,6 +7,7 @@ function init() {
   import('./common.footer.copyright.clock.js'); /*Курилін*/
   import('./dry-food.js'); /*Зоценко*/
   import('./trending-carousel.js') /*Мачіха*/
+  import('./featured-product.js'); // Никифорчин
 }
 
 const totalPartials = document.querySelectorAll(
