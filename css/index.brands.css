@@ -166,6 +166,7 @@
    padding: 5px 0; 
    white-space: nowrap; 
    max-width: 100%;
+   align-items: center;
 }
 .car__track--container {
    display: flex;
