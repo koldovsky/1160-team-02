@@ -50,6 +50,8 @@
     margin: 3px 0;
     padding-top: 20px;
     padding-bottom: 30px;
+    font-family: var(--secondary-font);
+    font-size: 32px;
  }
  
  
@@ -64,7 +66,7 @@
  }
  
  
- /* Styling links */
+ 
  .promo-link--discover {
     color: #000000;
     text-decoration: none;
@@ -89,7 +91,9 @@
  .promo__title--bestpicks {
     position: relative;
     color: #000;
-    margin: 3px 0;
+    margin: 1px 0;
+    font-family: var(--secondary-font);
+    font-size: 32px;
  }
  
  
@@ -97,8 +101,8 @@
     position: relative;
     color: #84939B;
     margin: 5px 0;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
  }
  
  
@@ -158,7 +162,11 @@
         max-width: 719px; 
     }
  }
-
+  
+ 
+ .sub__container {
+   position: relative;
+}
  
  .car.container--brands {
    display: flex;
@@ -197,6 +205,8 @@
    box-sizing: border-box; 
    margin-right: 30px; 
    overflow: hidden;
+   max-width: 149px;
+   max-height: 83px;
 }
 .car__brandslide:last-child {
    margin-right: 0; 
@@ -211,57 +221,18 @@
    display: block; 
 }
 
-.sub__container {
-    position: relative;
-} 
-@media (min-width: 1276px) {
-   .car__brandslide {
-       width: calc(100vw / 6);
-       max-width: 149px;
-       max-height: 83px;
-   }
+.slide-size-3, .car__brandslide {
+   min-width: 149px;
+   min-height: 83px;
 }
 
-@media (max-width: 1275px) and (min-width: 992px) {
-   .car__brandslide {
-       width: calc(100vw / 6); 
-       min-width: 49px;
-       min-height: 29px;
-       max-width: 149px;
-       max-height: 83px;
-   }
-}
-/* Between 765px and 991px */
-@media (max-width: 991px) and (min-width: 766px) {
-   .car__brandslide {
-       width: calc(80vw / 3); 
-       min-width: 80px;
-       min-height: 44px;
-       max-width: 109px;
-       max-height: 58px;
-   }
+.slide-size-2.car__brandslide {
+   min-width: 71px;
+   min-height: 40px;
+   max-width: 128px;
+   max-height: 67.5px;
 }
 
-@media (max-width: 765px) and (min-width: 481px) {
-   .car__brandslide {
-       width: calc(100vw / 2); 
-       min-width: 71px;
-       min-height: 40px;
-       max-width: 128px;
-       max-height: 67.5px;
-   }
-}
-
-@media (max-width: 480px) {
-   .car__brandslide {
-       width: calc(100vw / 1); 
-       min-width: 97.5px;
-       min-height: 53px;
-       max-width: 152px;
-       max-height: 79px;
-   }
-
-}
 
 .carousel__button {
    position: absolute;
@@ -283,4 +254,14 @@
 
 .carousel__button--right {
    right: -3vw; 
+}
+
+@media (max-width: 768px) {
+   .carousel__button--left {
+      left: -7vw; 
+   }
+   .carousel__button--right {
+      right: -7vw; 
+   }
+
 }
