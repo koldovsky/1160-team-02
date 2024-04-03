@@ -7,6 +7,7 @@ function init() {
   import('./common.footer.copyright.clock.js'); /*Курилін*/
   import('./dry-food.js'); /*Зоценко*/
   import('./trending-carousel.js') /*Мачіха*/
+  import('./brands.js') /*Kундукова*/
   import('./featured-product.js'); // Никифорчин
   import('./swiper.js'); //Марченко
 }
