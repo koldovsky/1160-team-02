@@ -165,7 +165,7 @@
    overflow-x: hidden; 
    padding: 5px 0; 
    white-space: nowrap; 
-
+   max-width: 100%;
 }
 .car__track--container {
    display: flex;
