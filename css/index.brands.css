@@ -34,7 +34,7 @@
  
  
  .promo-box--save10 {
-    background-image: url("..img/brands/gold_fish_under_water.png");
+    background-image: url("../img/brands/gold_fish_under_water.png");
     background-size: cover;
     background-position: bottom;
     height: 240px;
@@ -53,7 +53,7 @@
  }
  
  
- /* Color styling for "10%" */
+ 
  .promo__title--save10 span {
     color: #ED6435;
  }
@@ -75,7 +75,7 @@
  
  
  .promo-box--treats {
-    background-image: url("..img/brands/pet_leash_pet_brush_and_pet_toy.png");
+    background-image: url("../img/brands/pet_leash_pet_brush_and_pet_toy.png");
     height: 322px;
     justify-content: flex-start;
     background-size: cover;
@@ -109,7 +109,7 @@
  
  .promo-button--learnmore {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 45px;
     line-height: 45px;
     padding: 0 20px;
@@ -162,9 +162,9 @@
  
  .car.container--brands {
    display: flex;
-   overflow-x: hidden; /* Allows horizontal scrolling */
-   padding: 5px 0; /* Adds some vertical padding */
-   white-space: nowrap; /* Prevents wrapping to ensure a horizontal layout */
+   overflow-x: hidden; 
+   padding: 5px 0; 
+   white-space: nowrap; 
 
 }
 .car__track--container {
@@ -177,40 +177,37 @@
 .car__track {
    display: flex;
    position: relative;
-   list-style-type: none; /* Removes default list styling */
-   padding: 0; /* Removes default padding */
-   margin: 0; /* Removes default margin */
+   list-style-type: none; 
+   padding: 0; 
+   margin: 0; 
    overflow: hidden;
 }
 
 .car__brandslide {
-   display: flex; /* Changes display to inline-flex to align with white-space: nowrap; */
-   justify-content: center; /* Centers the image horizontally */
-   align-items: center; /* Centers the image vertically */
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
    width: calc((100vw - (30px * 5)) / 6);
    max-width: 159px;
    max-height: 83px;
-   background-color: #FFE6D4; /* Background color for the box */
-   padding: 22px; /* Padding around the image */
-   box-sizing: border-box; /* Includes padding in the box's dimensions */
-   margin-right: 30px; /* Distance between the boxes */
+   background-color: #FFE6D4; 
+   padding: 22px; 
+   box-sizing: border-box; 
+   margin-right: 30px; 
    overflow: hidden;
-   /* Ensures the box is treated as a single horizontal row */
 }
 .car__brandslide:last-child {
-   margin-right: 0; /* Removes margin for the last slide to prevent extra spacing at the end */
-}
+   margin-right: 0; 
+
 .car__image {
-   width: auto; /* Adjusts the width automatically to maintain aspect ratio */
-   height: auto; /* Adjusts the height automatically to maintain aspect ratio */
-   max-width: 80%; /* Limits the image's width to 80% of its container */
-   max-height: 80%; /* Limits the image's height to 80% of its container */
-   margin: auto; /* Centers the image within its container */
-   display: block; /* Ensures the image is treated as a block-level element for proper centering */
+   width: auto; 
+   height: auto; 
+   max-width: 80%; 
+   max-height: 80%; 
+   margin: auto; 
+   display: block; 
 }
 
-
-   /* Default styles for large screens (above 1275px) - adjust based on actual requirements */
 @media (min-width: 1276px) {
    .car__brandslide {
        width: calc(100vw / 6);
@@ -218,10 +215,10 @@
        max-height: 83px;
    }
 }
-/* Between 991px and 1275px */
+
 @media (max-width: 1275px) and (min-width: 992px) {
    .car__brandslide {
-       width: calc(100vw / 6); /* Adjust the divisor for the number of items you want to show */
+       width: calc(100vw / 6); 
        min-width: 49px;
        min-height: 29px;
        max-width: 149px;
@@ -231,27 +228,27 @@
 /* Between 765px and 991px */
 @media (max-width: 991px) and (min-width: 766px) {
    .car__brandslide {
-       width: calc(80vw / 3); /* Adjust for visible items */
+       width: calc(80vw / 3); 
        min-width: 80px;
        min-height: 44px;
        max-width: 109px;
        max-height: 58px;
    }
 }
-/* Between 480px and 765px */
+
 @media (max-width: 765px) and (min-width: 481px) {
    .car__brandslide {
-       width: calc(100vw / 2); /* 3 items visible */
+       width: calc(100vw / 2); 
        min-width: 71px;
        min-height: 40px;
        max-width: 128px;
        max-height: 67.5px;
    }
 }
-/* Smaller than 480px */
+
 @media (max-width: 480px) {
    .car__brandslide {
-       width: calc(100vw / 1); /* Adjust for 1 or 2 items visible */
+       width: calc(100vw / 1); 
        min-width: 97.5px;
        min-height: 53px;
        max-width: 152px;
@@ -259,7 +256,7 @@
    }
 
 }
-/* Button positioning without changing the appearance or functionality */
+
 .carousel__button {
    position: absolute;
    top: 50%;
@@ -273,10 +270,10 @@
 
 
 .carousel__button--left {
-   left: 15vw; /* Adjusted for positioning */
+   left: 15vw; 
 }
 
 
 .carousel__button--right {
-   right: 15vw; /* Adjusted for positioning */
+   right: 15vw; 
 }
