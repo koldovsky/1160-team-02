@@ -34,7 +34,7 @@
  
  
  .promo-box--save10 {
-    background-image: url('img/brands/gold_fish_under_water.png');
+    background-image: url("..img/brands/gold_fish_under_water.png");
     background-size: cover;
     background-position: bottom;
     height: 240px;
@@ -75,7 +75,7 @@
  
  
  .promo-box--treats {
-    background-image: url('img/brands/pet_leash_pet_brush_and_pet_toy.png');
+    background-image: url("..img/brands/pet_leash_pet_brush_and_pet_toy.png");
     height: 322px;
     justify-content: flex-start;
     background-size: cover;
