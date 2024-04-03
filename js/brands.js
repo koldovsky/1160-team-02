@@ -9,40 +9,46 @@ const slides = [
 ];
 
 let currentSlideIdx = 0;
+
+function calculateVisibleSlides() {
+    if (window.matchMedia('(min-width:1200px)').matches) {
+        return 6; 
+    } else if (window.matchMedia('(min-width:980px) and (max-width:1199px)').matches) {
+        return 5;
+    } else if (window.matchMedia('(min-width:768px) and (max-width:979px)').matches) {
+        return 4; 
+    } else if (window.matchMedia('(min-width:600px) and (max-width:767px)').matches) {
+        return 3; 
+    } else if (window.matchMedia('(min-width:481px) and (max-width:599px)').matches) {
+        return 2; 
+    }
+    return 1; 
+}
+
 function renderSlide() {
     const slideContainer = document.querySelector('.car__track');
-    slideContainer.innerHTML = slides[currentSlideIdx];
-    const maxVisibleSlides = 3; // Максимальна кількість видимих слайдів
-    const startSlideIndex = currentSlideIdx % slides.length; // Індекс першого видимого слайда
+    slideContainer.innerHTML = ''; // Clear existing slides
 
-    // Додаємо кожен слайд у список
-    for (let i = 0; i < maxVisibleSlides; i++) {
-        const slideIndex = (startSlideIndex + i) % slides.length;
+    let maxVisibleSlides = calculateVisibleSlides(); // Determine how many slides should be visible
+
+    for (let i = 0; i < slides.length && i < maxVisibleSlides; i++) { // Ensure we don't exceed the total slides
+        let slideIndex = (currentSlideIdx + i) % slides.length;
         slideContainer.innerHTML += slides[slideIndex];
     }
-    if (window.matchMedia('(min-width:768px)').matches) {
-        const secondSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
-        slideContainer.innerHTML += slides[secondSlideIdx];
-        if (window.matchMedia('(min-width:980px)').matches) {
-            const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
-            slideContainer.innerHTML += slides[thirdSlideIdx];
-        }
-    }
 }
+
 function nextSlide() {
-    currentSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
+    currentSlideIdx = (currentSlideIdx + 1) % slides.length; // Cycle through slides
     renderSlide();
 }
+
 function prevSlide() {
-    currentSlideIdx = currentSlideIdx - 1 < 0 ? slides.length - 1 : currentSlideIdx - 1;
+    currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length; // Cycle backwards through slides
     renderSlide();
 }
-//setInterval(nextSlide, 3000);
+
+// Initial rendering and setup of event listeners
 renderSlide();
-const btnNext = document.querySelectorByClass('.carousel__button--left');
-btnNext.addEventListener('click', nextSlide);
-
-const btnPrev = document.querySelectorByClass('.carousel__button--right');
-btnPrev.addEventListener('click', prevSlide);
-
+document.querySelector(".carousel__button--left").addEventListener('click', prevSlide);
+document.querySelector(".carousel__button--right").addEventListener('click', nextSlide);
 window.addEventListener('resize', renderSlide);
