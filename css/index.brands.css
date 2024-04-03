@@ -167,6 +167,7 @@
    white-space: nowrap; 
    max-width: 100%;
    align-items: center;
+   justify-content: center;
 }
 .car__track--container {
    display: flex;
@@ -199,6 +200,7 @@
 }
 .car__brandslide:last-child {
    margin-right: 0; 
+}
 
 .car__image {
    width: auto; 
@@ -209,6 +211,9 @@
    display: block; 
 }
 
+.sub__container {
+    position: relative;
+} 
 @media (min-width: 1276px) {
    .car__brandslide {
        width: calc(100vw / 6);
@@ -272,10 +277,10 @@
 
 
 .carousel__button--left {
-   left: 15vw; 
+   left: -3vw; 
 }
 
 
 .carousel__button--right {
-   right: 15vw; 
+   right: -3vw; 
 }
