@@ -2,6 +2,7 @@
   background: url(../img/header-footer/hero-bg.png) 75% / cover no-repeat
     var(--main-bg-color);
   padding: 60px 15px 150px;
+  margin-bottom: 30px;
 }
 .hero__container {
   display: flex;
@@ -42,6 +43,7 @@
     background: url("../img/header-footer/hero-bg.png") center / cover no-repeat
       var(--main-bg-color);
     padding: 100px 24px 300px;
+    margin-bottom: 60px;
   }
   .hero__title {
     font-size: 5.1rem;
