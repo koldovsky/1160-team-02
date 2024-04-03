@@ -1,69 +1,104 @@
 <!--Anna Kundukova block 5-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section class="promo container" id="brands">
-        <h2 class="promo__title">Save 10% on Aquariums</h2>
-        <a data-proofer-ignore href="#our-shop">Discover Now →</a>
-        <div class="promo__image-container">
-          <img width="400" src="img/brands/gold_fish_under_water.png" alt="Gold fish under water">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Brands</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="brands" id="brands">
+      <div class="promo-container--discounts">
+        <div class="promo-box--save10" id="promo-box-aquariums">
+          <h2 class="promo__title--save10">
+            Save <span>10%</span> on <br />
+            Aquariums
+          </h2>
+          <a data-proofer-ignore href="#our-shop" class="promo-link--discover"
+            >Discover Now <span>→</span></a
+          >
         </div>
 
-        <p class="promo__subtitle">TOYS, TREATS & LEASHES</p>
-        <h2 class="promo__title--secondary">Best Picks for Your Pets></h2>
-        <p class="promo__offer"><em>from</em> <em>$1.99</em></p>
-        <a data-proofer-ignore href="#our-shop">Learn More</a>
-        <div class="promo__image-container">
-            <img width="400" src="img/brands/pet_leash_pet_brush_and_pet_toy.png" alt="Pet leash, pet brush, pet toy">
-        </div>
-  
-    
-        <div class="car car--brands">
-          <div class="car__track-container">
-            <ul class="car__track">
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_applaws_logo.png" alt="Brand Applaws logo" class="car__image">
-              </li>
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_dokas.png" alt="Brand Dokas logo" class="car__image">
-              </li>
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_felix_logo.png" alt="Brand Felix logo" class="car__image">
-              </li>
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_gourmet_logo.png" alt="Brand Gourmet logo" class="car__image">
-              </li>
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_purizon_logo.png" alt="Brand Purizon logo" class="car__image">
-              </li>
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_rocco_logo.png" alt="Brand Rocco logo" class="car__image">
-              </li>
-              <li class="car__brandslide">
-                <img width="200" src="img/brands/brand_tigerino_logo.png" alt="Brand Tigerino logo" class="car__image">
-              </li>
-            </ul>
+        <div class="promo-box--treats" id="promo-box-toys">
+          <p class="promo__subtitle--toys">TOYS, TREATS & LEASHES</p>
+          <h2 class="promo__title--bestpicks">
+            Best Picks for <br />Your Pets
+          </h2>
+          <p class="promo__price">
+            <em>from</em>
+            <em
+              ><b><span>$1.99</span></b></em
+            >
+          </p>
+          <a
+            data-proofer-ignore
+            href="#our-shop"
+            class="promo-button--learnmore"
+            >Learn More</a
+          >
         </div>
       </div>
 
-        
-            <button class="carousel__button carousel__button--left" type="button">←</button>
-            <button class="carousel__button carousel__button--right" type="button">→</button>
-        
-            <div class="carousel__nav">
-              <button class="carousel__indicator carousel__indicator--active" type="button" data-slide-to="0"></button>
-              <button class="carousel__indicator" type="button" data-slide-to="1"></button>
-              <button class="carousel__indicator" type="button" data-slide-to="2"></button>
-            </div>
+      <div class="sub__container">
+        <div class="car container--brands">
+          <button
+            class="carousel__button carousel__button--left"
+            type="button"
+            onclick="nextSlide()"
+            aria-label="Previous Slide"
+          >
+            <
+          </button>
+          <div class="car__track--container">
+            <ul class="car__track">
+              <!-- <li class="car__brandslide">
+                <img src="img/brands/brand_applaws_logo.png" alt="Brand Applaws logo" class="car__image">
+            </li>
+            <li class="car__brandslide">
+                <img src="img/brands/brand_dokas.png" alt="Brand Dokas logo" class="car__image">
+            </li>
+            <li class="car__brandslide">
+                <img src="img/brands/brand_felix_logo.png" alt="Brand Felix logo" class="car__image">
+            </li>
+            <li class="car__brandslide">
+                <img src="img/brands/brand_gourmet_logo.png" alt="Brand Gourmet logo" class="car__image">
+            </li>
+            <li class="car__brandslide">
+                <img src="img/brands/brand_purizon_logo.png" alt="Brand Purizon logo" class="car__image">
+            </li>
+            <li class="car__brandslide">
+                <img src="img/brands/brand_rocco_logo.png" alt="Brand Rocco logo" class="car__image">
+            </li>
+            <li class="car__brandslide">
+                <img src="img/brands/brand_tigerino_logo.png" alt="Brand Tigerino logo" class="car__image">
+            </li> -->
+            </ul>
           </div>
+          <button
+            class="carousel__button carousel__button--right"
+            type="button"
+            onclick="prevSlide()"
+            aria-label="Next Slide"
+          >
+            >
+          </button>
+        </div>
+      </div>
     </section>
-        </body>
+  </body>
 </html>
