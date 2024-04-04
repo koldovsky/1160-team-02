@@ -1,7 +1,7 @@
 const slides = [
-  `<li class="car__brandslide"><img src="/1160-team-02/img/brands/brand_applaws_logo.png" alt="Brand Applaws logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/new-arrivals/arrivals-crunch-stick.png" alt="Brand Applaws logo" class="car__image"></li>`,
   `<li class="car__brandslide"><img src="koldovsky/1160-team-02/img/brands/brand_dokas.png" alt="Brand Dokas logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="/koldovsky/1160-team-02/img/brands/brand_felix_logo.png" alt="Brand Felix logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="..1160-team-02/img/brands/brand_felix_logo.png" alt="Brand Felix logo" class="car__image"></li>`,
   `<li class="car__brandslide"><img src="img/brands/brand_gourmet_logo.png" alt="Brand Gourmet logo" class="car__image"></li>`,
   `<li class="car__brandslide"><img src="img/brands/brand_purizon_logo.png" alt="Brand Purizon logo" class="car__image"></li>`,
   `<li class="car__brandslide"><img src="img/brands/brand_rocco_logo.png" alt="Brand Rocco logo" class="car__image"></li>`,
