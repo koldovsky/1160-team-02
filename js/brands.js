@@ -1,11 +1,11 @@
 const slides = [
-  `<li class="car__brandslide"><img src="../img/brands/brand_applaws_logo.png" alt="Brand Applaws logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="../img/brands/brand_dokas.png" alt="Brand Dokas logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="../img/brands/brand_felix_logo.png" alt="Brand Felix logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="../img/brands/brand_gourmet_logo.png" alt="Brand Gourmet logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="../img/brands/brand_purizon_logo.png" alt="Brand Purizon logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="../img/brands/brand_rocco_logo.png" alt="Brand Rocco logo" class="car__image"></li>`,
-  `<li class="car__brandslide"><img src="../img/brands/brand_tigerino_logo.png" alt="Brand Tigerino logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_applaws_logo.png" alt="Brand Applaws logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_dokas.png" alt="Brand Dokas logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_felix_logo.png" alt="Brand Felix logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_gourmet_logo.png" alt="Brand Gourmet logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_purizon_logo.png" alt="Brand Purizon logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_rocco_logo.png" alt="Brand Rocco logo" class="car__image"></li>`,
+  `<li class="car__brandslide"><img src="img/brands/brand_tigerino_logo.png" alt="Brand Tigerino logo" class="car__image"></li>`,
 ];
 
 let currentSlideIdx = 0;
@@ -33,8 +33,6 @@ function calculateVisibleSlides() {
   return 1;
 }
 
-<<<<<<< HEAD
-=======
 function renderSlide() {
   const slideContainer = document.querySelector(".car__track");
   slideContainer.innerHTML = "";
@@ -65,4 +63,3 @@ document
   .querySelector(".carousel__button--right")
   .addEventListener("click", nextSlide);
 window.addEventListener("resize", renderSlide);
->>>>>>> 93348dde8234ae163e6c02bfe058b2ec6d0ca9ee
