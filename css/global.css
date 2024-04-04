@@ -20,7 +20,11 @@
   --title-text-color: #3c3731;
   --basic-text-color: #958b7e;
   color: var(--basic-text-color);
-
+  /* featured-container */
+ --color-bt-hover-featured:rgba(72, 209, 204, 0.5);
+ --color-btn-text-hover-featured:rgba(127, 255, 212, 0.9);
+   /* featured-container */
+ 
   --slider-stock-color: #61a854;
   --slider-line: #edf0f5;
   --slider-featured-product-title: #232323;

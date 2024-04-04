@@ -13,7 +13,7 @@ function renderCode(productList, rate=1){
         productDomString+=`
         <div class="slider__main-slider">
         
-        <p class="slider__title">Store homepage</p>
+        
         <div class="slide">
           <img
             class="slide-item"
@@ -41,7 +41,7 @@ function renderCode(productList, rate=1){
 
             <p class="product__code">${product.productCode}</p>
 
-            <p class="buyspace__price">$${(product.price*rate).toFixed(2)}</p>
+            <p class="buyspace__price">Price:${(product.price*rate).toFixed(2)}</p>
           </div>
 
           <div class="buyspace__line"></div>
