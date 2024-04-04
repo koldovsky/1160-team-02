@@ -1,39 +1,71 @@
 /*Andrii Chemisov block 3*/
+/*    @media(min-width: 620px) {
+
+      }*/
+
+
+
 
 .about-us {
     display: flex;
     flex-direction: column;
     background-color: #FAF4F2;
+    align-items: center;
 }
 
 .about-us__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    padding-top: 90px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 50px;
     gap: 30px;
+
+    @media(min-width: 620px) {
+        flex-direction: row;
+        padding-top: 95px;
+        gap: 40px;
+    }
 }
 
-.about-us__poster-image
-{
+
+
+.about-us__poster-image-wrapper {
     max-height: 397px;
     max-width: 366px;
-    padding-top: 90px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 50px;
+
+    @media (min-width: 620px) {
+        max-height: 565px;
+        max-width: 655px;
+    }
 }
+
+
 
 .about-us__text-explanation {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 30px;
     font-size: 17px;
     font-weight: 400;
-    font: bold;
+    font-style: bold;
     font-family: var(--primary-font);
     color: var(--basic-text-color);
+
+    @media(min-width: 620px) {
+        font-size: 23px;
+    }
+}
+
+.about-us__separator-image {
+    max-height: 40px;
+    max-width: 100px;
+    align-items: center;
 }
 
 .about-us__title {
@@ -43,29 +75,86 @@
     font-weight: 700;
     color: var(--title-text-color);
 
+    @media(min-width: 620px) {
+        font-size: 50px;
+        max-width: 800px;
+    }
+
 }
 
 .about-us__company-description {
-    
+
     font-size: 19px;
+
+    @media(min-width: 620px) {
+        font-size: 30px;
+        max-width: 800px;
+    }
+
 }
 
 .about-us__product-list {
     display: flex;
     flex-direction: column;
     gap: 9px;
+
+    @media(min-width: 620px) {
+        gap: 20px;
+    }
 }
 
-.about-us__paw-wrapper
-{
+.about-us__paw-wrapper {
     height: 20px;
     width: 24px;
 }
 
-.about-us__list-element{
+.about-us__list-element {
     display: flex;
     align-items: start;
     gap: 4px;
+}
+
+.about-us__bullet-points-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 50px;
+    gap: 50px;
+
+    @media(min-width: 620px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 200px;
+    }
+}
+
+.about-us__bullet-points {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    @media(min-width: 620px) {
+        font-size: 23px;
+    }
+}
+
+.about-us__bullet-point-image-background {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 45%;
+    background-color: #ffe6d4;
+
+}
+
+.about-us__bullet-point-text--title {
+    font-family: var(--primary-font);
+    color: var(--title-text-color);
+    @media(min-width: 620px) {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 501px) {}
