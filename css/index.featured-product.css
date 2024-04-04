@@ -79,6 +79,9 @@
     cursor: pointer;
     
 }
+.product__currency{
+    margin-bottom: 20px;
+}
 
 .btn.right{
     right: 20px;
