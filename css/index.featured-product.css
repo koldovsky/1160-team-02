@@ -62,8 +62,8 @@
     cursor: pointer;
 }
 .buyspace__addcard-btn:hover{
-    background-color: var(--button-bg-hover);
-    color: var(--button-cl-hover);
+    background-color: var(--socials-button-bg-hover-color);
+    color: var(--button-text-secondary-color);
     transition: background-color, 0.3s ease;
 }
 .btn__container{

@@ -1,41 +1,72 @@
 <!--Anna Kundukova block 5-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Brands</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <section class="brands" id="brands">
-        
-        <div class="promo-container--discounts">
-            <div class="promo-box--save10" id="promo-box-aquariums">
-                <h2 class="promo__title--save10">Save <span>10%</span> on <br> Aquariums</h2>
-                <a href="#our-shop" class="promo-link--discover">Discover Now <span>→</span></a>
-            </div>
-
-            <div class="promo-box--treats" id="promo-box-toys">
-                <p class="promo__subtitle--toys">TOYS, TREATS & LEASHES</p>
-                <h2 class="promo__title--bestpicks">Best Picks for <br>Your Pets</h2>
-                <p class="promo__price"><em>from</em> <em><b><span>$1.99</span></b></em></p>
-                <a href="#our-shop" class="promo-button--learnmore">Learn More</a>
-            </div>
+      <div class="promo-container--discounts">
+        <div class="promo-box--save10" id="promo-box-aquariums">
+          <h2 class="promo__title--save10">
+            Save <span>10%</span> on <br />
+            Aquariums
+          </h2>
+          <a data-proofer-ignore href="#our-shop" class="promo-link--discover"
+            >Discover Now <span>→</span></a
+          >
         </div>
-    
+
+        <div class="promo-box--treats" id="promo-box-toys">
+          <p class="promo__subtitle--toys">TOYS, TREATS & LEASHES</p>
+          <h2 class="promo__title--bestpicks">
+            Best Picks for <br />Your Pets
+          </h2>
+          <p class="promo__price">
+            <em>from</em>
+            <em
+              ><b><span>$1.99</span></b></em
+            >
+          </p>
+          <a
+            data-proofer-ignore
+            href="#our-shop"
+            class="promo-button--learnmore"
+            >Learn More</a
+          >
+        </div>
+      </div>
+
+      <div class="sub__container">
         <div class="car container--brands">
-        <button class="carousel__button carousel__button--left" type="button" onclick="moveSlide(-1)" aria-label="Previous Slide"><</button>
+          <button
+            class="carousel__button carousel__button--left"
+            type="button"
+            onclick="nextSlide()"
+            aria-label="Previous Slide"
+          >
+            <
+          </button>
           <div class="car__track--container">
             <ul class="car__track">
-              <li class="car__brandslide">
+              <!-- <li class="car__brandslide">
                 <img src="img/brands/brand_applaws_logo.png" alt="Brand Applaws logo" class="car__image">
             </li>
             <li class="car__brandslide">
@@ -55,6 +86,7 @@
             </li>
             <li class="car__brandslide">
                 <img src="img/brands/brand_tigerino_logo.png" alt="Brand Tigerino logo" class="car__image">
+<<<<<<< HEAD
             </li>
           </ul>  
          </div>
@@ -62,6 +94,21 @@
     </div>            
         
             
+=======
+            </li> -->
+            </ul>
+          </div>
+          <button
+            class="carousel__button carousel__button--right"
+            type="button"
+            onclick="prevSlide()"
+            aria-label="Next Slide"
+          >
+            >
+          </button>
+        </div>
+      </div>
+>>>>>>> 93348dde8234ae163e6c02bfe058b2ec6d0ca9ee
     </section>
-        </body>
+  </body>
 </html>

@@ -3,6 +3,7 @@
     var(--main-bg-color);
   padding: 60px 15px 150px;
   margin-bottom: 30px;
+  position: relative;
 }
 .hero__container {
   display: flex;
@@ -31,6 +32,48 @@
   color: white;
   background-color: var(--button-text-secondary-color);
 }
+.paw-step::before,
+.paw-step::after {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  top: -30px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-25deg);
+  background: url(../img/header-footer/paw.svg) center / contain;
+  animation: walk 14s steps(14, end) 2;
+}
+.paw-step::before {
+  right: 0;
+  transform: rotate(25deg);
+  animation: walk 14s steps(14, start) 0.3s 2;
+}
+.paw-step {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  animation: direction 14s linear 14s;
+}
+
+@keyframes walk {
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes direction {
+  0%,
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
 @media (min-width: 600px) {
   .hero__title {
     font-size: 3.5rem;
