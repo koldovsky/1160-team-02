@@ -10,3 +10,4 @@ function moveSlide(step) {
 
     track.style.transform = `translateX(-${slideWidthIncludingMargin * slideIndex}px)`;
 }
+
