@@ -1,9 +1,10 @@
 /* Olena Derevianko__block 8*/
 .recommendations__title {
   color: var(--title-text-color);
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 50px;
   font-family: var(--secondary-font);
 }
 
@@ -22,44 +23,119 @@
 
 .recommendations__categories {
   margin-top: 30px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   text-align: center;
-  border-bottom: 2px solid var(--testimonials-header__paragraph-color);
+  width: 100%;
+  border-bottom: 1px solid var(--testimonials-header__paragraph-color);
 }
 
 .recommendations__category {
+  background-color: transparent;
+  border: none;
   padding: 10px 20px;
   font-size: 14px;
   text-decoration: none;
   color: var(--basic-text-color);
   font-weight: 700;
+  border: none;
+  opacity: .6;
 }
 
 .recommendations__category:hover {
   color: var(--title-text-color);
+  opacity: 1;
 }
 
-.recommendation__store {
+.recommendations__button-active {
+  opacity: 1;
+  color: var(--title-text-color);
+  border-bottom: 3px solid var(--button-text-primary-color);
+}
+
+.recommendations__category-pages{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: space-around;
+}
+
+.recommendations__menu-position {
+  border-radius: 5px;
+  padding: 5%;
+}
+
+.recommendations__menu-position-img {
+  margin: auto;
+  height: 265px;
+}
+
+.recommendations__menu-position-img img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.recommendations__href {
+  color: var(--basic-text-color);
+  font-size: 18px;
+  margin: 8px 0 0;
+  display: block;
+}
+
+.recommendations__href:hover {
+  text-decoration: underline;
+}
+
+.recommendations__price {
+  color: var(--arivals__price-color);
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.recommendations__button {
+  background-color: var(--arivals__button-color);
+  color: var(--button-text-secondary-color);
+  border-radius: 25px;
+  padding: 16px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+
+.recommendations__button:hover {
+  background-color: var(--button-bg-primary-color);
+  color: var(--arivals__price-color);
+}
+.recommendations__images {
   display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+  flex: 1 1;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .recommendations__image-container {
   flex: 2;
 }
 
-.recommendations__image {
-  width: 100%;
-}
-
 .recommendations__promo {
-  background-color: url(../img/recommendation/recommendation_background.png);
+  background: url(../img/recommendation/recommendation_background.png) no-repeat;
   background-size: cover;
+  background-position: right;
+  border-radius: 10px;
   font-family: var(--secondary-font);
   font-weight: 600;
   text-align: center;
+  padding: 25px;
+  text-align: left;
 }
 
 .recommendations__promo-title {
@@ -70,6 +146,7 @@
 .recommendations__promo-description {
   color: var(--title-text-color);
   font-size: 20px;
+  padding-bottom: 25px;
 }
 
 .recommendations__promo-link {
@@ -78,10 +155,44 @@
 }
 
 .recommendations__promo-list {
-  font-size: 14px;
+  font-size: 24px;
+  color: var(--slider-featured-product-title);
+  padding-left: 15px;
+  padding-top: 25px;
+  font-family: var(--secondary-font);
+}
+
+.recommendations__promo-list li::marker {
+  color: var(--brand-color);
+}
+
+.recommendations__image-container {
+  background-image: url(../images/ice-cream-background.png);
+  background-size: cover;
+  border-radius: 10px;
+  margin-left: 24px;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
+  .recommendations__category-pages {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .recommendations__category {
+      padding: 15px 20px;
+      font-size: 17px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .recommendations__category-pages {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
   .recommendations__title {
     font-size: 50px;
   }
@@ -111,18 +222,12 @@
     font-size: 15px;
   }
 
-  .recommendations__store {
-    flex-direction: row;
-    align-items: center;
+  .recommendations__image {
+    width: 100%;
   }
 
   .recommendations__image-container {
     flex: 2;
-    margin-right: 20px;
-  }
-
-  .recommendations__image {
-    width: 100%;
   }
 
   .recommendations__promo {

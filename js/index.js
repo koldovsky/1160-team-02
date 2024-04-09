@@ -1,15 +1,16 @@
 function init() {
-  import('./burger-button.js');
-  import('./new-arrivals.carousel.js'); /*Няйко*/
-  import('./index.promotion-timer.js'); /*Леонович*/
-  import('./testimonials-carousel.js'); /*Наконечний*/
-  import('./index.call-us.sale-week.countdown.js'); /*Курилін*/
-  import('./common.footer.copyright.clock.js'); /*Курилін*/
-  import('./dry-food.js'); /*Зоценко*/
-  import('./trending-carousel.js') /*Мачіха*/
-  import('./brands.js') /*Kундукова*/
-  import('./featured-product.js'); // Никифорчин
-  import('./swiper.js'); //Марченко
+  import("./burger-button.js");
+  import("./new-arrivals.carousel.js"); /*Няйко*/
+  import("./index.promotion-timer.js"); /*Леонович*/
+  import("./testimonials-carousel.js"); /*Наконечний*/
+  import("./index.call-us.sale-week.countdown.js"); /*Курилін*/
+  import("./common.footer.copyright.clock.js"); /*Курилін*/
+  import("./dry-food.js"); /*Зоценко*/
+  import("./trending-carousel.js"); /*Мачіха*/
+  import("./recommendations.js"); /*Дерев'янко*/
+  import("./brands.js"); /*Kундукова*/
+  import("./featured-product.js"); // Никифорчин
+  import("./swiper.js"); //Марченко
 }
 
 const totalPartials = document.querySelectorAll(
@@ -17,7 +18,7 @@ const totalPartials = document.querySelectorAll(
 ).length;
 let loadedPartialsCount = 0;
 
-document.body.addEventListener('htmx:afterOnLoad', () => {
+document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
   if (loadedPartialsCount === totalPartials) init();
 });
