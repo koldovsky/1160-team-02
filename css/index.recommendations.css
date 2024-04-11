@@ -62,7 +62,8 @@
 
 .recommendations__menu-position {
   border-radius: 5px;
-  padding: 5%;
+  padding: 10%;
+  margin: auto;
 }
 
 .recommendations__menu-position-img {
@@ -92,7 +93,7 @@
   color: var(--arivals__price-color);
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -115,15 +116,17 @@
 }
 .recommendations__images {
   display: flex;
+  flex-direction: column;
   flex: 1 1;
   width: 100%;
   justify-content: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .recommendations__image-container {
   flex: 2;
+  display: block;
 }
 
 .recommendations__promo {
@@ -136,6 +139,8 @@
   text-align: center;
   padding: 25px;
   text-align: left;
+  margin-left: 25px;
+
 }
 
 .recommendations__promo-title {
@@ -146,7 +151,7 @@
 .recommendations__promo-description {
   color: var(--title-text-color);
   font-size: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 .recommendations__promo-link {
@@ -178,7 +183,7 @@
 }
 
 @media (min-width: 768px) {
-  .recommendations__category-pages {
+    .recommendations__category-pages {
       grid-template-columns: 1fr 1fr;
     }
   
@@ -186,6 +191,21 @@
       padding: 15px 20px;
       font-size: 17px;
     }
+
+    .recommendations__images {
+      flex-direction: row;
+      margin-top: 50px;
+    }
+
+    .recommendations__promo-description {
+      padding-bottom: 25px;
+    }
+
+    .recommendations__promo {
+      margin-left: 0;
+      margin-right: 25px;
+    }
+
   }
   
   @media (min-width: 992px) {
@@ -232,5 +252,10 @@
 
   .recommendations__promo {
     flex: 1;
+  }
+  .recommendations__menu-position {
+    border-radius: 5px;
+    padding: 10%;
+    margin: auto;
   }
 }
