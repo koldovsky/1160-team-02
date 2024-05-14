@@ -1,17 +1,9 @@
 function init() {
   import("./burger-button.js");
-  import("./new-arrivals.carousel.js"); /*Няйко*/
-  import("./index.promotion-timer.js"); /*Леонович*/
-  import("./testimonials-carousel.js"); /*Наконечний*/
-  import("./index.call-us.sale-week.countdown.js"); /*Курилін*/
-  import("./common.footer.copyright.clock.js"); /*Курилін*/
-  import("./dry-food.js"); /*Зоценко*/
-  import("./trending-carousel.js"); /*Мачіха*/
-  import("./brands.js"); /*Kундукова*/
-  import("./featured-product.js"); // Никифорчин
-  import("./swiper.js"); //Марченко
-  import("./index.sub.featured-container.js"); // Никифорчин
-
+  import("./new-arrivals.carousel.js"); 
+  import("./common.footer.copyright.clock.js"); 
+  import("./swiper.js"); 
+  
   // Викликаємо завантаження категорій тут
   loadCategories();
 }
