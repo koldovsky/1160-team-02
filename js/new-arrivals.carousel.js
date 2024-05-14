@@ -5,9 +5,9 @@ const slides = [
         src="img/new-arrivals/arrivals-bowl.png"
         alt="Plastic Bowl"
       />
-      <a class="arrivals__carousel-href" href="#">OPTY Plastic Bowl</a>
+      <a class="arrivals__carousel-href" href="index.sub.featured-container.html" target="_blank" data-index="0">OPTY Plastic Bowl</a>
       <p class="arrivals__carousel-price">$3,00</p>
-      <a class="arrivals__carousel-button" href="#">Add to Cart</a>
+      <a class="arrivals__carousel-button" href="#" target="_blank">Add to Cart</a>
     </article>`,
   `<article class="arrivals__carousel-slide">
       <img
@@ -15,9 +15,9 @@ const slides = [
         src="img/new-arrivals/arrivals-butterfly-toy.png"
         alt="Butterfly Toy"
       />
-      <a class="arrivals__carousel-href" href="#">EGO Butterfly Toy</a>
+      <a class="arrivals__carousel-href" href="#" target="_blank" data-index="1">EGO Butterfly Toy</a>
       <p class="arrivals__carousel-price">$8,00</p>
-      <a class="arrivals__carousel-button" href="#">Add to Cart</a>
+      <a class="arrivals__carousel-button" href="#" target="_blank">Add to Cart</a>
     </article>`,
   `<article class="arrivals__carousel-slide">
       <img
@@ -25,11 +25,9 @@ const slides = [
         src="img/new-arrivals/arrivals-crunch-stick.png"
         alt="Crunch Stick"
       />
-      <a class="arrivals__carousel-href" href="#"
-        >VITALIFE Crunch Sticks Treat</a
-      >
+      <a class="arrivals__carousel-href" href="#" target="_blank" data-index="2">VITALIFE Crunch Sticks Treat</a>
       <p class="arrivals__carousel-price">$5,00</p>
-      <a class="arrivals__carousel-button" href="#">Add to Cart</a>
+      <a class="arrivals__carousel-button" href="#" target="_blank">Add to Cart</a>
     </article>`,
   `<article class="arrivals__carousel-slide">
       <img
@@ -37,9 +35,9 @@ const slides = [
         src="img/new-arrivals/arrivals-woven-toy.png"
         alt="Woven Toy"
       />
-      <a class="arrivals__carousel-href" href="#">DUNA Woven Toy</a>
+      <a class="arrivals__carousel-href" href="#" target="_blank" data-index="3">DUNA Woven Toy</a>
       <p class="arrivals__carousel-price">$1,50</p>
-      <a class="arrivals__carousel-button" href="#">Add to Cart</a>
+      <a class="arrivals__carousel-button" href="#" target="_blank">Add to Cart</a>
     </article>`,
   `<article class="arrivals__carousel-slide">
       <img
@@ -47,11 +45,12 @@ const slides = [
         src="img/new-arrivals/arrivals-woven-leash.png"
         alt="Woven Leash"
       />
-      <a class="arrivals__carousel-href" href="#">SERA Woven Leash</a>
+      <a class="arrivals__carousel-href" href="#" target="_blank" data-index="4">SERA Woven Leash</a>
       <p class="arrivals__carousel-price">$2,00</p>
-      <a class="arrivals__carousel-button" href="#">Add to Cart</a>
+      <a class="arrivals__carousel-button" href="#" target="_blank">Add to Cart</a>
     </article>`,
 ];
+
 
 let currentSlideIndex = 0;
 
@@ -87,5 +86,7 @@ btnNext.addEventListener("click", nextSlide);
 
 const btnPrev = document.querySelector(".right-arrow");
 btnPrev.addEventListener("click", prevSlide);
+
+
 
 window.addEventListener("resize", renderSlide);

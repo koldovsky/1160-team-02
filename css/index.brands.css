@@ -199,7 +199,7 @@
 }
 .car__brandslide:last-child {
    margin-right: 0; 
-
+}
 .car__image {
    width: auto; 
    height: auto; 
@@ -257,7 +257,9 @@
    }
 
 }
-
+.sub__container{
+   position: relative;
+}
 .carousel__button {
    position: absolute;
    top: 50%;
@@ -272,10 +274,10 @@
 
 
 .carousel__button--left {
-   left: 15vw; 
+   left: -3vw; 
 }
 
 
 .carousel__button--right {
-   right: 15vw; 
+   right: -3vw; 
 }
